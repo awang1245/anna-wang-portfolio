@@ -29,7 +29,7 @@ nav {
 .right-links {
   display: flex;
   flex-flow: row;
-  gap: 32px;
+  gap: 40px;
 }
 
 .scroll-indicator {

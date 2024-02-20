@@ -1,8 +1,18 @@
 .home {
   display: flex;
   flex-flow: column;
+  align-items: center;
+  text-align: center;
 }
 
-.delete {
-  height: 500px;
+.text {
+  display: flex;
+  flex-flow: column;
+  gap: 16px;
+}
+
+.intro {
+  font-family: "ivymode";
+  font-weight: 400;
+  font-size: 40px;
 }

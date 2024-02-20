@@ -21,6 +21,7 @@
 }
 
 body {
+  cursor: url("src/assets/star-unfilled.svg"), default;
   margin: 0;
   display: flex;
   place-items: center;
@@ -29,7 +30,7 @@ body {
 }
 
 main {
-  padding-top: 96px;
+  padding-top: 120px;
 }
 
 h1 {
@@ -47,10 +48,13 @@ a {
   font-weight: 500;
   color: black;
   text-decoration: inherit;
+  padding: 1em;
+  margin: -1em;
 }
 
 a:hover {
   color: var(--cream60);
+  cursor: url("src/assets/star-filled.svg"), default;
 }
 
 button {
