@@ -3,6 +3,7 @@
   flex-flow: column;
   align-items: center;
   text-align: center;
+  gap: 32px;
 }
 
 .text {
@@ -15,4 +16,38 @@
   font-family: "ivymode";
   font-weight: 400;
   font-size: 40px;
+}
+
+.marquee {
+  height: 200px;
+  width: 100%;
+  top: 57.5%;
+  position: absolute;
+}
+
+.marquee div {
+  display: flex;
+  align-items: end;
+  gap: 72px;
+  width: 200%;
+  position: absolute;
+  animation: marquee 36s linear infinite;
+}
+
+.marquee span {
+  float: right;
+  width: 100%;
+}
+
+@keyframes marquee {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -100%;
+  }
+}
+
+.welcome {
+  margin-top: 16px;
 }
