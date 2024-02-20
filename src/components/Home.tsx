@@ -1,7 +1,18 @@
+import "../styles/Home.css";
+
 function Home() {
   return (
     <>
-      <main></main>
+      <main>
+        <div className="home">
+          <img src="src/assets/logo.svg" className="delete" />
+          <img src="src/assets/logo.svg" className="delete" />
+          <img src="src/assets/logo.svg" className="delete" />
+          <img src="src/assets/logo.svg" className="delete" />
+          <img src="src/assets/logo.svg" className="delete" />
+          <img src="src/assets/logo.svg" className="delete" />
+        </div>
+      </main>
     </>
   );
 }

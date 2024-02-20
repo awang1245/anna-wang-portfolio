@@ -1,0 +1,8 @@
+.home {
+  display: flex;
+  flex-flow: column;
+}
+
+.delete {
+  height: 500px;
+}

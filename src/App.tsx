@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import About from "./components/About";
 import Home from "./components/Home";
 import Play from "./components/Play";
@@ -6,20 +7,36 @@ import "./styles/App.css";
 import { BrowserRouter, NavLink, Route, Routes } from "react-router-dom";
 
 function App() {
-  window.onscroll = () => myFunction();
-
-  function myFunction() {
+  const handleScroll = () => {
     const winScroll =
       document.body.scrollTop || document.documentElement.scrollTop;
     const height =
       document.documentElement.scrollHeight -
       document.documentElement.clientHeight;
     const scrolled = (winScroll / height) * 100;
-    const progBar = document.getElementById("prog-bar") as HTMLElement | null;
-    if (progBar) {
+    const progBar = document.getElementById("prog-bar");
+    const progStar = document.getElementById("prog-star");
+    if (progBar && progStar) {
       progBar.style.width = scrolled + "%";
+      if (parseInt(progBar.style.width) > 0) {
+        progStar.style.visibility = "visible";
+      } else {
+        progStar.style.visibility = "hidden";
+      }
     }
-  }
+    if (progBar && progStar) {
+      const progBarWidth = progBar.getBoundingClientRect().width;
+      const progStarOffset = progBarWidth - 12;
+      progStar.style.left = progStarOffset + "px";
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <article>
@@ -52,6 +69,11 @@ function App() {
           </nav>
           <div className="scroll-indicator">
             <div className="progress-bar" id="prog-bar" />
+            <img
+              src="src/assets/star-filled.svg"
+              className="progress-star"
+              id="prog-star"
+            />
           </div>
         </header>
         <footer></footer>
