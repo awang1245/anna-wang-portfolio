@@ -6,6 +6,8 @@ import Work from "./components/Work";
 import "./styles/App.css";
 import { NavLink, Route, Routes, useNavigate } from "react-router-dom";
 import logo from "../public/logo.svg";
+import starFilled from "../public/star-filled.svg";
+import resume from "../public/resume.pdf";
 
 function App() {
   const navigate = useNavigate();
@@ -148,7 +150,7 @@ function App() {
               <NavLink to="/about">03&nbsp; About</NavLink>
             </li>
             <li>
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a href={resume} target="_blank" rel="noopener noreferrer">
                 04&nbsp; Resume
               </a>
             </li>
@@ -157,7 +159,7 @@ function App() {
         <div className="scroll-indicator">
           <div className="progress-bar" id="prog-bar" />
           <img
-            src="../public/star-filled.svg"
+            src={starFilled}
             alt="star tracking the end of the horizontal scroll progress bar"
             className="progress-star"
             id="prog-star"

@@ -1,5 +1,9 @@
 import "../styles/Home.css";
 import "@dotlottie/player-component";
+import ikura from "../../public/ikura.svg";
+import tuna from "../../public/tuna.svg";
+import shrimp from "../../public/shrimp.svg";
+import tamago from "../../public/tamago.svg";
 
 function Home() {
   return (
@@ -33,18 +37,18 @@ function Home() {
           ></dotlottie-player>
           <div className="marquee">
             <div className="belt-items">
-              <img src="public/ikura.svg" alt="salmon roe sushi graphic" />
-              <img src="public/tuna.svg" alt="tuna sushi graphic" />
-              <img src="public/shrimp.svg" alt="shrimp sushi graphic" />
-              <img src="public/tamago.svg" alt="egg sushi graphic" />
+              <img src={ikura} alt="salmon roe sushi graphic" />
+              <img src={tuna} alt="tuna sushi graphic" />
+              <img src={shrimp} alt="shrimp sushi graphic" />
+              <img src={tamago} alt="egg sushi graphic" />
               <img src="public/maki.svg" alt="salmon avocado roll graphic" />
               <img src="public/salmon.svg" alt="salmon sushi grapihc" />
               <img src="public/ducky.svg" alt="a duck on a conveyor belt" />
               <img src="public/tako.svg" alt="octopus sushi graphic" />
-              <img src="public/ikura.svg" alt="salmon roe sushi graphic" />
-              <img src="public/tuna.svg" alt="tuna sushi graphic" />
-              <img src="public/shrimp.svg" alt="shrimp sushi graphic" />
-              <img src="public/tamago.svg" alt="egg sushi graphic" />
+              <img src={ikura} alt="salmon roe sushi graphic" />
+              <img src={tuna} alt="tuna sushi graphic" />
+              <img src={shrimp} alt="shrimp sushi graphic" />
+              <img src={tamago} alt="egg sushi graphic" />
               <img src="public/maki.svg" alt="salmon avocado roll graphic" />
               <img src="public/salmon.svg" alt="salmon sushi grapihc" />
               <img src="public/ducky.svg" alt="a duck on a conveyor belt" />
