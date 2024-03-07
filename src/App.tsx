@@ -134,7 +134,7 @@ function App() {
       <header>
         <nav>
           <NavLink to="/">
-            <img src="public/logo.svg" className="logo" alt="site logo" />
+            <img src="/logo.svg" className="logo" alt="site logo" />
           </NavLink>
           <ul className="right-links">
             <li>
@@ -147,11 +147,7 @@ function App() {
               <NavLink to="/about">03&nbsp; About</NavLink>
             </li>
             <li>
-              <a
-                href="public/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
                 04&nbsp; Resume
               </a>
             </li>
@@ -160,7 +156,7 @@ function App() {
         <div className="scroll-indicator">
           <div className="progress-bar" id="prog-bar" />
           <img
-            src="public/star-filled.svg"
+            src="/star-filled.svg"
             alt="star tracking the end of the horizontal scroll progress bar"
             className="progress-star"
             id="prog-star"
