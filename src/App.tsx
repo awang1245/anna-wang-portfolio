@@ -134,7 +134,11 @@ function App() {
       <header>
         <nav>
           <NavLink to="/">
-            <img src="/logo.svg" className="logo" alt="site logo" />
+            <img
+              src="anna-wang-portfolio/public/logo.svg"
+              className="logo"
+              alt="site logo"
+            />
           </NavLink>
           <ul className="right-links">
             <li>
