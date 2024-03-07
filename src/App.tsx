@@ -5,6 +5,7 @@ import Play from "./components/Play";
 import Work from "./components/Work";
 import "./styles/App.css";
 import { NavLink, Route, Routes, useNavigate } from "react-router-dom";
+import logo from "../public/logo.svg";
 
 function App() {
   const navigate = useNavigate();
@@ -134,11 +135,7 @@ function App() {
       <header>
         <nav>
           <NavLink to="/">
-            <img
-              src="anna-wang-portfolio/public/logo.svg"
-              className="logo"
-              alt="site logo"
-            />
+            <img src={logo} className="logo" alt="site logo" />
           </NavLink>
           <ul className="right-links">
             <li>
@@ -160,7 +157,7 @@ function App() {
         <div className="scroll-indicator">
           <div className="progress-bar" id="prog-bar" />
           <img
-            src="/star-filled.svg"
+            src="../public/star-filled.svg"
             alt="star tracking the end of the horizontal scroll progress bar"
             className="progress-star"
             id="prog-star"
