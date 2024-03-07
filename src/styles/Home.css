@@ -9,20 +9,21 @@
 .text {
   display: flex;
   flex-flow: column;
-  gap: 16px;
+  gap: 4px;
 }
 
 .intro {
   font-family: "ivymode";
   font-weight: 400;
-  font-size: 40px;
+  font-size: 44px;
 }
 
 .marquee {
   height: 200px;
   width: 100%;
-  top: 57.5%;
+  top: 58.2%;
   position: absolute;
+  overflow: hidden;
 }
 
 .marquee div {
@@ -32,6 +33,7 @@
   width: 200%;
   position: absolute;
   animation: marquee 36s linear infinite;
+  overflow: hidden;
 }
 
 .marquee span {

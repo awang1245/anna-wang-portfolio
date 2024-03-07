@@ -3,12 +3,13 @@
 :root {
   --cream10: #fff9f2;
   --cream15: #f3ece5;
+  --cream30: #cbc3bc;
   --cream40: #b1a8a1;
   --cream60: #7e716c;
 
   color-scheme: light dark;
   color: black;
-  font-family: "objektiv-mk2", sans-serif;
+  font-family: "objektiv-mk2";
   line-height: 1.5;
   font-size: 18px;
   font-weight: 400;
@@ -45,6 +46,7 @@ ul {
 }
 
 a {
+  font-size: 16px;
   font-weight: 500;
   color: black;
   text-decoration: inherit;
@@ -55,6 +57,11 @@ a {
 a:hover {
   color: var(--cream60);
   cursor: url("src/assets/star-filled.svg"), default;
+  transition: 0.3s;
+}
+
+div {
+  box-sizing: border-box;
 }
 
 button {

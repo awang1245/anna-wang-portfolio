@@ -1,0 +1,55 @@
+.work {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  gap: 64px;
+  padding: 0px 136px;
+}
+
+.work h1 {
+  font-family: "ivymode";
+  font-weight: 400;
+  font-size: 64px;
+  padding: 0;
+  margin: 0;
+}
+
+.work h2 {
+  font-family: "ivymode";
+  font-weight: 400;
+  font-size: 36px;
+  padding: 0;
+  margin: 0;
+}
+
+.work img {
+  width: 100%;
+  border: 1.5px solid black;
+  border-radius: 20px;
+}
+
+.work p {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.overview {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: start;
+  gap: 48px;
+}
+
+.subheading {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.grouping {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 16px;
+}

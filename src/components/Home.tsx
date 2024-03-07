@@ -33,27 +33,62 @@ function Home() {
           ></dotlottie-player>
           <div className="marquee">
             <div className="belt-items">
-              <img src="src/assets/ikura.svg" />
-              <img src="src/assets/shrimp.svg" />
-              <img src="src/assets/tamago.svg" />
-              <img src="src/assets/maki.svg" />
-              <img src="src/assets/salmon.svg" />
-              <img src="src/assets/ducky.svg" />
-              <img src="src/assets/tako.svg" />
-              <img src="src/assets/tuna.svg" />
-              <img src="src/assets/ikura.svg" />
-              <img src="src/assets/shrimp.svg" />
-              <img src="src/assets/tamago.svg" />
-              <img src="src/assets/maki.svg" />
-              <img src="src/assets/salmon.svg" />
-              <img src="src/assets/ducky.svg" />
-              <img src="src/assets/tako.svg" />
-              <img src="src/assets/tuna.svg" />
+              <img src="src/assets/ikura.svg" alt="salmon roe sushi graphic" />
+              <img src="src/assets/tuna.svg" alt="tuna sushi graphic" />
+              <img src="src/assets/shrimp.svg" alt="shrimp sushi graphic" />
+              <img src="src/assets/tamago.svg" alt="egg sushi graphic" />
+              <img
+                src="src/assets/maki.svg"
+                alt="salmon avocado roll graphic"
+              />
+              <img src="src/assets/salmon.svg" alt="salmon sushi grapihc" />
+              <img src="src/assets/ducky.svg" alt="a duck on a conveyor belt" />
+              <img src="src/assets/tako.svg" alt="octopus sushi graphic" />
+              <img src="src/assets/ikura.svg" alt="salmon roe sushi graphic" />
+              <img src="src/assets/tuna.svg" alt="tuna sushi graphic" />
+              <img src="src/assets/shrimp.svg" alt="shrimp sushi graphic" />
+              <img src="src/assets/tamago.svg" alt="egg sushi graphic" />
+              <img
+                src="src/assets/maki.svg"
+                alt="salmon avocado roll graphic"
+              />
+              <img src="src/assets/salmon.svg" alt="salmon sushi grapihc" />
+              <img src="src/assets/ducky.svg" alt="a duck on a conveyor belt" />
+              <img src="src/assets/tako.svg" alt="octopus sushi graphic" />
             </div>
           </div>
           <div className="welcome">
             Welcome, grab a snack, and enjoy your stay.
           </div>
+          <div className="text">
+            <div className="intro">
+              Hi, I'm Anna. <br />
+              I'm a UI developer and designer studying
+              <br />
+              Computer Science and Business at Brown University.
+            </div>
+            <p>
+              I'm interested in the intersection of technology and design, and
+              my goal is to develop <br />
+              interfaces that foster meaningful relationships between users and
+              products.
+            </p>
+          </div>
+          <div className="text">
+            <div className="intro">
+              Hi, I'm Anna. <br />
+              I'm a UI developer and designer studying
+              <br />
+              Computer Science and Business at Brown University.
+            </div>
+            <p>
+              I'm interested in the intersection of technology and design, and
+              my goal is to develop <br />
+              interfaces that foster meaningful relationships between users and
+              products.
+            </p>
+          </div>
+          ,
         </div>
       </main>
     </>
