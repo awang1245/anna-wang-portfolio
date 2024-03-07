@@ -1,4 +1,7 @@
 import "../styles/Work.css";
+import redesigned from "../../public/redesigned.png";
+import original from "../../public/original.png";
+
 function Work() {
   return (
     <>
@@ -31,14 +34,14 @@ function Work() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="public/redesigned.png"></img>
+              <img src={redesigned}></img>
             </a>
           </section>
           <section className="issues">
             <h2>Responsive Redesign</h2>
           </section>
 
-          <img src="public/original.png"></img>
+          <img src={original}></img>
         </div>
       </main>
     </>
