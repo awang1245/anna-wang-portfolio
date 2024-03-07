@@ -33,28 +33,22 @@ function Home() {
           ></dotlottie-player>
           <div className="marquee">
             <div className="belt-items">
-              <img src="src/assets/ikura.svg" alt="salmon roe sushi graphic" />
-              <img src="src/assets/tuna.svg" alt="tuna sushi graphic" />
-              <img src="src/assets/shrimp.svg" alt="shrimp sushi graphic" />
-              <img src="src/assets/tamago.svg" alt="egg sushi graphic" />
-              <img
-                src="src/assets/maki.svg"
-                alt="salmon avocado roll graphic"
-              />
-              <img src="src/assets/salmon.svg" alt="salmon sushi grapihc" />
-              <img src="src/assets/ducky.svg" alt="a duck on a conveyor belt" />
-              <img src="src/assets/tako.svg" alt="octopus sushi graphic" />
-              <img src="src/assets/ikura.svg" alt="salmon roe sushi graphic" />
-              <img src="src/assets/tuna.svg" alt="tuna sushi graphic" />
-              <img src="src/assets/shrimp.svg" alt="shrimp sushi graphic" />
-              <img src="src/assets/tamago.svg" alt="egg sushi graphic" />
-              <img
-                src="src/assets/maki.svg"
-                alt="salmon avocado roll graphic"
-              />
-              <img src="src/assets/salmon.svg" alt="salmon sushi grapihc" />
-              <img src="src/assets/ducky.svg" alt="a duck on a conveyor belt" />
-              <img src="src/assets/tako.svg" alt="octopus sushi graphic" />
+              <img src="public/ikura.svg" alt="salmon roe sushi graphic" />
+              <img src="public/tuna.svg" alt="tuna sushi graphic" />
+              <img src="public/shrimp.svg" alt="shrimp sushi graphic" />
+              <img src="public/tamago.svg" alt="egg sushi graphic" />
+              <img src="public/maki.svg" alt="salmon avocado roll graphic" />
+              <img src="public/salmon.svg" alt="salmon sushi grapihc" />
+              <img src="public/ducky.svg" alt="a duck on a conveyor belt" />
+              <img src="public/tako.svg" alt="octopus sushi graphic" />
+              <img src="public/ikura.svg" alt="salmon roe sushi graphic" />
+              <img src="public/tuna.svg" alt="tuna sushi graphic" />
+              <img src="public/shrimp.svg" alt="shrimp sushi graphic" />
+              <img src="public/tamago.svg" alt="egg sushi graphic" />
+              <img src="public/maki.svg" alt="salmon avocado roll graphic" />
+              <img src="public/salmon.svg" alt="salmon sushi grapihc" />
+              <img src="public/ducky.svg" alt="a duck on a conveyor belt" />
+              <img src="public/tako.svg" alt="octopus sushi graphic" />
             </div>
           </div>
           <div className="welcome">

@@ -31,14 +31,14 @@ function Work() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="src/assets/redesigned.png"></img>
+              <img src="public/redesigned.png"></img>
             </a>
           </section>
           <section className="issues">
             <h2>Responsive Redesign</h2>
           </section>
 
-          <img src="src/assets/original.png"></img>
+          <img src="public/original.png"></img>
         </div>
       </main>
     </>
