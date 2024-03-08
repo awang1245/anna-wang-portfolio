@@ -22,7 +22,7 @@ function Home() {
               Computer Science and Business at Brown University.
             </div>
             <p>
-              I'm interested in the intersection of technology and design, and
+              My interests lie at the intersection of technology and design, and
               my goal is to develop <br />
               interfaces that foster meaningful relationships between users and
               products.
@@ -63,6 +63,10 @@ function Home() {
             Welcome, grab a snack, and enjoy your stay.
           </div>
           <div className="text">
+            <p>
+              this is a new site that is a WIP! pls go to the work page for
+              responsive redesign assignment
+            </p>
             <div className="intro">
               Hi, I'm Anna. <br />
               I'm a UI developer and designer studying

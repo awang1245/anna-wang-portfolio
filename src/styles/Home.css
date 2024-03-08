@@ -50,6 +50,7 @@
   }
 }
 
+.home p,
 .welcome {
-  margin-top: 16px;
+  font-size: 18px;
 }

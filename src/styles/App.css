@@ -36,11 +36,11 @@ nav {
 
 .scroll-indicator {
   width: 100%;
-  height: 2px;
+  height: 1.5px;
 }
 
 .progress-bar {
-  height: 2px;
+  height: 1.5px;
   background: black;
   width: 0%;
 }
@@ -77,13 +77,13 @@ footer {
 }
 
 .ArrowUp {
-  background-image: url("src/assets/up.svg");
+  background-image: url("public/up.svg");
   width: 28px;
   height: 28px;
 }
 
 .ArrowUp.clicked {
-  background-image: url("src/assets/up-clicked.svg");
+  background-image: url("public/up-clicked.svg");
   width: 28px;
   height: 28px;
 }
