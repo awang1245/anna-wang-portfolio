@@ -245,16 +245,27 @@ function Work() {
             <h2>Development</h2>
             <div className="design-content">
               <div className="images">
-                <img src={redesigned} className="redesigned-img" />
-                <div className="sketches">
-                  <div className="half-screen">
-                    <img src={tablet} />
-                  </div>
-                  <div className="half-screen">
-                    <img src={mobile} />
+                <div className="top-final">
+                  <a
+                    href="https://www.figma.com/proto/HwQfYuhn5fPOSoCXn83LFC/Anna-Wang-Responsive-Redesign?type=design&node-id=45-568&t=Xv1KNFD9kodZr5h4-1&scaling=scale-down&page-id=27%3A35&starting-point-node-id=45%3A568&mode=design"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="desktop-final"
+                  >
+                    <img src={redesigned} />
+                  </a>
+                  <div className="tablet-final">
+                    <img src={tablet} className="tablet-img" />
                   </div>
                 </div>
-                <img src={monitor} className="redesigned-img" />
+                <div className="bottom-final">
+                  <div className="monitor-final">
+                    <img src={monitor} />
+                  </div>
+                  <div className="mobile-final">
+                    <img src={mobile} className="mobile-img" />
+                  </div>
+                </div>
               </div>
               <p className="description">
                 Starting off the design process, I made nine speed sketches to
