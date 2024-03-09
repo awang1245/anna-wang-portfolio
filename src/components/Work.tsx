@@ -67,6 +67,16 @@ function Work() {
           </section>
           <section className="issues">
             <h2>Identifying the Problem</h2>
+            <div className="design-content">
+              <p className="description">
+                Before diving into design critiques, I would like to point out
+                that for a site specializing in offering educational programs
+                for young students, there is limited introductory information
+                provided for their program offerings and content. The home page
+                also lacks an easy way to guide users to register, despite there
+                being a message saying registration is open for Spring 2024.
+              </p>
+            </div>
             <div className="split">
               <div className="details">
                 <h3>Observations</h3>
