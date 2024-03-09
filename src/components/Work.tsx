@@ -180,33 +180,40 @@ function Work() {
                   </div>
                 </div>
               </div>
-              <p className="description">
-                Starting off the design process, I made nine speed sketches to
-                brainstorm ways to best showcase Beestar's different program and
-                subject offerings. I mostly experimented with more traditional
-                elements such as vertical layouts, grids, carousels, and
-                sidebars.
+              <p className="intro-list">
+                Going off of my final sketch, I created lo-fi wireframes for
+                three screen sizes: desktop, tablet, and mobile. My main
+                objective here was to figure out how I wanted the page structure
+                and information architecture to looks across different
+                dimensions. To highlight some of my key design choices:
               </p>
-              <p className="description">
-                I liked the top right sketch the most, as it gives the user an
-                overview of all of Beestar's programs offerings in a left
-                sidebar, while details about each program and resources for each
-                are shown to the right. I refined it into a final sketch, while
-                also incorporating some elements from the others.
-              </p>
-            </div>
-            <div className="design-content">
-              <h3>Visual Design Style Guide</h3>
-              <div className="screens">
-                <img className="full-img" src={guide} />
-              </div>
-              <p className="description">
-                Starting off the design process, I made nine speed sketches to
-                brainstorm ways to best showcase Beestar's different program and
-                subject offerings. I mostly experimented with more traditional
-                elements such as vertical layouts, grids, carousels, and
-                sidebars.
-              </p>
+              <ul className="details-list">
+                <li>
+                  Increased visibility of the navigation bar and interactive
+                  elements using combination of white text and a much darker
+                  blue background. For smaller screens, the navigation bar
+                  becomes a hamburger menu.
+                </li>
+                <li>
+                  Different colors and headings are used to identify different
+                  sections and elements on the page and create entry points for
+                  the user.
+                </li>
+                <li>
+                  Made the welcome description more concise as a whole, while
+                  emphasizing the first sentence for better visual hierarchy.
+                </li>
+                <li>
+                  Rather than having many buttons solely redirecting the user,
+                  the programs section was overhauled to give the user a more
+                  comprehensive first look at the content, grade levels, and
+                  registration for each program.
+                </li>
+                <li>
+                  For responsiveness, the programs sidebar becomes a horizontal
+                  scrolling window and the grade cards are simplified.
+                </li>
+              </ul>
             </div>
             <div className="design-content">
               <h3>Hi-Fi Prototypes</h3>
@@ -225,20 +232,45 @@ function Work() {
                   <img src={deskHifi} />
                 </a>
               </div>
-              <p className="description">
-                Starting off the design process, I made nine speed sketches to
-                brainstorm ways to best showcase Beestar's different program and
-                subject offerings. I mostly experimented with more traditional
-                elements such as vertical layouts, grids, carousels, and
-                sidebars.
+              <p className="intro-list">
+                At this stage, I was mostly concerned with the feel and
+                usability of the site, deciding on colors, font sizes, and
+                interactions. My final designs were mostly faithful to the
+                lo-fi, but I also needed to consider the layout of the full
+                page. Click on the desktop version to check out the Figma
+                prototype!
               </p>
-              <p className="description">
-                I liked the top right sketch the most, as it gives the user an
-                overview of all of Beestar's programs offerings in a left
-                sidebar, while details about each program and resources for each
-                are shown to the right. I refined it into a final sketch, while
-                also incorporating some elements from the others.
-              </p>
+              <ul className="details-list">
+                <li>
+                  I took inspiration from the blues and yellows in the Beestar
+                  logo, along with a few accent colors to give the site a
+                  playful look, since it is primarily used by younger students.
+                </li>
+                <li>
+                  I moved the register button to the welcome section, as I felt
+                  it was an important element for both new and existing users to
+                  see when first opening the site.
+                </li>
+                <li>
+                  I realized that displaying all grades at once could be
+                  overwhelming to the user, which I resolved by adding an
+                  expanding window.
+                </li>
+                <li>
+                  The original webpage featured two excessively long columns of
+                  text for the news and leaderboards, where some of the
+                  information was over a decade old and irrelevant to new users.
+                  To address this, I condensed them into one section that
+                  displays only recent announcements and redirects users to a
+                  separate page for the news/leaderboards.
+                </li>
+              </ul>
+            </div>
+            <div className="design-content">
+              <h3>Visual Design Style Guide</h3>
+              <div className="screens">
+                <img className="full-img" src={guide} />
+              </div>
             </div>
           </section>
           <section className="design">
@@ -246,6 +278,9 @@ function Work() {
             <div className="design-content">
               <div className="images">
                 <div className="top-final">
+                  <div className="tablet-final">
+                    <img src={tablet} className="tablet-img" />
+                  </div>
                   <a
                     href="https://www.figma.com/proto/HwQfYuhn5fPOSoCXn83LFC/Anna-Wang-Responsive-Redesign?type=design&node-id=45-568&t=Xv1KNFD9kodZr5h4-1&scaling=scale-down&page-id=27%3A35&starting-point-node-id=45%3A568&mode=design"
                     target="_blank"
@@ -254,16 +289,13 @@ function Work() {
                   >
                     <img src={redesigned} />
                   </a>
-                  <div className="tablet-final">
-                    <img src={tablet} className="tablet-img" />
-                  </div>
                 </div>
                 <div className="bottom-final">
-                  <div className="monitor-final">
-                    <img src={monitor} />
-                  </div>
                   <div className="mobile-final">
                     <img src={mobile} className="mobile-img" />
+                  </div>
+                  <div className="monitor-final">
+                    <img src={monitor} />
                   </div>
                 </div>
               </div>
@@ -282,6 +314,16 @@ function Work() {
                 also incorporating some elements from the others.
               </p>
             </div>
+          </section>
+          <section className="design">
+            <h2>Conclusion</h2>
+            <p className="description">
+              I liked the top right sketch the most, as it gives the user an
+              overview of all of Beestar's programs offerings in a left sidebar,
+              while details about each program and resources for each are shown
+              to the right. I refined it into a final sketch, while also
+              incorporating some elements from the others.
+            </p>
           </section>
         </div>
       </main>
