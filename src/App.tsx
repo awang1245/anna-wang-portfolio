@@ -141,13 +141,13 @@ function App() {
           </NavLink>
           <ul className="right-links">
             <li>
-              <NavLink to="/work">01&nbsp; Work</NavLink>
+              <NavLink to={"/work"}>01&nbsp; Work</NavLink>
             </li>
             <li>
-              <NavLink to="/play">02&nbsp; Play</NavLink>
+              <NavLink to={"/play"}>02&nbsp; Play</NavLink>
             </li>
             <li>
-              <NavLink to="/about">03&nbsp; About</NavLink>
+              <NavLink to={"/about"}>03&nbsp; About</NavLink>
             </li>
             <li>
               <a href={resume} target="_blank" rel="noopener noreferrer">
