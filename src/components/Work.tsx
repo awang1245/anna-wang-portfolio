@@ -331,7 +331,7 @@ function Work() {
                       Click to visit the final site!
                     </p>
                     <a
-                      href="https://www.figma.com/proto/HwQfYuhn5fPOSoCXn83LFC/Anna-Wang-Responsive-Redesign?type=design&node-id=45-568&t=Xv1KNFD9kodZr5h4-1&scaling=scale-down&page-id=27%3A35&starting-point-node-id=45%3A568&mode=design"
+                      href="https://awang1245.github.io/beestar-responsive-redesign/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -368,7 +368,7 @@ function Work() {
               <p className="description">
                 To account for large monitors, I ended up using a max-width that
                 contained the content near the center of the screen within the
-                user’s line of sight. The final product closely resembles the
+                user's line of sight. The final product closely resembles the
                 hi-fi prototypes, but some differences can be noticed especially
                 with the smaller screen sizes, as it was much more challenging
                 than I expected make my site smoothly responsive. The images and
