@@ -10,7 +10,7 @@
   flex-flow: column;
   align-items: center;
   text-align: center;
-  gap: 72px;
+  gap: 64px;
   max-width: 1080px;
 }
 
@@ -19,6 +19,7 @@
     padding: 0px 56px;
   }
 }
+
 .work h1 {
   font-family: "ivymode";
   font-weight: 400;
@@ -186,7 +187,6 @@
 
 .desktop-img {
   width: 66%;
-  max-width: 66%;
 
   img {
     width: 100%;
@@ -239,6 +239,12 @@
   img {
     width: 100%;
   }
+
+  .description {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 8px;
+  }
 }
 
 .tablet-final {
@@ -259,5 +265,16 @@
   width: 78%;
   img {
     width: 100%;
+  }
+}
+
+.conclusion {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: left;
+  margin-bottom: 136px;
+  .description {
+    margin-bottom: 16px;
   }
 }

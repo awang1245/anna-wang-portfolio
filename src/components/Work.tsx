@@ -48,7 +48,7 @@ function Work() {
                 I focused on redesigning the home page, which needed to
                 accomodate both new and existing users. After identifying
                 accessibility and usability issues, I created sketches, lo-fi
-                wireframes, and a hi-fi prototype in Figma. Finally, I developed
+                wireframes, and hi-fi prototypes in Figma. Finally, I developed
                 the new, responsive website, equipped with a modernized UI to
                 support a broad range of screen dimensions.
               </p>
@@ -204,10 +204,10 @@ function Work() {
                   emphasizing the first sentence for better visual hierarchy.
                 </li>
                 <li>
-                  Rather than having many buttons solely redirecting the user,
-                  the programs section was overhauled to give the user a more
-                  comprehensive first look at the content, grade levels, and
-                  registration for each program.
+                  Instead of having a bunch of buttons immediately redirecting
+                  the user, the programs section was overhauled to give the user
+                  a more comprehensive first look at the content, grade levels,
+                  and registration for each program.
                 </li>
                 <li>
                   For responsiveness, the programs sidebar becomes a horizontal
@@ -242,9 +242,9 @@ function Work() {
               </p>
               <ul className="details-list">
                 <li>
-                  I took inspiration from the blues and yellows in the Beestar
-                  logo, along with a few accent colors to give the site a
-                  playful look, since it is primarily used by younger students.
+                  I took inspiration from the blues and yellows in the logo,
+                  along with adding a few accent colors to give the site a
+                  playful look to cater to Beestar's young audience.
                 </li>
                 <li>
                   I moved the register button to the welcome section, as I felt
@@ -252,17 +252,16 @@ function Work() {
                   see when first opening the site.
                 </li>
                 <li>
-                  I realized that displaying all grades at once could be
-                  overwhelming to the user, which I resolved by adding an
-                  expanding window.
+                  Displaying all grades at once could be overwhelming to the
+                  user, which I resolved by adding an expanding window.
                 </li>
                 <li>
                   The original webpage featured two excessively long columns of
-                  text for the news and leaderboards, where some of the
-                  information was over a decade old and irrelevant to new users.
-                  To address this, I condensed them into one section that
-                  displays only recent announcements and redirects users to a
-                  separate page for the news/leaderboards.
+                  text for the news and leaderboards, where much of the info was
+                  years old and irrelevant to new users. To address this, I
+                  condensed them into one section that displays only recent
+                  announcements and redirects users to a separate page for the
+                  news/leaderboards.
                 </li>
               </ul>
             </div>
@@ -281,14 +280,18 @@ function Work() {
                   <div className="tablet-final">
                     <img src={tablet} className="tablet-img" />
                   </div>
-                  <a
-                    href="https://www.figma.com/proto/HwQfYuhn5fPOSoCXn83LFC/Anna-Wang-Responsive-Redesign?type=design&node-id=45-568&t=Xv1KNFD9kodZr5h4-1&scaling=scale-down&page-id=27%3A35&starting-point-node-id=45%3A568&mode=design"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="desktop-final"
-                  >
-                    <img src={redesigned} />
-                  </a>
+                  <div className="desktop-final">
+                    <p className="description">
+                      Click to visit the final site!
+                    </p>
+                    <a
+                      href="https://www.figma.com/proto/HwQfYuhn5fPOSoCXn83LFC/Anna-Wang-Responsive-Redesign?type=design&node-id=45-568&t=Xv1KNFD9kodZr5h4-1&scaling=scale-down&page-id=27%3A35&starting-point-node-id=45%3A568&mode=design"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={redesigned} />
+                    </a>
+                  </div>
                 </div>
                 <div className="bottom-final">
                   <div className="mobile-final">
@@ -300,29 +303,47 @@ function Work() {
                 </div>
               </div>
               <p className="description">
-                Starting off the design process, I made nine speed sketches to
-                brainstorm ways to best showcase Beestar's different program and
-                subject offerings. I mostly experimented with more traditional
-                elements such as vertical layouts, grids, carousels, and
-                sidebars.
+                I developed the final site using HTML, CSS, and a bit of
+                JavaScript. This was my first time creating a site responsive
+                enough to be compatible with such a wide range of screen sizes.
+                The smallest screen displayed is 375x667px and the largest is
+                3840x2160px.
               </p>
               <p className="description">
-                I liked the top right sketch the most, as it gives the user an
-                overview of all of Beestar's programs offerings in a left
-                sidebar, while details about each program and resources for each
-                are shown to the right. I refined it into a final sketch, while
-                also incorporating some elements from the others.
+                To account for large monitors, I ended up using a max-width that
+                contained the content near the center of the screen within the
+                user’s line of sight. The final product closely resembles the
+                hi-fi prototypes, but some differences can be noticed especially
+                with the smaller screen sizes, as it was much more challenging
+                than I expected make my site smoothly responsive. The images and
+                list of programs, in particular, gave me some trouble.
               </p>
             </div>
           </section>
-          <section className="design">
+          <section className="conclusion">
             <h2>Conclusion</h2>
             <p className="description">
-              I liked the top right sketch the most, as it gives the user an
-              overview of all of Beestar's programs offerings in a left sidebar,
-              while details about each program and resources for each are shown
-              to the right. I refined it into a final sketch, while also
-              incorporating some elements from the others.
+              This project was valuable both as an intensive exercise in
+              responsive design and revisit to a site from my childhood. Through
+              each stage, I was able to engage much more deeply with the design
+              process, from considering the needs of Beestar's users to
+              iterating through multiple designs and to finally developing a
+              site that was both responsive and accessible. If I have a chance
+              to revisit this project in the future, I would love to improve
+              upon my tablet and mobile designs, and also get feedback from
+              actual Beestar users.
+            </p>
+            <p className="description">
+              If you haven't had a chance to yet, please check out the final
+              redesigned website{" "}
+              <a
+                href="https://awang1245.github.io/beestar-responsive-redesign/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                here
+              </a>
+              !
             </p>
           </section>
         </div>
