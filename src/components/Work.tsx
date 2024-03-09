@@ -59,7 +59,10 @@ function Work() {
               rel="noopener noreferrer"
               className="redesigned-img"
             >
-              <img src={redesigned} />
+              <img
+                src={redesigned}
+                alt="image of the redesigned Beestar website for desktop"
+              />
             </a>
           </section>
           <section className="issues">
@@ -99,7 +102,7 @@ function Work() {
                 rel="noopener noreferrer"
                 className="original-img"
               >
-                <img src={original} />
+                <img src={original} alt="image of Beestar's home page" />
               </a>
             </div>
             <div className="split">
@@ -109,7 +112,10 @@ function Work() {
                 rel="noopener noreferrer"
                 className="original-img"
               >
-                <img src={accessibility} />
+                <img
+                  src={accessibility}
+                  alt="image of Beestar's WebAIM WAVE accessibility results"
+                />
               </a>
               <div className="details">
                 <h3>Accessibility Concerns</h3>
@@ -146,10 +152,10 @@ function Work() {
               <h3>Initial Sketches</h3>
               <div className="sketches">
                 <div className="half-screen">
-                  <img src={speedSketches} />
+                  <img src={speedSketches} alt="image of nine speed sketches" />
                 </div>
                 <div className="half-screen">
-                  <img src={finalSketch} />
+                  <img src={finalSketch} alt="final sketch for the redesign" />
                 </div>
               </div>
               <p className="description">
@@ -170,13 +176,23 @@ function Work() {
             <div className="design-content">
               <h3>Lo-Fi Wireframes</h3>
               <div className="images">
-                <img src={deskWire} className="redesigned-img" />
+                <img
+                  src={deskWire}
+                  className="redesigned-img"
+                  alt="image of redesigned desktop wireframe"
+                />
                 <div className="sketches">
                   <div className="half-screen">
-                    <img src={tabWire} />
+                    <img
+                      src={tabWire}
+                      alt="image of redesigned tablet wireframe"
+                    />
                   </div>
                   <div className="half-screen">
-                    <img src={mobWire} />
+                    <img
+                      src={mobWire}
+                      alt="image of redesigned mobile wireframe"
+                    />
                   </div>
                 </div>
               </div>
@@ -219,9 +235,17 @@ function Work() {
               <h3>Hi-Fi Prototypes</h3>
               <div className="screens">
                 <div className="smaller-screens">
-                  <img src={tabHifi} className="tablet-img" />
+                  <img
+                    src={tabHifi}
+                    className="tablet-img"
+                    alt="tablet hi-fi prototype for redesign"
+                  />
 
-                  <img src={mobHifi} className="mobile-img" />
+                  <img
+                    src={mobHifi}
+                    className="mobile-img"
+                    alt="mobile hi-fi prototype for redesign"
+                  />
                 </div>
                 <a
                   href="https://www.figma.com/proto/HwQfYuhn5fPOSoCXn83LFC/Anna-Wang-Responsive-Redesign?type=design&node-id=45-568&t=Xv1KNFD9kodZr5h4-1&scaling=scale-down&page-id=27%3A35&starting-point-node-id=45%3A568&mode=design"
@@ -229,7 +253,10 @@ function Work() {
                   rel="noopener noreferrer"
                   className="desktop-img"
                 >
-                  <img src={deskHifi} />
+                  <img
+                    src={deskHifi}
+                    alt="desktop hi-fi prototype for redesign"
+                  />
                 </a>
               </div>
               <p className="intro-list">
@@ -268,7 +295,11 @@ function Work() {
             <div className="design-content">
               <h3>Visual Design Style Guide</h3>
               <div className="screens">
-                <img className="full-img" src={guide} />
+                <img
+                  className="full-img"
+                  src={guide}
+                  alt="image of visual design style guide for hi-fi prototypes"
+                />
               </div>
             </div>
           </section>
@@ -278,7 +309,11 @@ function Work() {
               <div className="images">
                 <div className="top-final">
                   <div className="tablet-final">
-                    <img src={tablet} className="tablet-img" />
+                    <img
+                      src={tablet}
+                      className="tablet-img"
+                      alt="image of final Beestar redesign for tablet"
+                    />
                   </div>
                   <div className="desktop-final">
                     <p className="description">
@@ -289,16 +324,26 @@ function Work() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img src={redesigned} />
+                      <img
+                        src={redesigned}
+                        alt="image of final Beestar redesign for desktop"
+                      />
                     </a>
                   </div>
                 </div>
                 <div className="bottom-final">
                   <div className="mobile-final">
-                    <img src={mobile} className="mobile-img" />
+                    <img
+                      src={mobile}
+                      className="mobile-img"
+                      alt="image of final Beestar redesign for mobile"
+                    />
                   </div>
                   <div className="monitor-final">
-                    <img src={monitor} />
+                    <img
+                      src={monitor}
+                      alt="image of final Beestar redesign for monitors"
+                    />
                   </div>
                 </div>
               </div>
