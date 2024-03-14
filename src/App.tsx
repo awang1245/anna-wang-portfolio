@@ -8,6 +8,8 @@ import { NavLink, Route, Routes, useNavigate } from "react-router-dom";
 import logo from "../public/logo.svg";
 import starFilled from "../public/star-filled.svg";
 import resume from "../public/resume.pdf";
+import Beestar from "./components/Beestar";
+import ABTesting from "./components/ABTesting";
 
 function App() {
   const navigate = useNavigate();
@@ -22,8 +24,6 @@ function App() {
         navigate("/play");
       } else if (event.key === "3") {
         navigate("/about");
-      } else if (event.key === "4") {
-        navigate("/resume");
       }
     };
 
@@ -42,7 +42,6 @@ function App() {
     });
   }
 
-  let scrollTimer: number | null = null;
   window.addEventListener("keydown", function (e) {
     if (e.key.startsWith("Arrow")) {
       e.preventDefault();
@@ -69,11 +68,6 @@ function App() {
         key.classList.add("clicked");
       }
       smoothScroll(dx, dy);
-      // Clear any previous scrollTimer and set a new one to ensure smooth scrolling
-      clearTimeout(scrollTimer!);
-      scrollTimer = setTimeout(function () {
-        smoothScroll(dx, dy);
-      }, 250); // Adjust this value as needed
     }
   });
 
@@ -181,6 +175,10 @@ function App() {
         <Route path="/work" element={<Work />} />
         <Route path="/play" element={<Play />} />
         <Route path="/about" element={<About />} />
+        {/* add a not found page */}
+        {/* routes to work pages */}
+        <Route path="/beestar-redesign" element={<Beestar />} />
+        <Route path="/ab-testing" element={<ABTesting />} />
       </Routes>
     </article>
   );

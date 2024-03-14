@@ -1,0 +1,79 @@
+.ab {
+  display: flex;
+  justify-content: center;
+}
+
+.ab-content {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  gap: 64px;
+  max-width: 1080px;
+}
+
+@media (max-width: 1160px) {
+  .ab-content {
+    padding: 0px 56px;
+  }
+}
+
+.ab h1 {
+  font-family: "ivymode";
+  font-weight: 400;
+  font-size: 64px;
+  padding: 0;
+  margin: 0;
+}
+
+.ab h2 {
+  font-family: "ivymode";
+  font-weight: 400;
+  font-size: 44px;
+  padding: 0 0 24px 0;
+  margin: 0;
+}
+
+.ab h3 {
+  font-family: "ivymode";
+  font-weight: 400;
+  font-size: 32px;
+  padding: 0 0 16px 0;
+  line-height: 90%;
+  margin: 0;
+}
+
+.ab img {
+  border: 1.5px solid black;
+  border-radius: 20px;
+}
+
+.ab p {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.split {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 24px;
+}
+
+.half-screen {
+  width: 50%;
+
+  img {
+    width: 100%;
+  }
+
+  .description {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+}

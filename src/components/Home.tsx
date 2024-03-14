@@ -8,8 +8,12 @@ import maki from "../../public/maki.svg";
 import salmon from "../../public/salmon.svg";
 import ducky from "../../public/ducky.svg";
 import tako from "../../public/tako.svg";
+import { useEffect } from "react";
 
 function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <main>
@@ -64,8 +68,9 @@ function Home() {
           </div>
           <div className="text">
             <p>
-              this is a new site that is a WIP! pls go to the work page for
-              responsive redesign assignment
+              yes i know the sushi isn't on the conveyor belt :/ this is a new
+              site that is a WIP! pls go to the work page for responsive
+              redesign assignment
             </p>
             <div className="intro">
               Hi, I'm Anna. <br />
