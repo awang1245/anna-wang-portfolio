@@ -1,6 +1,6 @@
 import "../styles/ABTesting.css";
-import verA from "../../public/version_A.png";
-import verB from "../../public/version_B.png";
+import verA from "../../public/ab_testing/version_A.png";
+import verB from "../../public/ab_testing/version_B.png";
 import timePageRes from "../../public/time_page_results.png";
 import firstClickRes from "../../public/first_click_results.png";
 import misclickRes from "../../public/misclick_results.png";
@@ -18,38 +18,79 @@ function ABTesting() {
             </div>
             <div className="grouping">
               <p>
-                In this project, I am working to optimize a healthcare platform
-                on which users can find and schedule appointments with their
-                local providers. The original webpage will be called Version A
-                throughout this study, while my modified page will be called
-                Version B. Using A/B testing, I am interested in seeing which
-                site offers a better user experience across three main metrics:
-                time spent on page, time to first click, and misclick rate.
+                In this project, I use A/B testing to optimize a healthcare
+                platform on which users can find and schedule appointments with
+                their local providers. The original webpage will be called
+                Version A throughout this study, while my modified page will be
+                called Version B. For users scheduling appointments, I am
+                interested in seeing which version of the site offers a better
+                user experience across three main metrics:
               </p>
-              <p>
-                For each version, a group of around twenty people were asked to
-                complete the task:{" "}
-                <b>
-                  Schedule an appointment with Adam Ng, MD at Morristown Medical
-                  Center on April 23, 2024.
-                </b>
-              </p>
+              <ul className="details-list">
+                <li>
+                  <b>Time Spent on Page:</b> Time spent on the webpage to
+                  complete the task for each user group.
+                </li>
+                <li>
+                  <b>Time to First Click:</b> Time spent on the webpage before
+                  the user first clicks something.
+                </li>
+                <li>
+                  <b>Misclick Rate:</b> Frequency with which users click
+                  something else on the page before finding the correct button
+                  for the task.
+                </li>
+              </ul>
             </div>
-            <div className="split">
-              <div className="half-screen">
-                <img
-                  src={verA}
-                  alt="image of the original design called version A"
-                />
-                <p className="description">Version A: Before changes</p>
+          </section>
+          <section className="process">
+            <h2>Design Changes</h2>
+            <div className="process-content">
+              <div className="split">
+                <div className="half-screen">
+                  <img
+                    src={verA}
+                    alt="image of the original design called version A"
+                  />
+                  <p className="description">Version A: Original</p>
+                </div>
+                <div className="half-screen">
+                  <img
+                    src={verB}
+                    alt="image of the modified design called version B"
+                  />
+                  <p className="description">Version B: After Changes</p>
+                </div>
               </div>
-              <div className="half-screen">
-                <img
-                  src={verB}
-                  alt="image of the modified design called version B"
-                />
-                <p className="description">Version B: After changes</p>
-              </div>
+              <p className="description">
+                The original webpage had a number of accessibility and usability
+                issues, but the ones I focused on addressing were that the
+                combination of light blue and white did not have enough contrast
+                and that the information was not clearly organized.
+              </p>
+              <p className="description">
+                In Version B, the changes I made were:
+              </p>
+              <ul className="details-list">
+                <li>
+                  Added a dark background to the dates to clearly differentiate
+                  this information from the other appointment details. The color
+                  also draws the user's attention and creates an initial entry
+                  point for users to scan the dates and narrow down their
+                  options.
+                </li>
+                <li>
+                  Changed the background color for the buttons to dark blue to
+                  provide greater contrast between the background and the text.
+                  Appointment information on a white background was changed to
+                  black to similarly help with readability.
+                </li>
+                <li>
+                  Increased the spacing between each appointment and added a box
+                  shadow to each to better visually distinguish all of the
+                  appointments from each other and the background.
+                </li>
+              </ul>
             </div>
           </section>
           <section className="process">
@@ -77,7 +118,7 @@ function ABTesting() {
                   </ul>
                 </li>
               </ul>
-              <p className="description">
+              <p className="description-top">
                 I predict that I will reject the null hypothesis since the
                 modified layout for Version B provides clearer visual separation
                 between each appointment and the information within each
@@ -109,7 +150,7 @@ function ABTesting() {
                   </ul>
                 </li>
               </ul>
-              <p className="description">
+              <p className="description-top">
                 I predict that I will reject the null hypothesis since the
                 higher color contrast, box shadows, and cleaner organization of
                 information all contribute to the user more quickly being able
@@ -142,7 +183,7 @@ function ABTesting() {
                   </ul>
                 </li>
               </ul>
-              <p className="description">
+              <p className="description-top">
                 I predict that I will reject the null hypothesis as the
                 increased contrast enables users to more clearly identify and
                 select the information they need.
@@ -152,6 +193,15 @@ function ABTesting() {
           <section className="process">
             <h2>Statistical Tests</h2>
             <div className="process-content">
+              <p className="description">
+                When collecting the data for each version of the site, a group
+                of around twenty people were asked to complete the following
+                task:{" "}
+                <b>
+                  Schedule an appointment with Adam Ng, MD at Morristown Medical
+                  Center on April 23, 2024.
+                </b>
+              </p>
               <p className="description">
                 For all three of my tests, I used an alpha of 0.05, the
                 threshold at which we reject the null hypothesis. If there is a

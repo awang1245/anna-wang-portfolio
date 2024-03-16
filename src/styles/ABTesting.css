@@ -56,6 +56,15 @@
   margin: 0;
 }
 
+.overview {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: start;
+  gap: 36px;
+}
+
 .grouping {
   display: flex;
   flex-flow: column nowrap;
@@ -109,15 +118,20 @@
   .description {
     margin-bottom: 16px;
   }
+
+  .description-top {
+    margin-top: 16px;
+  }
 }
 
 .ab .details-list {
-  margin-left: 16px;
+  margin-left: 32px;
   list-style-type: disc;
   display: flex;
   flex-flow: column nowrap;
   gap: 8px;
-  margin-bottom: 16px;
+
+  text-align: left;
 
   li {
     stroke-width: 1.5px;
@@ -125,6 +139,7 @@
   }
 
   .nested-list {
+    padding-top: 8px;
     margin-left: 32px;
     list-style-type: circle;
     display: flex;

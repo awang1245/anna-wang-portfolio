@@ -1,19 +1,19 @@
 import "../styles/Beestar.css";
-import redesigned from "../../public/redesigned.png";
-import original from "../../public/original.png";
-import accessibility from "../../public/accessibility.png";
-import speedSketches from "../../public/speed_sketches.png";
-import finalSketch from "../../public/final_sketch.png";
-import deskWire from "../../public/desktop_wireframe.png";
-import tabWire from "../../public/tablet_wireframe.png";
-import mobWire from "../../public/mobile_wireframe.png";
-import guide from "../../public/guide.png";
-import deskHifi from "../../public/desktop_hifi.png";
-import tabHifi from "../../public/tablet_hifi.png";
-import mobHifi from "../../public/mobile_hifi.png";
-import monitor from "../../public/monitor.png";
-import tablet from "../../public/tablet.png";
-import mobile from "../../public/mobile.png";
+import redesigned from "../../public/beestar/redesigned.png";
+import original from "../../public/beestar/original.png";
+import accessibility from "../../public/beestar/accessibility.png";
+import speedSketches from "../../public/beestar/speed_sketches.png";
+import finalSketch from "../../public/beestar/final_sketch.png";
+import deskWire from "../../public/beestar/desktop_wireframe.png";
+import tabWire from "../../public/beestar/tablet_wireframe.png";
+import mobWire from "../../public/beestar/mobile_wireframe.png";
+import guide from "../../public/beestar/guide.png";
+import deskHifi from "../../public/beestar/desktop_hifi.png";
+import tabHifi from "../../public/beestar/tablet_hifi.png";
+import mobHifi from "../../public/beestar/mobile_hifi.png";
+import monitor from "../../public/beestar/monitor.png";
+import tablet from "../../public/beestar/tablet.png";
+import mobile from "../../public/beestar/mobile.png";
 import { useEffect } from "react";
 
 function Beestar() {
