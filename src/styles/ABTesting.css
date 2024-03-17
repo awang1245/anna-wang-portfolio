@@ -149,23 +149,24 @@
 }
 
 .analysis {
-  width: 70%;
+  width: 100%;
 }
 
 .test {
   width: 100%;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   gap: 24px;
 }
 
 .test-results {
   display: flex;
-  flex-flow: column nowrap;
-  gap: 16px;
-  width: 30%;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: start;
+  width: 60%;
 
   img {
     width: 100%;

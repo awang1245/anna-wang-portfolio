@@ -1,10 +1,9 @@
 import "../styles/ABTesting.css";
 import verA from "../../public/ab_testing/version_A.png";
 import verB from "../../public/ab_testing/version_B.png";
-import timePageRes from "../../public/time_page_results.png";
-import firstClickRes from "../../public/first_click_results.png";
-import misclickRes from "../../public/misclick_results.png";
-import misclickData from "../../public/misclick_data.png";
+import timePage from "../../public/ab_testing/time_page.png";
+import firstClick from "../../public/ab_testing/first_click.png";
+import misclick from "../../public/ab_testing/misclicks.png";
 
 function ABTesting() {
   return (
@@ -215,6 +214,9 @@ function ABTesting() {
             <div className="process-content">
               <h3>Time on Page</h3>
               <div className="test">
+                <div className="test-results">
+                  <img src={timePage} />
+                </div>
                 <div className="analysis">
                   <p className="description">
                     I decided to use a one-tailed t-test for this metric, as we
@@ -241,14 +243,14 @@ function ABTesting() {
                     </li>
                   </ul>
                 </div>
-                <div className="test-results">
-                  <img src={timePageRes} />
-                </div>
               </div>
             </div>
             <div className="process-content">
               <h3>Time to First Click</h3>
               <div className="test">
+                <div className="test-results">
+                  <img src={firstClick} />
+                </div>
                 <div className="analysis">
                   <p className="description">
                     I decided to use a one-tailed t-test for this metric, as we
@@ -274,14 +276,14 @@ function ABTesting() {
                     </li>
                   </ul>
                 </div>
-                <div className="test-results">
-                  <img src={firstClickRes} />
-                </div>
               </div>
             </div>
             <div className="process-content">
               <h3>Misclick Rate</h3>
               <div className="test">
+                <div className="test-results">
+                  <img src={misclick} />
+                </div>
                 <div className="analysis">
                   <p className="description">
                     I decided to use a chi-squared test for this metric, as we
@@ -303,39 +305,40 @@ function ABTesting() {
                     </li>
                   </ul>
                 </div>
-                <div className="test-results">
-                  <img src={misclickData} />
-                  <img src={misclickRes} />
-                </div>
               </div>
             </div>
           </section>
           <section className="process">
             <h2>Summary Statistics</h2>
             <p className="description">
-              This project was valuable both as an intensive exercise in
-              responsive design and revisit to a site from my childhood. Through
-              each stage, I was able to engage much more deeply with the design
-              process, from considering the needs of Beestar's users to
-              iterating through multiple designs and to finally developing a
-              site that was both responsive and accessible. If I have a chance
-              to revisit this project in the future, I would love to improve
-              upon my tablet and mobile designs, and also get feedback from
-              actual Beestar users.
+              For all three metrics, the summary statistics indicate that
+              Version B performed better than Version A. On average, users spent
+              less than a quarter of the time to complete the task on Version B
+              (8.46 seconds) compared to A (36.14 seconds). The variance in the
+              data was also significantly less, further indicating that more
+              users were able to schedule their desired appointments more
+              quickly. It took users an average of 14.48 seconds to make their
+              first click on Version A and 5.15 seconds on B, suggesting that
+              Version B enabled users to more quickly able to understand the
+              layout and information on the page and begin executing their task.
+              Although some of the data points could be a product of stray
+              clicks, the lower variance helps reinforce our conclusion as our
+              sample data for B is more tightly centered around the mean.
+              Lastly, for misclick rate, 50% of users made a misclick on Version
+              A, while only 16% of users misclicked on B, showing that users
+              were able to better navigate and accurately perform tasks on the
+              page, which could be attributed to the improved color contrast and
+              organization of appointments.
             </p>
           </section>
           <section className="conclusion">
             <h2>Conclusion</h2>
             <p className="description">
-              This project was valuable both as an intensive exercise in
-              responsive design and revisit to a site from my childhood. Through
-              each stage, I was able to engage much more deeply with the design
-              process, from considering the needs of Beestar's users to
-              iterating through multiple designs and to finally developing a
-              site that was both responsive and accessible. If I have a chance
-              to revisit this project in the future, I would love to improve
-              upon my tablet and mobile designs, and also get feedback from
-              actual Beestar users.
+              When learning about the design process at the beginning of the
+              course, the only step that appeared multiple times was testing.
+              This project helped reinforce my understanding of the importance
+              of testing, especially the quantitative data it can provide in
+              helping you improve your product across different metrics.
             </p>
           </section>
         </div>
