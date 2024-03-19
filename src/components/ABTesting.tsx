@@ -261,7 +261,7 @@ function ABTesting() {
                   <ul className="details-list">
                     <li>
                       We obtained a T-score of 5.230325613, which exceeds the
-                      threshold of ~2 We also obtain a P-value of
+                      threshold of ~2. We also obtain a P-value of
                       0.000008520042382, which falls below the threshold of 0.5.
                     </li>
                     <li>
@@ -287,9 +287,9 @@ function ABTesting() {
                 <div className="analysis">
                   <p className="description">
                     I decided to use a chi-squared test for this metric, as we
-                    are working with categorical data (did_misclick: T or F) to
-                    evaluate whether there is a lower misclick rate for Version
-                    B than A.
+                    are working with categorical data (did_misclick: True or
+                    False) to evaluate whether there is a lower misclick rate
+                    for Version B than A.
                   </p>
                   <ul className="details-list">
                     <li>

@@ -18,10 +18,20 @@
   font-size: 44px;
 }
 
+.sushi-belt {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
 .marquee {
+  min-width: 1440px;
+  max-width: 1440px;
   height: 200px;
   width: 100%;
-  top: 58.2%;
+  top: 8%;
   position: absolute;
   overflow: hidden;
 }
@@ -32,7 +42,7 @@
   gap: 72px;
   width: 200%;
   position: absolute;
-  animation: marquee 36s linear infinite;
+  animation: marquee 35.5s linear infinite;
   overflow: hidden;
 }
 
