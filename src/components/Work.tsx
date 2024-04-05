@@ -12,6 +12,9 @@ function Work() {
           <NavLink to={"/ab-testing"}>
             <div className="work-card">AB Testing</div>
           </NavLink>
+          <NavLink to={"/kopi-development"}>
+            <div className="work-card">Kopi Organic Roastery</div>
+          </NavLink>
         </div>
       </main>
     </>

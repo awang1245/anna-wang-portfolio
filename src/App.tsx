@@ -10,6 +10,7 @@ import starFilled from "../public/star-filled.svg";
 import resume from "../public/resume.pdf";
 import Beestar from "./components/Beestar";
 import ABTesting from "./components/ABTesting";
+import KopiDevelopment from "./components/KopiDevelopment";
 
 function App() {
   const navigate = useNavigate();
@@ -179,6 +180,7 @@ function App() {
         {/* routes to work pages */}
         <Route path="/beestar-redesign" element={<Beestar />} />
         <Route path="/ab-testing" element={<ABTesting />} />
+        <Route path="/kopi-development" element={<KopiDevelopment />} />
       </Routes>
     </article>
   );

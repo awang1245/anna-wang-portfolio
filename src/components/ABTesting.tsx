@@ -335,10 +335,12 @@ function ABTesting() {
             <h2>Conclusion</h2>
             <p className="description">
               When learning about the design process at the beginning of the
-              course, the only step that appeared multiple times was testing.
-              This project helped reinforce my understanding of the importance
-              of testing, especially the quantitative data it can provide in
-              helping you improve your product across different metrics.
+              course, we saw how crucial it was to do plenty of testing, as it
+              appeared multiple times especially leading into the later stages.
+              This project helped reinforce my understanding of and see
+              firsthand the importance of testing, especially the statistics it
+              can provide in helping you improve your product across different
+              metrics.
             </p>
           </section>
         </div>
