@@ -37,6 +37,7 @@ function Beestar() {
                   href="https://www.beestar.org/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="hyperlink"
                 >
                   Beestar.org
                 </a>
@@ -214,7 +215,7 @@ function Beestar() {
                 Going off of my final sketch, I created lo-fi wireframes for
                 three screen sizes: desktop, tablet, and mobile. My main
                 objective here was to figure out how I wanted the page structure
-                and information architecture to looks across different
+                and information architecture to look across different
                 dimensions. To highlight some of my key design choices:
               </p>
               <ul className="details-list">
@@ -399,6 +400,7 @@ function Beestar() {
                 href="https://awang1245.github.io/beestar-responsive-redesign/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hyperlink"
               >
                 here
               </a>

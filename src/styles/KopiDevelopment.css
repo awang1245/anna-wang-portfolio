@@ -89,14 +89,18 @@
   }
 }
 
-.analysis {
+.analysis,
+.design-process,
+.development {
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
   text-align: left;
 }
 
-.analysis-content {
+.analysis-content,
+.design-content,
+.development-content {
   width: 100%;
   max-width: 1200px;
   display: flex;
@@ -108,7 +112,7 @@
   }
 
   .description-top {
-    margin-top: 16px;
+    margin: 16px 0;
   }
 }
 
@@ -121,10 +125,26 @@
   margin-bottom: 56px;
 }
 
+.kopi .split-last {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: start;
+  gap: 56px;
+}
+
 .details {
   width: 50%;
   display: flex;
   flex-flow: column nowrap;
+}
+
+.half-img {
+  width: 50%;
+
+  img {
+    width: 100%;
+  }
 }
 
 .kopi .details-list {
@@ -161,21 +181,26 @@ td {
   border-collapse: collapse;
   border: 1.5px solid black;
   background-color: white;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 table {
-  width: 100%;
+  width: 90%;
+  margin-bottom: 16px;
 }
 
 th,
 td {
-  padding: 16px;
+  padding: 12px 16px;
   width: 272px;
 }
 
 td {
   font-weight: 500;
+}
+
+th {
+  padding: 16px 0;
 }
 
 .row-content {
@@ -196,8 +221,8 @@ th:first-child .row-content {
 
 td:first-child,
 th:first-child {
-  padding-left: 24px;
-  font-size: 16px;
+  padding-left: 16px;
+  font-size: 14px;
   width: 216px;
 }
 
@@ -207,4 +232,41 @@ th:first-child {
 
 .check-icon {
   width: 24px;
+}
+
+.branding-img {
+  width: 90%;
+  img {
+    width: 100%;
+  }
+}
+
+.single-img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.sketch-img {
+  width: 70%;
+}
+
+.hyperlink {
+  text-decoration: underline;
+}
+
+.grid {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 16px 24px;
+}
+
+.quarter-img {
+  width: 48.8%;
+
+  img {
+    width: 100%;
+  }
 }

@@ -76,6 +76,10 @@
   gap: 16px;
 }
 
+.hyperlink {
+  text-decoration: underline;
+}
+
 .redesigned-img {
   width: 80%;
 
