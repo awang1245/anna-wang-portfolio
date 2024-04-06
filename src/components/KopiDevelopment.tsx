@@ -691,10 +691,9 @@ function KopiDevelopment() {
             guilty of flat design). This was also the first time I tried React
             Bootstrap, and probably also the last time, as I'm realizing that UI
             frameworks are not ideal for me as someone who likes full control
-            over styling. I might just try to build my own components from now
-            on in the future. I plan to revisit this project in the future to
-            add custom checkboxes and make the site responsive for mobile and
-            large monitors.
+            over styling. I plan to revisit this project in the future to add
+            custom checkboxes and make the site responsive for mobile and large
+            monitors.
           </p>
           <p className="description">
             If you haven't had a chance to yet, please check out the final
