@@ -6,9 +6,6 @@ function Home() {
   const [wideScreen, setWideScreen] = useState<boolean>(false);
 
   useEffect(() => {
-    if (window.innerWidth > 1440) {
-      console.log("should resize");
-    }
     const detectWide = () => {
       setWideScreen(window.innerWidth > 1600);
     };

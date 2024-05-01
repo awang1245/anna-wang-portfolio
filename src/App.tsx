@@ -95,7 +95,7 @@ function App() {
     if (e.key.startsWith("Arrow")) {
       e.preventDefault();
 
-      let scrollStep = 100;
+      let scrollStep = 160;
       let dx = 0,
         dy = 0;
       switch (e.key) {
