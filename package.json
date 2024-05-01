@@ -2,7 +2,7 @@
   "name": "anna-wang-portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://awang1245.github.io/anna-wang-portfolio",
+  "homepage": "https://anna-wang.dev",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
