@@ -52,28 +52,37 @@ nav {
   visibility: hidden;
 }
 
-footer {
+.key-controls {
   bottom: 0;
   position: fixed;
   width: 100%;
   z-index: 20;
-  height: 64px;
-}
-
-.key-controls {
   padding: 18px 56px;
   display: flex;
-  flex-flow: row;
-  justify-content: space-between;
+  flex-flow: row nowrap;
+  justify-content: start;
   align-items: center;
   box-sizing: border-box;
   background-color: rgba(255, 249, 242, 0.9);
+  gap: 48px;
 }
 
-.arrow-keys {
+.control-label {
+  font-size: 14px;
+}
+
+.keys-label {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: start;
+  gap: 8px;
+}
+
+.keys {
   display: flex;
   flex-flow: row;
-  gap: 8px;
+  gap: 6px;
 }
 
 .ArrowUp {
@@ -84,6 +93,102 @@ footer {
 
 .ArrowUp.clicked {
   background-image: url("public/up-clicked.svg");
+  width: 28px;
+  height: 28px;
+}
+
+.ArrowDown {
+  background-image: url("public/down.svg");
+  width: 28px;
+  height: 28px;
+}
+
+.ArrowDown.clicked {
+  background-image: url("public/down-clicked.svg");
+  width: 28px;
+  height: 28px;
+}
+
+.ArrowLeft {
+  background-image: url("public/left.svg");
+  width: 28px;
+  height: 28px;
+}
+
+.ArrowLeft.clicked {
+  background-image: url("public/left-clicked.svg");
+  width: 28px;
+  height: 28px;
+}
+
+.ArrowRight {
+  background-image: url("public/right.svg");
+  width: 28px;
+  height: 28px;
+}
+
+.ArrowRight.clicked {
+  background-image: url("public/right-clicked.svg");
+  width: 28px;
+  height: 28px;
+}
+
+div[data-key="1"] {
+  background-image: url("public/1.svg");
+  width: 28px;
+  height: 28px;
+}
+
+div[data-key="1"].clicked {
+  background-image: url("public/1-clicked.svg");
+  width: 28px;
+  height: 28px;
+}
+
+div[data-key="2"] {
+  background-image: url("public/2.svg");
+  width: 28px;
+  height: 28px;
+}
+
+div[data-key="2"].clicked {
+  background-image: url("public/2-clicked.svg");
+  width: 28px;
+  height: 28px;
+}
+
+div[data-key="3"] {
+  background-image: url("public/3.svg");
+  width: 28px;
+  height: 28px;
+}
+
+div[data-key="3"].clicked {
+  background-image: url("public/3-clicked.svg");
+  width: 28px;
+  height: 28px;
+}
+
+div[data-key="4"] {
+  background-image: url("public/4.svg");
+  width: 28px;
+  height: 28px;
+}
+
+div[data-key="4"].clicked {
+  background-image: url("public/4-clicked.svg");
+  width: 28px;
+  height: 28px;
+}
+
+.h {
+  background-image: url("public/hide.svg");
+  width: 28px;
+  height: 28px;
+}
+
+.h.clicked {
+  background-image: url("public/hide-clicked.svg");
   width: 28px;
   height: 28px;
 }

@@ -1,10 +1,16 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import About from "./components/About";
 import Home from "./components/Home";
 import Play from "./components/Play";
 import Work from "./components/Work";
 import "./styles/App.css";
-import { NavLink, Route, Routes, useNavigate } from "react-router-dom";
+import {
+  NavLink,
+  Route,
+  Routes,
+  useLocation,
+  useNavigate,
+} from "react-router-dom";
 import logo from "../public/logo.svg";
 import starFilled from "../public/star-filled.svg";
 import resume from "../public/resume.pdf";
@@ -13,18 +19,54 @@ import ABTesting from "./components/ABTesting";
 import KopiDevelopment from "./components/KopiDevelopment";
 
 function App() {
+  const [isShown, setIsShown] = useState<boolean>(true);
   const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
-    const handleKeyPress = (event: { key: string }) => {
-      if (event.key === "0") {
-        navigate("/");
-      } else if (event.key === "1") {
-        navigate("/work");
-      } else if (event.key === "2") {
-        navigate("/play");
-      } else if (event.key === "3") {
-        navigate("/about");
+    window.scrollTo(0, 0);
+    const progBar = document.getElementById("prog-bar");
+    if (progBar) {
+      progBar.style.width = 0 + "%";
+    }
+    const progStar = document.getElementById("prog-star");
+    if (progStar) {
+      progStar.style.visibility = "hidden";
+    }
+  }, [location]);
+
+  useEffect(() => {
+    const handleKeyPress = (e: { key: string }) => {
+      switch (e.key) {
+        case "0":
+          navigate("/");
+          break;
+        case "1":
+          navigate("/work");
+          break;
+        case "2":
+          navigate("/play");
+          break;
+        case "3":
+          navigate("/about");
+          break;
+        case "4":
+          window.location.href =
+            "https://awang1245.github.io/anna-wang-portfolio/assets/resume-DyKsdSxX.pdf";
+          break;
+        case "h":
+          setIsShown((prevIsShown) => !prevIsShown);
+      }
+      if (e.key === "1" || e.key === "2" || e.key === "3" || e.key === "4") {
+        const key = document.querySelector(`[data-key="${e.key}"]`);
+        if (key && !key.classList.contains("clicked")) {
+          key.classList.add("clicked");
+        }
+      } else {
+        const key = document.querySelector("." + e.key);
+        if (key && !key.classList.contains("clicked")) {
+          key.classList.add("clicked");
+        }
       }
     };
 
@@ -36,9 +78,9 @@ function App() {
   }, [navigate]);
 
   function smoothScroll(dx: number, dy: number) {
-    window.scrollBy({
-      top: dy,
-      left: dx,
+    window.scrollTo({
+      top: window.scrollY + dy,
+      left: window.scrollX + dx,
       behavior: "smooth",
     });
   }
@@ -47,7 +89,7 @@ function App() {
     if (e.key.startsWith("Arrow")) {
       e.preventDefault();
 
-      let scrollStep = 80;
+      let scrollStep = 100;
       let dx = 0,
         dy = 0;
       switch (e.key) {
@@ -76,6 +118,18 @@ function App() {
     if (e.key.startsWith("Arrow")) {
       e.preventDefault();
       const key = document.querySelector("." + e.key);
+      if (key && key.classList.contains("clicked")) {
+        key.classList.remove("clicked");
+      }
+    }
+
+    if (
+      e.key.startsWith("1") ||
+      e.key.startsWith("2") ||
+      e.key.startsWith("3") ||
+      e.key.startsWith("4")
+    ) {
+      const key = document.querySelector(`[data-key="${e.key}"]`);
       if (key && key.classList.contains("clicked")) {
         key.classList.remove("clicked");
       }
@@ -114,11 +168,6 @@ function App() {
       progStar.style.left = progStarOffset + "px";
     }
   };
-
-  // try this also as alternative to the useffect?
-  // window.onscroll = function () {
-  //   handleScroll();
-  // };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -161,16 +210,34 @@ function App() {
           />
         </div>
       </header>
-      {/* <footer>
+      {isShown && (
         <div className="key-controls">
-          <ul className="arrow-keys">
-            <div className="ArrowUp" />
-            <div className="ArrowDown" />
-            <div className="ArrowLeft" />
-            <div className="ArrowRight" />
-          </ul>
+          <div className="keys-label">
+            <ul className="keys">
+              <div className="ArrowUp" />
+              <div className="ArrowDown" />
+              <div className="ArrowLeft" />
+              <div className="ArrowRight" />
+            </ul>
+            <div className="control-label">Scroll</div>
+          </div>
+          <div className="keys-label">
+            <ul className="keys">
+              <div data-key="1" />
+              <div data-key="2" />
+              <div data-key="3" />
+              <div data-key="4" />
+            </ul>
+            <div className="control-label">Navigate to page</div>
+          </div>
+          <div className="keys-label">
+            <ul className="keys">
+              <div className="h" />
+            </ul>
+            <div className="control-label">Hide</div>
+          </div>
         </div>
-      </footer> */}
+      )}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/work" element={<Work />} />
