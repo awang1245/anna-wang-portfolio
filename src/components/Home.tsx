@@ -1,6 +1,7 @@
 import "../styles/Home.css";
 import "@dotlottie/player-component";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 function Home() {
   const [wideScreen, setWideScreen] = useState<boolean>(false);
@@ -20,7 +21,12 @@ function Home() {
 
   return (
     <>
-      <main>
+      <motion.main
+        initial={{ y: "100%" }}
+        animate={{ y: "0%" }}
+        transition={{ duration: 0.75, ease: "easeOut" }}
+        exit={{ opacity: 1 }}
+      >
         <div className="home">
           <div className="text">
             <div className="intro">
@@ -55,7 +61,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </main>
+      </motion.main>
     </>
   );
 }

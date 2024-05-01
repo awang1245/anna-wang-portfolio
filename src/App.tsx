@@ -17,6 +17,7 @@ import resume from "../public/resume.pdf";
 import Beestar from "./components/Beestar";
 import ABTesting from "./components/ABTesting";
 import KopiDevelopment from "./components/KopiDevelopment";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
   const [isShown, setIsShown] = useState<boolean>(true);
@@ -246,17 +247,19 @@ function App() {
           </div>
         </div>
       )}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/work" element={<Work />} />
-        <Route path="/play" element={<Play />} />
-        <Route path="/about" element={<About />} />
-        {/* add a not found page */}
-        {/* routes to work pages */}
-        <Route path="/beestar-redesign" element={<Beestar />} />
-        <Route path="/ab-testing" element={<ABTesting />} />
-        <Route path="/kopi-development" element={<KopiDevelopment />} />
-      </Routes>
+      <AnimatePresence initial={false}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/play" element={<Play />} />
+          <Route path="/about" element={<About />} />
+          {/* add a not found page */}
+          {/* routes to work pages */}
+          <Route path="/beestar-redesign" element={<Beestar />} />
+          <Route path="/ab-testing" element={<ABTesting />} />
+          <Route path="/kopi-development" element={<KopiDevelopment />} />
+        </Routes>
+      </AnimatePresence>
     </article>
   );
 }
