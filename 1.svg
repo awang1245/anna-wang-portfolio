@@ -2,11 +2,11 @@
 <rect x="2.75" y="0.75" width="24.5" height="24.5" rx="5.25" fill="black" stroke="black" stroke-width="1.5"/>
 <rect x="0.75" y="2.75" width="24.5" height="24.5" rx="5.25" fill="#FFF9F2"/>
 <rect x="0.75" y="2.75" width="24.5" height="24.5" rx="5.25" stroke="black" stroke-width="1.5"/>
-<g clip-path="url(#clip0_100_269)">
+<g clip-path="url(#clip0_159_962)">
 <path d="M13.8572 20.5H12.3452V11.68L9.55918 12.94L9.33518 11.596L12.6672 10.084H13.8572V20.5Z" fill="black"/>
 </g>
 <defs>
-<clipPath id="clip0_100_269">
+<clipPath id="clip0_159_962">
 <rect width="18" height="18" fill="white" transform="translate(4 6)"/>
 </clipPath>
 </defs>
