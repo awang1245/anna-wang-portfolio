@@ -30,8 +30,7 @@ function Home() {
               Computer Science and Business at Brown University.
             </div>
             <p>
-              My interests lie at the intersection of technology and design, and
-              my goal is to develop <br />
+              I love , and my goal is to develop <br />
               interfaces that foster meaningful relationships between users and
               products.
             </p>
