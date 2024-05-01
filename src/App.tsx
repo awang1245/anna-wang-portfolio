@@ -57,7 +57,13 @@ function App() {
         case "h":
           setIsShown((prevIsShown) => !prevIsShown);
       }
-      if (e.key === "1" || e.key === "2" || e.key === "3" || e.key === "4") {
+      if (
+        e.key === "0" ||
+        e.key === "1" ||
+        e.key === "2" ||
+        e.key === "3" ||
+        e.key === "4"
+      ) {
         const key = document.querySelector(`[data-key="${e.key}"]`);
         if (key && !key.classList.contains("clicked")) {
           key.classList.add("clicked");
@@ -124,6 +130,7 @@ function App() {
     }
 
     if (
+      e.key.startsWith("0") ||
       e.key.startsWith("1") ||
       e.key.startsWith("2") ||
       e.key.startsWith("3") ||
@@ -223,6 +230,7 @@ function App() {
           </div>
           <div className="keys-label">
             <ul className="keys">
+              <div data-key="0" />
               <div data-key="1" />
               <div data-key="2" />
               <div data-key="3" />
