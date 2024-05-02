@@ -10,6 +10,7 @@ article {
 }
 
 .dark-mode {
+  cursor: url("/light-star-unfilled.svg"), default;
   background-color: var(--cream85);
   color: var(--cream5);
 }

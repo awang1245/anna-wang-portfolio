@@ -24,12 +24,12 @@
 
 body {
   font-family: "objektiv-mk2";
-  cursor: url("/star-unfilled.svg"), default;
   margin: 0;
   display: flex;
   place-items: center;
   width: 100vw;
   height: 100vh;
+  cursor: url("/star-unfilled.svg"), default;
 }
 
 main {
@@ -84,7 +84,7 @@ ul {
 
 .dark-link:hover {
   color: var(--cream30);
-  cursor: url("/star-filled.svg"), default;
+  cursor: url("/light-star-filled.svg"), default;
   transition: 0.3s;
 }
 
@@ -108,7 +108,7 @@ ul {
 
 .hyperlink-dark:hover {
   color: var(--cream30);
-  cursor: url("/star-filled.svg"), default;
+  cursor: url("/light-star-filled.svg"), default;
   transition: 0.3s;
 }
 
