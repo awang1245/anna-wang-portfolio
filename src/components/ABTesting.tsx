@@ -5,10 +5,10 @@ import timePage from "../../public/ab_testing/time_page.png";
 import firstClick from "../../public/ab_testing/first_click.png";
 import misclick from "../../public/ab_testing/misclicks.png";
 
-function ABTesting() {
+function ABTesting({ isDark }: { isDark: boolean }) {
   return (
     <>
-      <main className="ab">
+      <main className={isDark ? "page-dark" : "page-light"}>
         <div className="ab-content">
           <section className="overview">
             <div className="grouping">

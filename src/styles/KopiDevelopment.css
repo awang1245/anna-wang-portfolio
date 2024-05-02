@@ -1,4 +1,10 @@
-.kopi {
+.kopi-dark {
+  display: flex;
+  justify-content: center;
+  background-color: var(--cream85);
+}
+
+.kopi-light {
   display: flex;
   justify-content: center;
 }
@@ -20,7 +26,7 @@
   }
 }
 
-.kopi h1 {
+.kopi-content h1 {
   font-family: "ivymode";
   font-weight: 400;
   font-size: 64px;
@@ -28,7 +34,7 @@
   margin: 0;
 }
 
-.kopi h2 {
+.kopi-content h2 {
   font-family: "ivymode";
   font-weight: 400;
   font-size: 44px;
@@ -36,7 +42,7 @@
   margin: 0;
 }
 
-.kopi h3 {
+.kopi-content h3 {
   font-family: "ivymode";
   font-weight: 400;
   font-size: 32px;
@@ -45,18 +51,18 @@
   margin: 0;
 }
 
-.kopi img {
+.kopi-content img {
   border: 1.5px solid black;
   border-radius: 20px;
 }
 
-.kopi p {
+.kopi-content p {
   text-align: left;
   padding: 0;
   margin: 0;
 }
 
-.kopi a:hover {
+.kopi-content a:hover {
   transition: 0.3s;
   filter: brightness(80%);
 }
@@ -116,7 +122,7 @@
   }
 }
 
-.kopi .split {
+.kopi-content .split {
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
@@ -125,7 +131,7 @@
   margin-bottom: 56px;
 }
 
-.kopi .split-last {
+.kopi-content .split-last {
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
@@ -147,7 +153,7 @@
   }
 }
 
-.kopi .details-list {
+.kopi-content .details-list {
   margin-left: 16px;
   list-style-type: disc;
   display: flex;
@@ -161,6 +167,7 @@
 }
 
 .table-content {
+  color: black;
   width: 100%;
   max-width: 1200px;
   display: flex;
@@ -249,10 +256,6 @@ th:first-child {
 
 .sketch-img {
   width: 70%;
-}
-
-.hyperlink {
-  text-decoration: underline;
 }
 
 .grid {

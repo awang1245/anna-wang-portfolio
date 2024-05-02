@@ -16,14 +16,14 @@ import tablet from "../../public/beestar/tablet.png";
 import mobile from "../../public/beestar/mobile.png";
 import { useEffect } from "react";
 
-function Beestar() {
+function Beestar({ isDark }: { isDark: boolean }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <>
-      <main className="beestar">
+      <main className={isDark ? "page-dark" : "page-light"}>
         <div className="beestar-content">
           <section className="overview">
             <div className="grouping">
@@ -37,7 +37,7 @@ function Beestar() {
                   href="https://www.beestar.org/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hyperlink"
+                  className={isDark ? "hyperlink-dark" : "hyperlink"}
                 >
                   Beestar.org
                 </a>
@@ -400,7 +400,7 @@ function Beestar() {
                 href="https://awang1245.github.io/beestar-responsive-redesign/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hyperlink"
+                className={isDark ? "hyperlink-dark" : "hyperlink"}
               >
                 here
               </a>

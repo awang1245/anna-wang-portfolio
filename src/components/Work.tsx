@@ -2,11 +2,7 @@ import { NavLink } from "react-router-dom";
 import "../styles/Work.css";
 // import { motion } from "framer-motion";
 
-interface WorkProps {
-  isDark: boolean;
-}
-
-function Work({ isDark }: WorkProps) {
+function Work({ isDark }: { isDark: boolean }) {
   return (
     <>
       <main>

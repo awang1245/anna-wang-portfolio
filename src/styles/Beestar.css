@@ -20,7 +20,7 @@
   }
 }
 
-.beestar h1 {
+.beestar-content h1 {
   font-family: "ivymode";
   font-weight: 400;
   font-size: 64px;
@@ -28,7 +28,7 @@
   margin: 0;
 }
 
-.beestar h2 {
+.beestar-content h2 {
   font-family: "ivymode";
   font-weight: 400;
   font-size: 44px;
@@ -36,7 +36,7 @@
   margin: 0;
 }
 
-.beestar h3 {
+.beestar-content h3 {
   font-family: "ivymode";
   font-weight: 400;
   font-size: 32px;
@@ -45,12 +45,12 @@
   margin: 0;
 }
 
-.beestar img {
+.beestar-content img {
   border: 1.5px solid black;
   border-radius: 20px;
 }
 
-.beestar p {
+.beestar-content p {
   text-align: left;
   padding: 0;
   margin: 0;
@@ -96,7 +96,7 @@
   text-align: left;
 }
 
-.beestar .split {
+.beestar-content .split {
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
@@ -115,7 +115,7 @@
   }
 }
 
-.beestar .details-list {
+.beestar-content .details-list {
   margin-left: 16px;
   list-style-type: disc;
   display: flex;
@@ -136,7 +136,7 @@
   }
 }
 
-.beestar a:hover {
+.beestar-content a:hover {
   transition: 0.3s;
   filter: brightness(80%);
 }

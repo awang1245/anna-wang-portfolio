@@ -270,9 +270,9 @@ function App() {
               d="M18.9276 26.7535L17 33.5L15.0724 26.7535C14.06 23.2099 11.2901 20.44 7.74652 19.4276L1 17.5L7.74653 15.5724C11.2901 14.56 14.06 11.7901 15.0724 8.24652L17 1.5L18.9276 8.24653C19.94 11.7901 22.7099 14.56 26.2535 15.5724L33 17.5L26.2535 19.4276C22.7099 20.44 19.94 23.2099 18.9276 26.7535Z"
               fill="currentColor"
               stroke="currentColor"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
           {/* <img
@@ -326,9 +326,12 @@ function App() {
         <Route path="/about" element={<About />} />
         {/* add a not found page */}
         {/* routes to work pages */}
-        <Route path="/beestar-redesign" element={<Beestar />} />
-        <Route path="/ab-testing" element={<ABTesting />} />
-        <Route path="/kopi-development" element={<KopiDevelopment />} />
+        <Route path="/beestar-redesign" element={<Beestar isDark={isDark} />} />
+        <Route path="/ab-testing" element={<ABTesting isDark={isDark} />} />
+        <Route
+          path="/kopi-development"
+          element={<KopiDevelopment isDark={isDark} />}
+        />
       </Routes>
       {/* </AnimatePresence> */}
     </article>

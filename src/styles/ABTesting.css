@@ -20,7 +20,7 @@
   }
 }
 
-.ab h1 {
+.ab-content h1 {
   font-family: "ivymode";
   font-weight: 400;
   font-size: 64px;
@@ -28,7 +28,7 @@
   margin: 0;
 }
 
-.ab h2 {
+.ab-content h2 {
   font-family: "ivymode";
   font-weight: 400;
   font-size: 44px;
@@ -36,7 +36,7 @@
   margin: 0;
 }
 
-.ab h3 {
+.ab-content h3 {
   font-family: "ivymode";
   font-weight: 400;
   font-size: 32px;
@@ -45,12 +45,12 @@
   margin: 0;
 }
 
-.ab img {
+.ab-content img {
   border: 1.5px solid black;
   border-radius: 20px;
 }
 
-.ab p {
+.ab-content p {
   text-align: left;
   padding: 0;
   margin: 0;
@@ -124,7 +124,7 @@
   }
 }
 
-.ab .details-list {
+.ab-content .details-list {
   margin-left: 32px;
   list-style-type: disc;
   display: flex;

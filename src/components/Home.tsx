@@ -55,8 +55,9 @@ function Home() {
                 src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
                 type="module"
               ></script>
+
               <dotlottie-player
-                src="https://lottie.host/a7977099-2933-4065-94ce-5f9e5a9d47b1/f7j2aSIHgG.json"
+                src="https://lottie.host/29b13877-8aed-4c2c-9298-c4e09e1c28f4/5BKcZ0di5y.json"
                 background="transparent"
                 style={medScreen ? { minWidth: "2850px" } : {}}
                 speed="0.3"

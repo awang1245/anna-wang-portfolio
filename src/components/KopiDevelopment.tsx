@@ -13,9 +13,9 @@ import screen2 from "../../public/kopi/screen_2.png";
 import screen3 from "../../public/kopi/screen_3.png";
 import screen4 from "../../public/kopi/screen_4.png";
 
-function KopiDevelopment() {
+function KopiDevelopment({ isDark }: { isDark: boolean }) {
   return (
-    <main className="kopi">
+    <main className={isDark ? "page-dark" : "page-light"}>
       <div className="kopi-content">
         <section className="overview">
           <div className="grouping">
@@ -282,7 +282,7 @@ function KopiDevelopment() {
                   href="https://www.etsy.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hyperlink"
+                  className={isDark ? "hyperlink-dark" : "hyperlink"}
                 >
                   Etsy
                 </a>{" "}
@@ -339,7 +339,7 @@ function KopiDevelopment() {
                   href="https://www.goldbelly.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hyperlink"
+                  className={isDark ? "hyperlink-dark" : "hyperlink"}
                 >
                   Goldbelly
                 </a>{" "}
@@ -376,7 +376,7 @@ function KopiDevelopment() {
                   href="https://www.sayweee.com/en"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hyperlink"
+                  className={isDark ? "hyperlink-dark" : "hyperlink"}
                 >
                   Weee!
                 </a>{" "}
@@ -471,7 +471,7 @@ function KopiDevelopment() {
                 href="https://www.behance.net/gallery/130276809/Fleuron-Free-Floral-Display-Font?tracking_source=search_projects|free+fonts&l=75&"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hyperlink"
+                className={isDark ? "hyperlink-dark" : "hyperlink"}
               >
                 Fleuron
               </a>
@@ -490,7 +490,7 @@ function KopiDevelopment() {
                 href="https://cdn.shopify.com/s/files/1/0249/4283/7837/files/CCC_Tasters_Flavor_Wheel_EN.pdf?v=1679587792&utm_source=Email&utm_medium=Flow&utm_campaign=Flavor%20Wheel&tw_source=klaviyo"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hyperlink"
+                className={isDark ? "hyperlink-dark" : "hyperlink"}
               >
                 Taster's Flavor Wheel
               </a>{" "}
@@ -702,7 +702,7 @@ function KopiDevelopment() {
               href="https://awang1245.github.io/kopi-development/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hyperlink"
+              className={isDark ? "hyperlink-dark" : "hyperlink"}
             >
               here
             </a>

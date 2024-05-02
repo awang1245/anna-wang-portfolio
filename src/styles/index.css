@@ -47,6 +47,17 @@ ul {
   margin: 0;
 }
 
+.page-light {
+  display: flex;
+  justify-content: center;
+}
+
+.page-dark {
+  display: flex;
+  justify-content: center;
+  background-color: var(--cream85);
+}
+
 .light-link {
   font-size: 16px;
   font-weight: 500;
@@ -72,6 +83,30 @@ ul {
 }
 
 .dark-link:hover {
+  color: var(--cream30);
+  cursor: url("/star-filled.svg"), default;
+  transition: 0.3s;
+}
+
+.hyperlink {
+  font-weight: 500;
+  text-decoration: underline;
+  color: black;
+}
+
+.hyperlink:hover {
+  color: var(--cream60);
+  cursor: url("/star-filled.svg"), default;
+  transition: 0.3s;
+}
+
+.hyperlink-dark {
+  font-weight: 500;
+  text-decoration: underline;
+  color: var(--cream5);
+}
+
+.hyperlink-dark:hover {
   color: var(--cream30);
   cursor: url("/star-filled.svg"), default;
   transition: 0.3s;
