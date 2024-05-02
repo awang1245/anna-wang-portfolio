@@ -1,17 +1,18 @@
 import { NavLink } from "react-router-dom";
 import "../styles/Work.css";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 function Work() {
   return (
     <>
-      <motion.main
+      <main>
+        {/* <motion.main
         initial={{ y: "100%" }}
         animate={{ y: "0%" }}
         transition={{ duration: 0.75, ease: "easeOut" }}
         exit={{ opacity: 1 }}
         className="work"
-      >
+      > */}
         <div className="work-content">
           <NavLink to={"/beestar-redesign"}>
             <div className="work-card">Beestar.org</div>
@@ -23,7 +24,8 @@ function Work() {
             <div className="work-card">Kopi Organic Roastery</div>
           </NavLink>
         </div>
-      </motion.main>
+        {/* </motion.main> */}
+      </main>
     </>
   );
 }

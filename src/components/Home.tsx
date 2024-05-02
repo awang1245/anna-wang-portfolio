@@ -1,32 +1,39 @@
 import "../styles/Home.css";
 import "@dotlottie/player-component";
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 function Home() {
-  const [wideScreen, setWideScreen] = useState<boolean>(false);
+  const [medScreen, setMedScreen] = useState<boolean>(false);
 
   useEffect(() => {
-    const detectWide = () => {
-      setWideScreen(window.innerWidth > 1600);
+    const detectScreenSize = () => {
+      const windowWidth = window.innerWidth;
+      setMedScreen(windowWidth <= 2400);
     };
 
-    detectWide();
-    window.addEventListener("resize", detectWide);
+    detectScreenSize();
+
+    const handleResize = () => {
+      detectScreenSize();
+    };
+
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener("resize", detectWide);
+      window.removeEventListener("resize", handleResize);
     };
   });
 
   return (
     <>
-      <motion.main
+      <main>
+        {/* <motion.main
         initial={{ y: "100%" }}
         animate={{ y: "0%" }}
         transition={{ duration: 0.75, ease: "easeOut" }}
         exit={{ opacity: 1 }}
-      >
+      > */}
         <div className="home">
           <div className="text">
             <div className="intro">
@@ -36,8 +43,9 @@ function Home() {
               Computer Science and Business at Brown University.
             </div>
             <p>
-              I love , and my goal is to develop <br />
-              interfaces that foster meaningful relationships between users and
+              My interests lie at the intersection of technology and design, and
+              my goal is to develop <br />
+              interfaces that create delightful relationships between users and
               products.
             </p>
           </div>
@@ -50,18 +58,19 @@ function Home() {
               <dotlottie-player
                 src="https://lottie.host/a7977099-2933-4065-94ce-5f9e5a9d47b1/f7j2aSIHgG.json"
                 background="transparent"
-                style={wideScreen ? {} : { minWidth: "2850px" }}
+                style={medScreen ? { minWidth: "2850px" } : {}}
                 speed="0.3"
                 loop
                 autoplay
               ></dotlottie-player>
             </div>
             <div className="welcome">
-              Welcome, grab a snack, and enjoy your stay.
+              Welcome, make yourself comfortable, and enjoy your stay.
             </div>
           </div>
         </div>
-      </motion.main>
+        {/* </motion.main> */}
+      </main>
     </>
   );
 }
