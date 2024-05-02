@@ -2,7 +2,11 @@ import { NavLink } from "react-router-dom";
 import "../styles/Work.css";
 // import { motion } from "framer-motion";
 
-function Work() {
+interface WorkProps {
+  isDark: boolean;
+}
+
+function Work({ isDark }: WorkProps) {
   return (
     <>
       <main>
@@ -14,13 +18,22 @@ function Work() {
         className="work"
       > */}
         <div className="work-content">
-          <NavLink to={"/beestar-redesign"}>
+          <NavLink
+            className={isDark ? "dark-link" : "light-link"}
+            to={"/beestar-redesign"}
+          >
             <div className="work-card">Beestar.org</div>
           </NavLink>
-          <NavLink to={"/ab-testing"}>
+          <NavLink
+            className={isDark ? "dark-link" : "light-link"}
+            to={"/ab-testing"}
+          >
             <div className="work-card">AB Testing</div>
           </NavLink>
-          <NavLink to={"/kopi-development"}>
+          <NavLink
+            className={isDark ? "dark-link" : "light-link"}
+            to={"/kopi-development"}
+          >
             <div className="work-card">Kopi Organic Roastery</div>
           </NavLink>
         </div>

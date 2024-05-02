@@ -1,11 +1,12 @@
 /* Selects the root element of the document:
    <html> in the case of HTML */
 :root {
-  --cream10: #fff9f2;
-  --cream15: #f3ece5;
-  --cream30: #cbc3bc;
-  --cream40: #b1a8a1;
+  --cream5: #fff9f2;
+  --cream10: #f3ece5;
+  --cream30: #c2b9b2;
+  --cream40: #a99f99;
   --cream60: #7e716c;
+  --cream85: #534540;
 
   color-scheme: light dark;
   color: black;
@@ -13,7 +14,7 @@
   line-height: 1.5;
   font-size: 16px;
   font-weight: 400;
-  background-color: var(--cream10);
+  background-color: var(--cream5);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -46,7 +47,7 @@ ul {
   margin: 0;
 }
 
-a {
+.light-link {
   font-size: 16px;
   font-weight: 500;
   color: black;
@@ -55,8 +56,23 @@ a {
   margin: -1em;
 }
 
-a:hover {
+.dark-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--cream5);
+  text-decoration: inherit;
+  padding: 1em;
+  margin: -1em;
+}
+
+.light-link:hover {
   color: var(--cream60);
+  cursor: url("/star-filled.svg"), default;
+  transition: 0.3s;
+}
+
+.dark-link:hover {
+  color: var(--cream30);
   cursor: url("/star-filled.svg"), default;
   transition: 0.3s;
 }

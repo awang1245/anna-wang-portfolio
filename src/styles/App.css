@@ -9,6 +9,16 @@ article {
   height: 100%;
 }
 
+.dark-mode {
+  background-color: var(--cream85);
+  color: var(--cream5);
+}
+
+.light-mode {
+  background-color: var(--cream5);
+  color: black;
+}
+
 header {
   top: 0;
   width: 100%;
@@ -24,8 +34,15 @@ nav {
   align-items: center;
   padding: 16px 56px;
   box-sizing: border-box;
-  background-color: rgba(255, 249, 242, 0.9);
   z-index: 40;
+}
+
+.dark-nav {
+  background-color: rgba(83, 69, 63, 0.9);
+}
+
+.light-nav {
+  background-color: rgba(255, 249, 242, 0.9);
 }
 
 .logo {
@@ -50,6 +67,12 @@ nav {
   width: 0%;
 }
 
+.progress-bar-dark {
+  height: 1.5px;
+  background-color: var(--cream5);
+  width: 0%;
+}
+
 .progress-star {
   height: 24px;
   position: absolute;
@@ -57,7 +80,7 @@ nav {
   visibility: hidden;
 }
 
-.key-controls {
+.key-controls-light {
   bottom: 0;
   position: fixed;
   width: 100%;
@@ -70,6 +93,22 @@ nav {
   align-items: center;
   box-sizing: border-box;
   background-color: rgba(255, 249, 242, 0.9);
+  gap: 48px;
+}
+
+.key-controls-dark {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  height: 96px;
+  padding: 18px 56px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: rgba(83, 69, 63, 0.9);
   gap: 48px;
 }
 
@@ -207,6 +246,18 @@ div[data-key="4"].clicked {
 
 .h.clicked {
   background-image: url("../../public/hide-clicked.svg");
+  width: 28px;
+  height: 28px;
+}
+
+.d {
+  background-image: url("../../public/dark.svg");
+  width: 28px;
+  height: 28px;
+}
+
+.d.clicked {
+  background-image: url("../../public/dark-clicked.svg");
   width: 28px;
   height: 28px;
 }
