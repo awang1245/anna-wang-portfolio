@@ -2,7 +2,7 @@
   "work": [
     {
       "name": "Kopi Organic Roastery",
-      "path": "public/kopi/kopi.png",
+      "path": "/anna-wang-portfolio/kopi/kopi.png",
       "time": "April 2024",
       "tags": [
         "React",

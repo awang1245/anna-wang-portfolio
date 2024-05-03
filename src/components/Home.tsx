@@ -1,8 +1,9 @@
 import "../styles/Home.css";
 import "@dotlottie/player-component";
 import { useEffect, useState } from "react";
-import workData from "../Work.json";
+// import workData from "../Work.json";
 import FeaturedCard from "./FeaturedCard";
+import { projects } from "./Projects";
 // import { motion } from "framer-motion";
 
 export interface WorkData {
@@ -83,7 +84,7 @@ function Home() {
         <div className="featured-work">
           <h1>My Featured Work</h1>
           <div className="featured-cards">
-            {workData.work.map((work, index) => (
+            {projects.map((work: WorkData, index: number) => (
               <FeaturedCard work={work} key={index} />
             ))}
           </div>
