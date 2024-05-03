@@ -1,7 +1,7 @@
 import "../styles/Home.css";
 import "@dotlottie/player-component";
 import { useEffect, useState } from "react";
-import workData from "../data/Work.json";
+import workData from "../Work.json";
 import FeaturedCard from "./FeaturedCard";
 // import { motion } from "framer-motion";
 
