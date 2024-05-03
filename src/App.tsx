@@ -308,7 +308,7 @@ function App() {
             <ul className="keys">
               <div className="d" />
             </ul>
-            <div className="control-label">Toggle dark</div>
+            <div className="control-label">Dark/Light</div>
           </div>
           <div className="keys-label">
             <ul className="keys">

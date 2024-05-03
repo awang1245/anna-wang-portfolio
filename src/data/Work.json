@@ -1,0 +1,24 @@
+{
+  "work": [
+    {
+      "name": "Kopi Organic Roastery",
+      "path": "/anna-wang-portfolio/public/kopi/kopi.png",
+      "time": "April 2024",
+      "tags": [
+        "React",
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "Web Design",
+        "Branding",
+        "Figma"
+      ]
+    },
+    {
+      "name": "Beestar Learning Redesign",
+      "path": "/anna-wang-portfolio/public/beestar/redesigned.png",
+      "time": "March 2024",
+      "tags": ["Responsive Design", "Figma", "HTML", "CSS", "JavaScript"]
+    }
+  ]
+}

@@ -1,15 +1,16 @@
 main {
   width: 100%;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: start;
 }
 
 .home {
   width: 100%;
-  height: 100%;
+  height: calc(100vh - 160px);
   display: flex;
-  flex-flow: column;
+  flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -25,6 +26,7 @@ main {
   font-family: "ivymode";
   font-weight: 400;
   font-size: 44px;
+  line-height: 1.4;
 }
 
 .lower-intro {
@@ -33,7 +35,7 @@ main {
   flex-flow: column;
   align-items: center;
   text-align: center;
-  transform: translateY(-32px);
+  transform: translateY(-36px);
 }
 
 .sushi-belt {
@@ -55,6 +57,16 @@ main {
   }
 }
 
+@media (max-height: 760px) {
+  .home {
+    height: 100%;
+  }
+
+  .intro {
+    font-size: 40px;
+  }
+}
+
 .home p,
 .welcome {
   font-size: 18px;
@@ -62,4 +74,30 @@ main {
 
 .welcome {
   transform: translateY(-32px);
+}
+
+.featured-work {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  text-align: center;
+  gap: 64px;
+  max-width: 1080px;
+  padding-top: 48px;
+}
+
+@media (max-width: 1160px) {
+  .featured-work {
+    padding: 0px 56px;
+  }
+}
+
+.featured-work h1 {
+  font-family: "ivymode";
+  font-weight: 400;
+  font-size: 44px;
+  padding: 0 0 24px 0;
+  margin: 0;
 }

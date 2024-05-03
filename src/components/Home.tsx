@@ -1,6 +1,7 @@
 import "../styles/Home.css";
 import "@dotlottie/player-component";
 import { useEffect, useState } from "react";
+import work from "../data/work.json";
 // import { motion } from "framer-motion";
 
 function Home() {
@@ -40,12 +41,12 @@ function Home() {
               Hi, I'm Anna. <br />
               I'm a UI developer and designer studying
               <br />
-              Computer Science and Business at Brown University.
+              Computer Science and Economics at Brown University.
             </div>
             <p>
               My interests lie at the intersection of technology and design, and
               my goal is to develop <br />
-              interfaces that create delightful relationships between users and
+              interfaces that inspire delightful relationships between users and
               products.
             </p>
           </div>
@@ -69,6 +70,9 @@ function Home() {
               Welcome, make yourself comfortable, and enjoy your stay.
             </div>
           </div>
+        </div>
+        <div className="featured-work">
+          <h1>My Featured Work</h1>
         </div>
         {/* </motion.main> */}
       </main>
