@@ -12,8 +12,12 @@ import screen1 from "../../public/kopi/screen_1.png";
 import screen2 from "../../public/kopi/screen_2.png";
 import screen3 from "../../public/kopi/screen_3.png";
 import screen4 from "../../public/kopi/screen_4.png";
+import { useRecoilState } from "recoil";
+import { isDarkState } from "./atoms";
 
-function KopiDevelopment({ isDark }: { isDark: boolean }) {
+function KopiDevelopment() {
+  const [isDark] = useRecoilState<boolean>(isDarkState);
+
   return (
     <main className={isDark ? "page-dark" : "page-light"}>
       <div className="kopi-content">

@@ -4,8 +4,12 @@ import verB from "../../public/ab_testing/version_B.png";
 import timePage from "../../public/ab_testing/time_page.png";
 import firstClick from "../../public/ab_testing/first_click.png";
 import misclick from "../../public/ab_testing/misclicks.png";
+import { useRecoilState } from "recoil";
+import { isDarkState } from "./atoms";
 
-function ABTesting({ isDark }: { isDark: boolean }) {
+function ABTesting() {
+  const [isDark] = useRecoilState<boolean>(isDarkState);
+
   return (
     <>
       <main className={isDark ? "page-dark" : "page-light"}>

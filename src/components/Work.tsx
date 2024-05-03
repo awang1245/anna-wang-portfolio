@@ -1,8 +1,12 @@
 import { NavLink } from "react-router-dom";
 import "../styles/Work.css";
+import { useRecoilState } from "recoil";
+import { isDarkState } from "./atoms";
 // import { motion } from "framer-motion";
 
-function Work({ isDark }: { isDark: boolean }) {
+function Work() {
+  const [isDark] = useRecoilState<boolean>(isDarkState);
+
   return (
     <>
       <main>

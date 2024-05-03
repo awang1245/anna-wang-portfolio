@@ -1,8 +1,17 @@
 import "../styles/Home.css";
 import "@dotlottie/player-component";
 import { useEffect, useState } from "react";
-import work from "../data/work.json";
+import workData from "../data/Work.json";
+import FeaturedCard from "./FeaturedCard";
 // import { motion } from "framer-motion";
+
+export interface WorkData {
+  name: string;
+  path: string;
+  time: string;
+  tags: string[];
+  nav: string;
+}
 
 function Home() {
   const [medScreen, setMedScreen] = useState<boolean>(false);
@@ -73,6 +82,11 @@ function Home() {
         </div>
         <div className="featured-work">
           <h1>My Featured Work</h1>
+          <div className="featured-cards">
+            {workData.work.map((work, index) => (
+              <FeaturedCard work={work} key={index} />
+            ))}
+          </div>
         </div>
         {/* </motion.main> */}
       </main>
