@@ -29,6 +29,36 @@ main {
   line-height: 1.4;
 }
 
+.name-light {
+  font-family: "ivymode";
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 1.4;
+  text-decoration: inherit;
+  color: black;
+}
+
+.name-dark {
+  font-family: "ivymode";
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 1.4;
+  text-decoration: inherit;
+  color: var(--cream5);
+}
+
+.name-light:hover {
+  color: var(--cream60);
+  cursor: url("/star-filled.svg"), default;
+  transition: 0.3s;
+}
+
+.name-dark:hover {
+  color: var(--cream30);
+  cursor: url("/light-star-filled.svg"), default;
+  transition: 0.3s;
+}
+
 .lower-intro {
   width: 100%;
   display: flex;
@@ -78,6 +108,7 @@ main {
 
 .featured-work {
   width: 100%;
+  min-height: calc(100vh - 160px);
   height: fit-content;
   display: flex;
   flex-flow: column;
@@ -85,7 +116,7 @@ main {
   text-align: center;
   max-width: 1080px;
   padding-top: 48px;
-  margin-bottom: 96px;
+  margin-bottom: 120px;
 }
 
 @media (max-width: 1160px) {

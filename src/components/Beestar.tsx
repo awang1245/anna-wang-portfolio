@@ -31,7 +31,7 @@ function Beestar() {
         <div className="beestar-content">
           <section className="overview">
             <div className="grouping">
-              <h1>Beestar.org</h1>
+              <h1>Beestar Learning</h1>
               <div className="subheading">Responsive Redesign | March 2024</div>
             </div>
             <div className="grouping">

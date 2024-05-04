@@ -13,22 +13,44 @@ function FeaturedCard({ work }: FeaturedCardProps) {
   return (
     <>
       <div className="feat-back">
-        <NavLink className="feat-link" to={work.nav}>
-          <img className="feat-img" src={work.path} />
-          <div className="feat-info">
-            <div className="feat-row">
-              <div className="feat-name">{work.name}</div>
-              <div className="feat-time">{work.time}</div>
+        {work.nav ? (
+          <NavLink
+            className={isDark ? "feat-link-dark" : "feat-link-light"}
+            to={work.nav}
+          >
+            <img className="feat-img" src={work.path} />
+            <div className="feat-info">
+              <div className="feat-row">
+                <div className="feat-name">{work.name}</div>
+                <div className="feat-time">{work.time}</div>
+              </div>
+              <div className="feat-tags">
+                {work.tags.map((tag, index) => (
+                  <div className="feat-tag" key={index}>
+                    {tag}
+                  </div>
+                ))}
+              </div>
             </div>
-            <div className="feat-tags">
-              {work.tags.map((tag, index) => (
-                <div className="feat-tag" key={index}>
-                  {tag}
-                </div>
-              ))}
+          </NavLink>
+        ) : (
+          <div>
+            <img className="feat-img" src={work.path} />
+            <div className="feat-info">
+              <div className="feat-row">
+                <div className="feat-name">{work.name}</div>
+                <div className="feat-time">{work.time}</div>
+              </div>
+              <div className="feat-tags">
+                {work.tags.map((tag, index) => (
+                  <div className="feat-tag" key={index}>
+                    {tag}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-        </NavLink>
+        )}
       </div>
     </>
   );

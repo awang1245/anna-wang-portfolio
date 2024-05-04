@@ -4,6 +4,9 @@ import { useEffect, useState } from "react";
 // import workData from "../Work.json";
 import FeaturedCard from "./FeaturedCard";
 import { projects } from "./Projects";
+import { useRecoilState } from "recoil";
+import { isDarkState } from "./atoms";
+import { NavLink } from "react-router-dom";
 // import { motion } from "framer-motion";
 
 export interface WorkData {
@@ -11,11 +14,12 @@ export interface WorkData {
   path: string;
   time: string;
   tags: string[];
-  nav: string;
+  nav?: string;
 }
 
 function Home() {
   const [medScreen, setMedScreen] = useState<boolean>(false);
+  const [isDark] = useRecoilState<boolean>(isDarkState);
 
   useEffect(() => {
     const detectScreenSize = () => {
@@ -38,7 +42,7 @@ function Home() {
 
   return (
     <>
-      <main>
+      <main className={isDark ? "page-dark" : "page-light"}>
         {/* <motion.main
         initial={{ y: "100%" }}
         animate={{ y: "0%" }}
@@ -48,7 +52,14 @@ function Home() {
         <div className="home">
           <div className="text">
             <div className="intro">
-              Hi, I'm Anna. <br />
+              Hi, I'm{" "}
+              <NavLink
+                className={isDark ? "name-dark" : "name-light"}
+                to="/about"
+              >
+                Anna
+              </NavLink>
+              . <br />
               I'm a UI developer and designer studying
               <br />
               Computer Science and Economics at Brown University.

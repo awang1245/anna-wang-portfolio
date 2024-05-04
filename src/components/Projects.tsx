@@ -1,5 +1,6 @@
 import kopi from "../../public/kopi/kopi.png";
 import beestar from "../../public/beestar/redesigned.png";
+import gmcafe from "../../public/gmcafe.png";
 
 export const projects = [
   {
@@ -18,10 +19,16 @@ export const projects = [
     nav: "/kopi-development",
   },
   {
-    name: "Beestar Learning Redesign",
+    name: "Beestar Learning",
     path: beestar,
     time: "March 2024",
     tags: ["Responsive Design", "Figma", "HTML", "CSS", "JavaScript"],
     nav: "/beestar-redesign",
+  },
+  {
+    name: "Good Morning Café Link in Bio",
+    path: gmcafe,
+    time: "May 2023",
+    tags: ["Product Design", "Figma"],
   },
 ];
