@@ -32,6 +32,7 @@ body {
   width: 100vw;
   height: 100vh;
   cursor: url("/star-unfilled.svg"), default;
+  overflow-x: hidden;
 }
 
 main {
@@ -52,12 +53,15 @@ ul {
 .page-light {
   display: flex;
   justify-content: center;
+  background-color: var(--cream5);
+  transition: background-color 0.3s;
 }
 
 .page-dark {
   display: flex;
   justify-content: center;
   background-color: var(--cream85);
+  transition: background-color 0.3s;
 }
 
 .light-link {

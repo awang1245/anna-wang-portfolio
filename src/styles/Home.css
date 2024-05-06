@@ -70,6 +70,7 @@ main {
 
 .sushi-belt {
   height: auto;
+  min-height: 200px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -80,6 +81,7 @@ main {
 @media (max-width: 1600px) {
   .sushi-belt {
     height: auto;
+    min-height: 267.19px;
     display: flex;
     justify-content: center;
     position: relative;
