@@ -117,7 +117,7 @@ main {
   align-items: start;
   text-align: center;
   max-width: 1080px;
-  padding-top: 48px;
+  padding-top: 96px;
   margin-bottom: 120px;
 }
 
@@ -140,4 +140,10 @@ main {
   grid-template-columns: 1fr 1fr;
   width: 100%;
   gap: 48px;
+}
+
+@media (max-width: 800px) {
+  .featured-cards {
+    grid-template-columns: 1fr;
+  }
 }

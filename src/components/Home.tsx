@@ -1,13 +1,11 @@
 import "../styles/Home.css";
 import "@dotlottie/player-component";
 import { useEffect, useState } from "react";
-// import workData from "../Work.json";
 import FeaturedCard from "./FeaturedCard";
 import { projects } from "./Projects";
 import { useRecoilState } from "recoil";
 import { isDarkState } from "./atoms";
 import { NavLink } from "react-router-dom";
-// import { motion } from "framer-motion";
 
 export interface WorkData {
   name: string;
@@ -43,12 +41,6 @@ function Home() {
   return (
     <>
       <main className={isDark ? "page-dark" : "page-light"}>
-        {/* <motion.main
-        initial={{ y: "100%" }}
-        animate={{ y: "0%" }}
-        transition={{ duration: 0.75, ease: "easeOut" }}
-        exit={{ opacity: 1 }}
-      > */}
         <div className="home">
           <div className="text">
             <div className="intro">
@@ -92,7 +84,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="featured-work">
+        <div className="featured-work" id="featured">
           <h1>My Featured Work</h1>
           <div className="featured-cards">
             {projects.map((work: WorkData, index: number) => (
@@ -100,7 +92,6 @@ function Home() {
             ))}
           </div>
         </div>
-        {/* </motion.main> */}
       </main>
     </>
   );

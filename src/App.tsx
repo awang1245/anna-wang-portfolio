@@ -17,13 +17,34 @@ import ABTesting from "./components/ABTesting";
 import KopiDevelopment from "./components/KopiDevelopment";
 import { useRecoilState } from "recoil";
 import { isDarkState } from "./components/atoms";
-// import { AnimatePresence } from "framer-motion";
 
 function App() {
   const [isShown, setIsShown] = useState<boolean>(true);
   const [isDark, setIsDark] = useRecoilState<boolean>(isDarkState);
   const navigate = useNavigate();
   const location = useLocation();
+
+  const scrollToFeatured = () => {
+    const featuredDiv = document.getElementById("featured");
+    if (featuredDiv) {
+      featuredDiv.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollToTop = () => {
+    const element = document.documentElement;
+    element.scrollIntoView({ behavior: "smooth", block: "start" });
+    setTimeout(() => {
+      const progBar = document.getElementById("prog-bar");
+      if (progBar) {
+        progBar.style.width = 0 + "%";
+      }
+      const progStar = document.getElementById("prog-star");
+      if (progStar) {
+        progStar.style.visibility = "hidden";
+      }
+    }, 500);
+  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -61,6 +82,13 @@ function App() {
           break;
         case "d":
           setIsDark((prevIsDark) => !prevIsDark);
+          break;
+        case "f":
+          scrollToFeatured();
+          break;
+        case "t":
+          scrollToTop();
+          break;
       }
       if (
         e.key === "0" ||
@@ -109,12 +137,6 @@ function App() {
           break;
         case "ArrowDown":
           dy = scrollStep;
-          break;
-        case "ArrowLeft":
-          dx = -scrollStep;
-          break;
-        case "ArrowRight":
-          dx = scrollStep;
           break;
       }
       const key = document.querySelector("." + e.key);
@@ -198,7 +220,6 @@ function App() {
       <header>
         <nav className={isDark ? "dark-nav" : "light-nav"}>
           <NavLink className={isDark ? "dark-link" : "light-link"} to="/">
-            {/* <img src={logo} className="logo" alt="site logo" /> */}
             <svg
               className="logo"
               xmlns="http://www.w3.org/2000/svg"
@@ -277,22 +298,22 @@ function App() {
               strokeLinejoin="round"
             />
           </svg>
-          {/* <img
-            src={starFilled}
-            alt="star tracking the end of the horizontal scroll progress bar"
-            className="progress-star"
-            id="prog-star"
-          /> */}
         </div>
       </header>
       {isShown && (
         <div className={isDark ? "key-controls-dark" : "key-controls-light"}>
+          {location.pathname === "/" && (
+            <div className="keys-label">
+              <ul className="keys">
+                <div className="f" />
+              </ul>
+              <div className="control-label">Featured work</div>
+            </div>
+          )}
           <div className="keys-label">
             <ul className="keys">
               <div className="ArrowUp" />
               <div className="ArrowDown" />
-              <div className="ArrowLeft" />
-              <div className="ArrowRight" />
             </ul>
             <div className="control-label">Scroll</div>
           </div>
@@ -314,13 +335,18 @@ function App() {
           </div>
           <div className="keys-label">
             <ul className="keys">
+              <div className="t" />
+            </ul>
+            <div className="control-label">Back to top</div>
+          </div>
+          <div className="keys-label">
+            <ul className="keys">
               <div className="h" />
             </ul>
             <div className="control-label">Hide</div>
           </div>
         </div>
       )}
-      {/* <AnimatePresence initial={false}> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/work" element={<Work />} />
@@ -332,7 +358,6 @@ function App() {
         <Route path="/ab-testing" element={<ABTesting />} />
         <Route path="/kopi-development" element={<KopiDevelopment />} />
       </Routes>
-      {/* </AnimatePresence> */}
     </article>
   );
 }

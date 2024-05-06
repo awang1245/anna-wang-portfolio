@@ -159,30 +159,6 @@ nav {
   height: 28px;
 }
 
-.ArrowLeft {
-  background-image: url("../../public/left.svg");
-  width: 28px;
-  height: 28px;
-}
-
-.ArrowLeft.clicked {
-  background-image: url("../../public/left-clicked.svg");
-  width: 28px;
-  height: 28px;
-}
-
-.ArrowRight {
-  background-image: url("../../public/right.svg");
-  width: 28px;
-  height: 28px;
-}
-
-.ArrowRight.clicked {
-  background-image: url("../../public/right-clicked.svg");
-  width: 28px;
-  height: 28px;
-}
-
 div[data-key="0"] {
   background-image: url("../../public/0.svg");
   width: 28px;
@@ -263,6 +239,30 @@ div[data-key="4"].clicked {
 
 .d.clicked {
   background-image: url("../../public/dark-clicked.svg");
+  width: 28px;
+  height: 28px;
+}
+
+.f {
+  background-image: url("../../public/featured.svg");
+  width: 28px;
+  height: 28px;
+}
+
+.f.clicked {
+  background-image: url("../../public/featured-clicked.svg");
+  width: 28px;
+  height: 28px;
+}
+
+.t {
+  background-image: url("../../public/top.svg");
+  width: 28px;
+  height: 28px;
+}
+
+.t.clicked {
+  background-image: url("../../public/top-clicked.svg");
   width: 28px;
   height: 28px;
 }

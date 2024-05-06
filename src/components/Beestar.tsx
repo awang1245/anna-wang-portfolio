@@ -14,16 +14,11 @@ import mobHifi from "../../public/beestar/mobile_hifi.png";
 import monitor from "../../public/beestar/monitor.png";
 import tablet from "../../public/beestar/tablet.png";
 import mobile from "../../public/beestar/mobile.png";
-import { useEffect } from "react";
 import { useRecoilState } from "recoil";
 import { isDarkState } from "./atoms";
 
 function Beestar() {
   const [isDark] = useRecoilState<boolean>(isDarkState);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   return (
     <>
