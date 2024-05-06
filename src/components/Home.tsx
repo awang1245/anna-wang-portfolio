@@ -86,7 +86,7 @@ function Home() {
           </div>
         </div>
         <div className="featured-work" id="featured">
-          <h1>My Featured Work</h1>
+          <h1>Featured Work</h1>
           <div className="featured-cards">
             {projects
               .filter((work) => work.featured)

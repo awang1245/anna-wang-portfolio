@@ -25,7 +25,7 @@ export const projects = [
     path: abtesting,
     time: "March 2024",
     tags: ["A/B Testing", "UX Research", "HTML", "CSS"],
-    nav: "/gmcafe",
+    nav: "/ab-testing",
     featured: false,
   },
   {
