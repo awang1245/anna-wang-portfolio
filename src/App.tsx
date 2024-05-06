@@ -11,7 +11,7 @@ import {
   useLocation,
   useNavigate,
 } from "react-router-dom";
-import resume from "../public/resume.pdf";
+import resume from "../public/main/resume.pdf";
 import Beestar from "./components/Beestar";
 import ABTesting from "./components/ABTesting";
 import KopiDevelopment from "./components/KopiDevelopment";

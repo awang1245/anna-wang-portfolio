@@ -138,133 +138,133 @@ nav {
 }
 
 .ArrowUp {
-  background-image: url("../../public/up.svg");
+  background-image: url("../../public/main/up.svg");
   width: 28px;
   height: 28px;
 }
 
 .ArrowUp.clicked {
-  background-image: url("../../public/up-clicked.svg");
+  background-image: url("../../public/main/up-clicked.svg");
   width: 28px;
   height: 28px;
 }
 
 .ArrowDown {
-  background-image: url("../../public/down.svg");
+  background-image: url("../../public/main/down.svg");
   width: 28px;
   height: 28px;
 }
 
 .ArrowDown.clicked {
-  background-image: url("../../public/down-clicked.svg");
+  background-image: url("../../public/main/down-clicked.svg");
   width: 28px;
   height: 28px;
 }
 
 div[data-key="0"] {
-  background-image: url("../../public/0.svg");
+  background-image: url("../../public/main/0.svg");
   width: 28px;
   height: 28px;
 }
 
 div[data-key="0"].clicked {
-  background-image: url("../../public/0-clicked.svg");
+  background-image: url("../../public/main/0-clicked.svg");
   width: 28px;
   height: 28px;
 }
 
 div[data-key="1"] {
-  background-image: url("../../public/1.svg");
+  background-image: url("../../public/main/1.svg");
   width: 28px;
   height: 28px;
 }
 
 div[data-key="1"].clicked {
-  background-image: url("../../public/1-clicked.svg");
+  background-image: url("../../public/main/1-clicked.svg");
   width: 28px;
   height: 28px;
 }
 
 div[data-key="2"] {
-  background-image: url("../../public/2.svg");
+  background-image: url("../../public/main/2.svg");
   width: 28px;
   height: 28px;
 }
 
 div[data-key="2"].clicked {
-  background-image: url("../../public/2-clicked.svg");
+  background-image: url("../../public/main/2-clicked.svg");
   width: 28px;
   height: 28px;
 }
 
 div[data-key="3"] {
-  background-image: url("../../public/3.svg");
+  background-image: url("../../public/main/3.svg");
   width: 28px;
   height: 28px;
 }
 
 div[data-key="3"].clicked {
-  background-image: url("../../public/3-clicked.svg");
+  background-image: url("../../public/main/3-clicked.svg");
   width: 28px;
   height: 28px;
 }
 
 div[data-key="4"] {
-  background-image: url("../../public/4.svg");
+  background-image: url("../../public/main/4.svg");
   width: 28px;
   height: 28px;
 }
 
 div[data-key="4"].clicked {
-  background-image: url("../../public/4-clicked.svg");
+  background-image: url("../../public/main/4-clicked.svg");
   width: 28px;
   height: 28px;
 }
 
 .h {
-  background-image: url("../../public/hide.svg");
+  background-image: url("../../public/main/hide.svg");
   width: 28px;
   height: 28px;
 }
 
 .h.clicked {
-  background-image: url("../../public/hide-clicked.svg");
+  background-image: url("../../public/main/hide-clicked.svg");
   width: 28px;
   height: 28px;
 }
 
 .d {
-  background-image: url("../../public/dark.svg");
+  background-image: url("../../public/main/dark.svg");
   width: 28px;
   height: 28px;
 }
 
 .d.clicked {
-  background-image: url("../../public/dark-clicked.svg");
+  background-image: url("../../public/main/dark-clicked.svg");
   width: 28px;
   height: 28px;
 }
 
 .f {
-  background-image: url("../../public/featured.svg");
+  background-image: url("../../public/main/featured.svg");
   width: 28px;
   height: 28px;
 }
 
 .f.clicked {
-  background-image: url("../../public/featured-clicked.svg");
+  background-image: url("../../public/main/featured-clicked.svg");
   width: 28px;
   height: 28px;
 }
 
 .t {
-  background-image: url("../../public/top.svg");
+  background-image: url("../../public/main/top.svg");
   width: 28px;
   height: 28px;
 }
 
 .t.clicked {
-  background-image: url("../../public/top-clicked.svg");
+  background-image: url("../../public/maintop-clicked.svg");
   width: 28px;
   height: 28px;
 }

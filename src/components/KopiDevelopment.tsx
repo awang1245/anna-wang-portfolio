@@ -75,207 +75,211 @@ function KopiDevelopment() {
           </div>
           <div className="table-content">
             <table>
-              <tr>
-                <th>
-                  <div className="row-content">factors</div>
-                </th>
-                <th>
-                  <div className="row-content">Etsy</div>
-                </th>
-                <th>
-                  <div className="row-content">Goldbelly</div>
-                </th>
-                <th>
-                  <div className="row-content">Weee!</div>
-                </th>
-              </tr>
-              <tr>
-                <td>
-                  <div className="row-content">filtering options</div>
-                </td>
-                <td>
-                  <div className="row-content">
-                    <img src={check} className="check-icon" />
-                    <div className="explanation">
-                      custom filters based on user's favorites; can search
-                      within list
+              <thead>
+                <tr>
+                  <th>
+                    <div className="row-content">factors</div>
+                  </th>
+                  <th>
+                    <div className="row-content">Etsy</div>
+                  </th>
+                  <th>
+                    <div className="row-content">Goldbelly</div>
+                  </th>
+                  <th>
+                    <div className="row-content">Weee!</div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div className="row-content">filtering options</div>
+                  </td>
+                  <td>
+                    <div className="row-content">
+                      <img src={check} className="check-icon" />
+                      <div className="explanation">
+                        custom filters based on user's favorites; can search
+                        within list
+                      </div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <div className="row-content">
-                    <img src={x} />
-                    <div className="explanation">no filtering offered</div>
-                  </div>
-                </td>
-                <td>
-                  <div className="row-content">
-                    <img src={check} className="check-icon" />
-                    <div className="explanation">
-                      custom filters based on types of user's saved foods
+                  </td>
+                  <td>
+                    <div className="row-content">
+                      <img src={x} />
+                      <div className="explanation">no filtering offered</div>
                     </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>sorting options</td>
-                <td>
-                  <div className="row-content">
-                    <img src={x} />
-                    <div className="explanation">
-                      only default order of newest added
+                  </td>
+                  <td>
+                    <div className="row-content">
+                      <img src={check} className="check-icon" />
+                      <div className="explanation">
+                        custom filters based on types of user's saved foods
+                      </div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <div className="row-content">
-                    <img src={check} className="check-icon" />
-                    <div className="explanation">
-                      offers sorting by recommended, best sellers, popularity,
-                      and price
+                  </td>
+                </tr>
+                <tr>
+                  <td>sorting options</td>
+                  <td>
+                    <div className="row-content">
+                      <img src={x} />
+                      <div className="explanation">
+                        only default order of newest added
+                      </div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <div className="row-content">
-                    <img src={x} />
-                    <div className="explanation">
-                      only default order of newest added
+                  </td>
+                  <td>
+                    <div className="row-content">
+                      <img src={check} className="check-icon" />
+                      <div className="explanation">
+                        offers sorting by recommended, best sellers, popularity,
+                        and price
+                      </div>
                     </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>quick add/removal</td>
-                <td>
-                  <div className="row-content">
-                    <img src={x} />
-                    <div className="explanation">
-                      removal takes longer since user needs to specify the
-                      collection
+                  </td>
+                  <td>
+                    <div className="row-content">
+                      <img src={x} />
+                      <div className="explanation">
+                        only default order of newest added
+                      </div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <div className="row-content">
-                    <img src={check} className="check-icon" />
-                    <div className="explanation">
-                      simple, quick one-click adding and removing
+                  </td>
+                </tr>
+                <tr>
+                  <td>quick add/removal</td>
+                  <td>
+                    <div className="row-content">
+                      <img src={x} />
+                      <div className="explanation">
+                        removal takes longer since user needs to specify the
+                        collection
+                      </div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <div className="row-content">
-                    <img src={check} className="check-icon" />
-                    <div className="explanation">
-                      simple, quick one-click adding and removing
+                  </td>
+                  <td>
+                    <div className="row-content">
+                      <img src={check} className="check-icon" />
+                      <div className="explanation">
+                        simple, quick one-click adding and removing
+                      </div>
                     </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>visible like/save button</td>
-                <td>
-                  <div className="row-content">
-                    <img src={x} />
-                    <div className="explanation">shows up only on hover</div>
-                  </div>
-                </td>
-                <td>
-                  <div className="row-content">
-                    <img src={check} className="check-icon" />
-                    <div className="explanation">
-                      always visible on item listing
+                  </td>
+                  <td>
+                    <div className="row-content">
+                      <img src={check} className="check-icon" />
+                      <div className="explanation">
+                        simple, quick one-click adding and removing
+                      </div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <div className="row-content">
-                    <img src={check} className="check-icon" />
-                    <div className="explanation">
-                      always visible on item listing
+                  </td>
+                </tr>
+                <tr>
+                  <td>visible like/save button</td>
+                  <td>
+                    <div className="row-content">
+                      <img src={x} />
+                      <div className="explanation">shows up only on hover</div>
                     </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>easy navigation to list</td>
-                <td>
-                  <div className="row-content">
-                    <img src={check} className="check-icon" />
-                    <div className="explanation">
-                      favorites list always accessible on navigation bar
+                  </td>
+                  <td>
+                    <div className="row-content">
+                      <img src={check} className="check-icon" />
+                      <div className="explanation">
+                        always visible on item listing
+                      </div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <div className="row-content">
-                    <img src={check} className="check-icon" />
-                    <div className="explanation">
-                      favorites list found after clicking on user profile
-                      options
+                  </td>
+                  <td>
+                    <div className="row-content">
+                      <img src={check} className="check-icon" />
+                      <div className="explanation">
+                        always visible on item listing
+                      </div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <div className="row-content">
-                    <img src={check} className="check-icon" />
-                    <div className="explanation">
-                      saved list found after clicking on user profile options
+                  </td>
+                </tr>
+                <tr>
+                  <td>easy navigation to list</td>
+                  <td>
+                    <div className="row-content">
+                      <img src={check} className="check-icon" />
+                      <div className="explanation">
+                        favorites list always accessible on navigation bar
+                      </div>
                     </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>organization</td>
-                <td>
-                  <div className="row-content">
-                    <img src={check} className="check-icon" />
-                    <div className="explanation">
-                      allows users to make additional collections of items
+                  </td>
+                  <td>
+                    <div className="row-content">
+                      <img src={check} className="check-icon" />
+                      <div className="explanation">
+                        favorites list found after clicking on user profile
+                        options
+                      </div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <div className="row-content">
-                    <img src={x} />
-                    <div className="explanation">no further organization</div>
-                  </div>
-                </td>
-                <td>
-                  <div className="row-content">
-                    <img src={x} />
-                    <div className="explanation">no further organization</div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>add to cart option</td>
-                <td>
-                  <div className="row-content">
-                    <img src={check} className="check-icon" />
-                    <div className="explanation">
-                      add to cart and buy now buttons
+                  </td>
+                  <td>
+                    <div className="row-content">
+                      <img src={check} className="check-icon" />
+                      <div className="explanation">
+                        saved list found after clicking on user profile options
+                      </div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <div className="row-content">
-                    <img src={x} />
-                    <div className="explanation">
-                      cannot add directly from favorites list
+                  </td>
+                </tr>
+                <tr>
+                  <td>organization</td>
+                  <td>
+                    <div className="row-content">
+                      <img src={check} className="check-icon" />
+                      <div className="explanation">
+                        allows users to make additional collections of items
+                      </div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <div className="row-content">
-                    <img src={check} className="check-icon" />
-                    <div className="explanation">
-                      plus button that adds saved item to cart
+                  </td>
+                  <td>
+                    <div className="row-content">
+                      <img src={x} />
+                      <div className="explanation">no further organization</div>
                     </div>
-                  </div>
-                </td>
-              </tr>
+                  </td>
+                  <td>
+                    <div className="row-content">
+                      <img src={x} />
+                      <div className="explanation">no further organization</div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>add to cart option</td>
+                  <td>
+                    <div className="row-content">
+                      <img src={check} className="check-icon" />
+                      <div className="explanation">
+                        add to cart and buy now buttons
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div className="row-content">
+                      <img src={x} />
+                      <div className="explanation">
+                        cannot add directly from favorites list
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div className="row-content">
+                      <img src={check} className="check-icon" />
+                      <div className="explanation">
+                        plus button that adds saved item to cart
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
             </table>
           </div>
           <div className="split">

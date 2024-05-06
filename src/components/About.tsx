@@ -1,8 +1,8 @@
 import "../styles/About.css";
 import { useRecoilState } from "recoil";
 import { isDarkState } from "./atoms";
-import anna1 from "../../public/anna1.png";
-import anna2 from "../../public/anna2.png";
+import anna1 from "../../public/main/anna1.png";
+import anna2 from "../../public/main/anna2.png";
 
 function About() {
   const [isDark] = useRecoilState<boolean>(isDarkState);
