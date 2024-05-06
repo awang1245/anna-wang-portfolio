@@ -17,6 +17,7 @@ import ABTesting from "./components/ABTesting";
 import KopiDevelopment from "./components/KopiDevelopment";
 import { useRecoilState } from "recoil";
 import { isDarkState } from "./components/atoms";
+import GMCafe from "./components/GMCafe";
 
 function App() {
   const [isShown, setIsShown] = useState<boolean>(true);
@@ -361,6 +362,7 @@ function App() {
         <Route path="/beestar-redesign" element={<Beestar />} />
         <Route path="/ab-testing" element={<ABTesting />} />
         <Route path="/kopi-development" element={<KopiDevelopment />} />
+        <Route path="/gmcafe" element={<GMCafe />} />
       </Routes>
     </article>
   );

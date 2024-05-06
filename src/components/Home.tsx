@@ -1,7 +1,7 @@
 import "../styles/Home.css";
 import "@dotlottie/player-component";
 import { useEffect, useState } from "react";
-import FeaturedCard from "./FeaturedCard";
+import ProjectCard from "./ProjectCard";
 import { projects } from "./Projects";
 import { useRecoilState } from "recoil";
 import { isDarkState } from "./atoms";
@@ -13,6 +13,7 @@ export interface WorkData {
   time: string;
   tags: string[];
   nav?: string;
+  featured: boolean;
 }
 
 function Home() {
@@ -87,9 +88,11 @@ function Home() {
         <div className="featured-work" id="featured">
           <h1>My Featured Work</h1>
           <div className="featured-cards">
-            {projects.map((work: WorkData, index: number) => (
-              <FeaturedCard work={work} key={index} />
-            ))}
+            {projects
+              .filter((work) => work.featured)
+              .map((work: WorkData, index: number) => (
+                <ProjectCard work={work} key={index} />
+              ))}
           </div>
         </div>
       </main>

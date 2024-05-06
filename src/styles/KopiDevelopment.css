@@ -51,11 +51,6 @@
   margin: 0;
 }
 
-.kopi-content a:hover {
-  transition: 0.3s;
-  filter: brightness(80%);
-}
-
 .overview {
   width: 100%;
   display: flex;
