@@ -49,13 +49,13 @@ main {
 
 .name-light:hover {
   color: var(--cream60);
-  cursor: url("/star-filled.svg"), default;
+  cursor: url("/main/star-filled.svg"), default;
   transition: 0.3s;
 }
 
 .name-dark:hover {
   color: var(--cream30);
-  cursor: url("/light-star-filled.svg"), default;
+  cursor: url("/main/light-star-filled.svg"), default;
   transition: 0.3s;
 }
 

@@ -86,7 +86,7 @@
 }
 
 .standard-img:hover {
-  cursor: url("/star-filled.svg"), default;
+  cursor: url("/main/star-filled.svg"), default;
   img {
     transition: 0.3s;
     filter: brightness(80%);
@@ -94,7 +94,7 @@
 }
 
 .standard-img-dark:hover {
-  cursor: url("/light-star-filled.svg"), default;
+  cursor: url("/main/light-star-filled.svg"), default;
   img {
     transition: 0.3s;
     filter: brightness(60%);
@@ -162,7 +162,7 @@
 }
 
 .half-img-light:hover {
-  cursor: url("/star-filled.svg"), default;
+  cursor: url("/main/star-filled.svg"), default;
   img {
     transition: 0.3s;
     filter: brightness(80%);
@@ -170,7 +170,7 @@
 }
 
 .half-img-dark:hover {
-  cursor: url("/light-star-filled.svg"), default;
+  cursor: url("/main/light-star-filled.svg"), default;
   img {
     transition: 0.3s;
     filter: brightness(60%);

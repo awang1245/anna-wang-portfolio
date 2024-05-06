@@ -18,7 +18,7 @@
 }
 
 .feat-link-light:hover {
-  cursor: url("/star-filled.svg"), default;
+  cursor: url("/main/star-filled.svg"), default;
   img {
     transition: 0.3s;
     filter: brightness(80%);
@@ -26,7 +26,7 @@
 }
 
 .feat-link-dark:hover {
-  cursor: url("/light-star-filled.svg"), default;
+  cursor: url("/main/light-star-filled.svg"), default;
   img {
     transition: 0.3s;
     filter: brightness(60%);
