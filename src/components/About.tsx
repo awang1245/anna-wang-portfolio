@@ -24,10 +24,10 @@ function About() {
                 anna_wang@brown.edu!
               </p>
             </div>
-            <img className="pic" src={anna1} />
+            <img className="pic" src={anna1} loading="lazy" />
           </div>
           <div className="split">
-            <img className="pic" src={anna2} />
+            <img className="pic" src={anna2} loading="lazy" />
             <div className="text"></div>
           </div>
         </div>

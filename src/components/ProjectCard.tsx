@@ -20,7 +20,7 @@ function ProjectCard({ work }: ProjectCardProps) {
             className={isDark ? "card-link-dark" : "card-link-light"}
             to={work.nav}
           >
-            <img className="card-img" src={work.path} />
+            <img className="card-img" src={work.path} loading="lazy" />
             <div className="card-info">
               <div className="card-row">
                 <div className="card-name">{work.name}</div>
@@ -37,7 +37,7 @@ function ProjectCard({ work }: ProjectCardProps) {
           </NavLink>
         ) : (
           <div>
-            <img className="card-img" src={work.path} />
+            <img className="card-img" src={work.path} loading="lazy" />
             <div className="card-info">
               <div className="card-row">
                 <div className="card-name">{work.name}</div>
