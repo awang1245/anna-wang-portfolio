@@ -1,0 +1,51 @@
+.about {
+  width: 100%;
+  height: calc(100vh - 160px);
+  max-width: 1000px;
+  height: fit-content;
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+@media (max-width: 1160px) {
+  .about {
+    padding: 0px 56px;
+  }
+}
+
+.about h1 {
+  font-family: "ivymode";
+  font-weight: 400;
+  font-size: 44px;
+  padding: 0 0 24px 0;
+  margin: 0;
+}
+
+.about img {
+  border: 1.5px solid black;
+  border-radius: 20px;
+}
+
+.about .split {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: start;
+  gap: 96px;
+  margin-bottom: 56px;
+}
+
+.about .text {
+  width: 60%;
+  text-align: left;
+}
+
+.about .pic {
+  width: 40%;
+  img {
+    width: 100%;
+  }
+}

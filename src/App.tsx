@@ -20,6 +20,7 @@ import { isDarkState } from "./components/atoms";
 
 function App() {
   const [isShown, setIsShown] = useState<boolean>(true);
+  const [hasScrolled, setHasScrolled] = useState<boolean>(false);
   const [isDark, setIsDark] = useRecoilState<boolean>(isDarkState);
   const navigate = useNavigate();
   const location = useLocation();
@@ -32,8 +33,7 @@ function App() {
   };
 
   const scrollToTop = () => {
-    const element = document.documentElement;
-    element.scrollIntoView({ behavior: "smooth", block: "start" });
+    window.scrollTo({ top: 0, behavior: "smooth" });
     setTimeout(() => {
       const progBar = document.getElementById("prog-bar");
       if (progBar) {
@@ -196,8 +196,10 @@ function App() {
       if (parseInt(progBar.style.width) > 0) {
         // if user has started scrolling
         progStar.style.visibility = "visible";
+        setHasScrolled(true);
       } else {
         progStar.style.visibility = "hidden"; // hide star if no progress bar is visible
+        setHasScrolled(false);
       }
     }
     // separate statement bc progBar width needs to be updated first before star's location is determined
@@ -333,12 +335,14 @@ function App() {
             </ul>
             <div className="control-label">Dark/Light</div>
           </div>
-          <div className="keys-label">
-            <ul className="keys">
-              <div className="t" />
-            </ul>
-            <div className="control-label">Back to Top</div>
-          </div>
+          {hasScrolled && (
+            <div className="keys-label">
+              <ul className="keys">
+                <div className="t" />
+              </ul>
+              <div className="control-label">Back to Top</div>
+            </div>
+          )}
           <div className="keys-label">
             <ul className="keys">
               <div className="h" />

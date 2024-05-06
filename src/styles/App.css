@@ -13,11 +13,13 @@ article {
   cursor: url("/light-star-unfilled.svg"), default;
   background-color: var(--cream85);
   color: var(--cream5);
+  transition: background-color 0.3s;
 }
 
 .light-mode {
   background-color: var(--cream5);
   color: black;
+  transition: background-color 0.3s;
 }
 
 header {
