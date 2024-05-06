@@ -48,7 +48,7 @@ function KopiDevelopment() {
             href="https://awang1245.github.io/kopi-development/"
             target="_blank"
             rel="noopener noreferrer"
-            className="standard-img"
+            className={isDark ? "standard-img-dark" : "standard-img"}
           >
             <img src={kopi} alt="image of the kopi roastery website" />
           </a>
@@ -319,7 +319,7 @@ function KopiDevelopment() {
               href="https://www.etsy.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="half-img"
+              className={isDark ? "half-img-dark" : "half-img-light"}
             >
               <img src={etsy} alt="image of etsy's user favorites page" />
             </a>
@@ -329,7 +329,7 @@ function KopiDevelopment() {
               href="https://www.goldbelly.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="half-img"
+              className={isDark ? "half-img-dark" : "half-img-light"}
             >
               <img
                 src={goldbelly}
@@ -412,7 +412,7 @@ function KopiDevelopment() {
               href="https://www.sayweee.com/en"
               target="_blank"
               rel="noopener noreferrer"
-              className="half-img"
+              className={isDark ? "half-img-dark" : "half-img-light"}
             >
               <img src={weee} alt="image of weee's user saved items page" />
             </a>
@@ -511,7 +511,7 @@ function KopiDevelopment() {
                 href="https://www.figma.com/proto/39nYnmilLiL9J9YZWK7dHi/Anna-Wang-Development?type=design&node-id=1-2&t=DaNDPxzQFDD7IFab-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="standard-img"
+                className={isDark ? "standard-img-dark" : "standard-img"}
               >
                 <img
                   src={prototype}
@@ -561,7 +561,7 @@ function KopiDevelopment() {
               href="https://awang1245.github.io/kopi-development/"
               target="_blank"
               rel="noopener noreferrer"
-              className="standard-img"
+              className={isDark ? "standard-img-dark" : "standard-img"}
             >
               <img src={screen1} alt="image of kopi website starting screen" />
             </a>

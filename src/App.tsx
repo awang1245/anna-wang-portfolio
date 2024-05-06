@@ -307,7 +307,7 @@ function App() {
               <ul className="keys">
                 <div className="f" />
               </ul>
-              <div className="control-label">Featured work</div>
+              <div className="control-label">Featured Work</div>
             </div>
           )}
           <div className="keys-label">
@@ -325,7 +325,7 @@ function App() {
               <div data-key="3" />
               <div data-key="4" />
             </ul>
-            <div className="control-label">Navigate to page</div>
+            <div className="control-label">Navigate to Page</div>
           </div>
           <div className="keys-label">
             <ul className="keys">
@@ -337,7 +337,7 @@ function App() {
             <ul className="keys">
               <div className="t" />
             </ul>
-            <div className="control-label">Back to top</div>
+            <div className="control-label">Back to Top</div>
           </div>
           <div className="keys-label">
             <ul className="keys">

@@ -76,11 +76,28 @@
   gap: 16px;
 }
 
-.standard-img {
+.standard-img,
+.standard-img-dark {
   width: 80%;
 
   img {
     width: 100%;
+  }
+}
+
+.standard-img:hover {
+  cursor: url("/star-filled.svg"), default;
+  img {
+    transition: 0.3s;
+    filter: brightness(80%);
+  }
+}
+
+.standard-img-dark:hover {
+  cursor: url("/light-star-filled.svg"), default;
+  img {
+    transition: 0.3s;
+    filter: brightness(60%);
   }
 }
 
@@ -134,11 +151,29 @@
   flex-flow: column nowrap;
 }
 
-.half-img {
+.half-img,
+.half-img-light,
+.half-img-dark {
   width: 50%;
 
   img {
     width: 100%;
+  }
+}
+
+.half-img-light:hover {
+  cursor: url("/star-filled.svg"), default;
+  img {
+    transition: 0.3s;
+    filter: brightness(80%);
+  }
+}
+
+.half-img-dark:hover {
+  cursor: url("/light-star-filled.svg"), default;
+  img {
+    transition: 0.3s;
+    filter: brightness(60%);
   }
 }
 

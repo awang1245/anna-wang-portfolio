@@ -60,7 +60,9 @@ function Beestar() {
               href="https://awang1245.github.io/beestar-responsive-redesign/"
               target="_blank"
               rel="noopener noreferrer"
-              className="redesigned-img"
+              className={
+                isDark ? "redesigned-img-dark" : "redesigned-img-light"
+              }
             >
               <img
                 src={redesigned}
@@ -114,7 +116,7 @@ function Beestar() {
                 href="https://www.beestar.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="original-img"
+                className={isDark ? "original-img-dark" : "original-img"}
               >
                 <img src={original} alt="image of Beestar's home page" />
               </a>
@@ -124,7 +126,7 @@ function Beestar() {
                 href="https://wave.webaim.org/report#/https://www.beestar.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="original-img"
+                className={isDark ? "original-img-dark" : "original-img"}
               >
                 <img
                   src={accessibility}
@@ -265,7 +267,7 @@ function Beestar() {
                   href="https://www.figma.com/proto/HwQfYuhn5fPOSoCXn83LFC/Anna-Wang-Responsive-Redesign?type=design&node-id=45-568&t=Xv1KNFD9kodZr5h4-1&scaling=scale-down&page-id=27%3A35&starting-point-node-id=45%3A568&mode=design"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="desktop-img"
+                  className={isDark ? "desktop-img-dark" : "desktop-img"}
                 >
                   <img
                     src={deskHifi}
@@ -335,6 +337,7 @@ function Beestar() {
                     </p>
                     <a
                       href="https://awang1245.github.io/beestar-responsive-redesign/"
+                      className={isDark ? "desktop-dark" : "desktop-light"}
                       target="_blank"
                       rel="noopener noreferrer"
                     >

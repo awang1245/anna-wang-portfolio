@@ -88,6 +88,31 @@
   }
 }
 
+.redesigned-img-light,
+.redesigned-img-dark {
+  width: 80%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.redesigned-img-light:hover {
+  cursor: url("/star-filled.svg"), default;
+  img {
+    transition: 0.3s;
+    filter: brightness(80%);
+  }
+}
+
+.redesigned-img-dark:hover {
+  cursor: url("/light-star-filled.svg"), default;
+  img {
+    transition: 0.3s;
+    filter: brightness(60%);
+  }
+}
+
 .issues,
 .design {
   width: 100%;
@@ -128,11 +153,28 @@
   }
 }
 
-.original-img {
+.original-img,
+.original-img-dark {
   width: 50%;
 
   img {
     width: 100%;
+  }
+}
+
+.original-img:hover {
+  cursor: url("/star-filled.svg"), default;
+  img {
+    transition: 0.3s;
+    filter: brightness(80%);
+  }
+}
+
+.original-img-dark:hover {
+  cursor: url("/light-star-filled.svg"), default;
+  img {
+    transition: 0.3s;
+    filter: brightness(60%);
   }
 }
 
@@ -189,11 +231,28 @@
   }
 }
 
-.desktop-img {
+.desktop-img,
+.desktop-img-dark {
   width: 66%;
 
   img {
     width: 100%;
+  }
+}
+
+.desktop-img:hover {
+  cursor: url("/star-filled.svg"), default;
+  img {
+    transition: 0.3s;
+    filter: brightness(80%);
+  }
+}
+
+.desktop-img-dark:hover {
+  cursor: url("/light-star-filled.svg"), default;
+  img {
+    transition: 0.3s;
+    filter: brightness(60%);
   }
 }
 
@@ -248,6 +307,22 @@
     width: 100%;
     text-align: center;
     margin-bottom: 8px;
+  }
+}
+
+.desktop-light:hover {
+  cursor: url("/star-filled.svg"), default;
+  img {
+    transition: 0.3s;
+    filter: brightness(80%);
+  }
+}
+
+.desktop-dark:hover {
+  cursor: url("/light-star-filled.svg"), default;
+  img {
+    transition: 0.3s;
+    filter: brightness(60%);
   }
 }
 
