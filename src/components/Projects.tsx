@@ -5,18 +5,18 @@ import gmcafe from "../../public/main/gmcafe.png";
 
 export const projects = [
   {
+    name: "Good Morning Café NFT",
+    path: gmcafe,
+    time: "May-June 2023",
+    tags: ["Product Design", "Figma"],
+    nav: "/gmcafe",
+    featured: true,
+  },
+  {
     name: "Kopi Organic Roastery",
     path: kopi,
     time: "April 2024",
-    tags: [
-      "React",
-      "TypeScript",
-      "HTML",
-      "CSS",
-      "Web Design",
-      "Branding",
-      "Figma",
-    ],
+    tags: ["React", "TypeScript", "HTML", "CSS", "Web Design", "Branding"],
     nav: "/kopi-development",
     featured: true,
   },
@@ -25,7 +25,7 @@ export const projects = [
     path: abtesting,
     time: "March 2024",
     tags: ["A/B Testing", "UX Research", "HTML", "CSS"],
-    nav: "/ab-testing",
+    // nav: "/ab-testing",
     featured: false,
   },
   {
@@ -34,14 +34,6 @@ export const projects = [
     time: "March 2024",
     tags: ["Responsive Design", "HTML", "CSS", "JavaScript", "Figma"],
     nav: "/beestar-redesign",
-    featured: true,
-  },
-  {
-    name: "Good Morning Café NFT",
-    path: gmcafe,
-    time: "May-June 2023",
-    tags: ["Product Design", "Figma"],
-    nav: "/gmcafe",
     featured: true,
   },
 ];
