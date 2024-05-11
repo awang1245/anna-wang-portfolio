@@ -56,7 +56,7 @@
   margin: 0;
 }
 
-.overview {
+.beestar-content .overview {
   width: 100%;
   display: flex;
   flex-flow: column nowrap;

@@ -119,6 +119,13 @@ nav {
   gap: 48px;
 }
 
+@media (max-height: 600px) {
+  .key-controls-light,
+  .key-controls-dark {
+    display: none;
+  }
+}
+
 .control-label {
   font-size: 14px;
 }

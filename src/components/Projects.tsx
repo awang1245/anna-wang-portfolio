@@ -1,7 +1,7 @@
 import kopi from "../../public/kopi/kopi.png";
 import abtesting from "../../public/main/ab_testing.png";
 import beestar from "../../public/main/beestar2.png";
-import gmcafe from "../../public/main/gmcafe.png";
+import gmcafe from "../../public/gmcafe/gmcafe.png";
 
 export const projects = [
   {
