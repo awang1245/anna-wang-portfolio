@@ -131,6 +131,50 @@
   gap: 72px;
 }
 
+.gmcafe .left {
+  width: 16%;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 16px;
+  position: sticky;
+  top: 128px;
+  font-size: 15px;
+  font-weight: 500;
+
+  ul {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 24px;
+  }
+
+  a {
+    padding: 1em;
+    margin: -1em;
+  }
+}
+
+.button-light {
+  background-color: transparent;
+  color: black;
+  height: fit-content;
+}
+
+.button-dark {
+  color: var(--cream5);
+}
+
+.button-light:hover {
+  color: var(--cream60);
+  cursor: url("/main/star-filled.svg"), default;
+  transition: 0.3s;
+}
+
+.button-dark:hover {
+  color: var(--cream30);
+  cursor: url("/main/light-star-filled.svg"), default;
+  transition: 0.3s;
+}
+
 .gmcafe .right {
   width: 84%;
   display: flex;
@@ -140,26 +184,21 @@
   gap: 96px;
 }
 
-.gmcafe .left {
-  width: 16%;
-  display: flex;
-  flex-flow: column nowrap;
-  font-size: 15px;
-  margin-top: 16px;
-  position: sticky;
-  top: 160px;
-  font-weight: 500;
-}
-
 .gmcafe .overview,
 .gmcafe .research,
 .gmcafe .lofi,
-.gmcafe .hifi {
+.gmcafe .hifi,
+.gmcafe .final,
+.gmcafe .conclusion {
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
   align-items: start;
   text-align: left;
+}
+
+.gmcafe .conclusion {
+  height: calc(100vh - 240px);
 }
 
 .gmcafe .section-content {
@@ -174,7 +213,7 @@
   }
 
   .description-top {
-    margin: 64px 0 24px 0;
+    margin: 72px 0 24px 0;
   }
 
   .description-list {
@@ -182,7 +221,7 @@
   }
 
   .description-top-list {
-    margin: 64px 0 6px 0;
+    margin: 72px 0 6px 0;
   }
 
   .description-img {

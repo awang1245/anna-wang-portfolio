@@ -10,9 +10,22 @@ import competitors from "../../public/gmcafe/competitors.png";
 import wireframes from "../../public/gmcafe/wireframes.png";
 import finalLofi from "../../public/gmcafe/final-lofi.png";
 import hifi1 from "../../public/gmcafe/hifi1.png";
+import finalHifi from "../../public/gmcafe/final-hifi.png";
 
 function GMCafe() {
   const [isDark] = useRecoilState<boolean>(isDarkState);
+
+  const scrollToSection = (name: string) => {
+    const section = document.getElementById(name);
+    if (section) {
+      const offsetTop = section.offsetTop - 112;
+      window.scrollTo({
+        top: offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <main className={isDark ? "page-dark" : "page-light"}>
       <div className="gmcafe">
@@ -57,12 +70,59 @@ function GMCafe() {
         </section>
         <div className="process">
           <div className="left">
-            01&nbsp; Overview <br />
-            02&nbsp; Research <br /> 03&nbsp; Lo-fi Designs
-            <br /> 04&nbsp; Hi-fi Designs
+            <ul>
+              <li>
+                <a
+                  className={isDark ? "button-dark" : "button-light"}
+                  onClick={() => scrollToSection("overview")}
+                >
+                  Overview
+                </a>
+              </li>
+              <li>
+                <a
+                  className={isDark ? "button-dark" : "button-light"}
+                  onClick={() => scrollToSection("research")}
+                >
+                  Research
+                </a>
+              </li>
+              <li>
+                <a
+                  className={isDark ? "button-dark" : "button-light"}
+                  onClick={() => scrollToSection("lofi")}
+                >
+                  Lo-fi Designs
+                </a>
+              </li>
+              <li>
+                <a
+                  className={isDark ? "button-dark" : "button-light"}
+                  onClick={() => scrollToSection("hifi")}
+                >
+                  Hi-fi Designs
+                </a>
+              </li>
+              <li>
+                <a
+                  className={isDark ? "button-dark" : "button-light"}
+                  onClick={() => scrollToSection("final")}
+                >
+                  Final Prototype
+                </a>
+              </li>
+              <li>
+                <a
+                  className={isDark ? "button-dark" : "button-light"}
+                  onClick={() => scrollToSection("conclusion")}
+                >
+                  Conclusion
+                </a>
+              </li>
+            </ul>
           </div>
           <div className="right">
-            <section className="overview">
+            <section className="overview" id="overview">
               <h2>Overview</h2>
               <div className="section-content">
                 <p className="description">
@@ -100,9 +160,9 @@ function GMCafe() {
                         d="M18.9276 26.7535L17 33.5L15.0724 26.7535C14.06 23.2099 11.2901 20.44 7.74652 19.4276L1 17.5L7.74653 15.5724C11.2901 14.56 14.06 11.7901 15.0724 8.24652L17 1.5L18.9276 8.24653C19.94 11.7901 22.7099 14.56 26.2535 15.5724L33 17.5L26.2535 19.4276C22.7099 20.44 19.94 23.2099 18.9276 26.7535Z"
                         fill="currentColor"
                         stroke="currentColor"
-                        stroke-width="1"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="1"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                     </svg>
                   </div>
@@ -133,7 +193,7 @@ function GMCafe() {
                 </div>
               </div>
             </section>
-            <section className="research">
+            <section className="research" id="research">
               <h2>Research</h2>
               <div className="section-content">
                 <h3>User Interviews</h3>
@@ -376,7 +436,7 @@ function GMCafe() {
                 </ul>
               </div>
             </section>
-            <section className="lofi">
+            <section className="lofi" id="lofi">
               <h2>Lo-fi Designs</h2>
               <div className="section-content">
                 <h3>Ideation</h3>
@@ -397,9 +457,9 @@ function GMCafe() {
                         d="M18.9276 26.7535L17 33.5L15.0724 26.7535C14.06 23.2099 11.2901 20.44 7.74652 19.4276L1 17.5L7.74653 15.5724C11.2901 14.56 14.06 11.7901 15.0724 8.24652L17 1.5L18.9276 8.24653C19.94 11.7901 22.7099 14.56 26.2535 15.5724L33 17.5L26.2535 19.4276C22.7099 20.44 19.94 23.2099 18.9276 26.7535Z"
                         fill="currentColor"
                         stroke="currentColor"
-                        stroke-width="1"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="1"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                     </svg>
                   </div>
@@ -448,7 +508,7 @@ function GMCafe() {
                 <img className="full-img" src={finalLofi} />
               </div>
             </section>
-            <section className="hifi">
+            <section className="hifi" id="hifi">
               <h2>Hi-fi Designs</h2>
               <div className="section-content">
                 <h3>First Iteration</h3>
@@ -468,9 +528,9 @@ function GMCafe() {
                         d="M18.9276 26.7535L17 33.5L15.0724 26.7535C14.06 23.2099 11.2901 20.44 7.74652 19.4276L1 17.5L7.74653 15.5724C11.2901 14.56 14.06 11.7901 15.0724 8.24652L17 1.5L18.9276 8.24653C19.94 11.7901 22.7099 14.56 26.2535 15.5724L33 17.5L26.2535 19.4276C22.7099 20.44 19.94 23.2099 18.9276 26.7535Z"
                         fill="currentColor"
                         stroke="currentColor"
-                        stroke-width="1"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="1"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                     </svg>
                   </div>
@@ -512,9 +572,83 @@ function GMCafe() {
                 <img className="full-img" src={hifi1} />
               </div>
               <div className="section-content">
-                <h3>Final Prototype</h3>
-                <p className="description-list"></p>
+                <h3>Final Screens</h3>
+                <p className="description-list">
+                  For my second and final iteration, since the link in bio
+                  features and profile format were mostly finalized, I focused
+                  on refining the informational content of the profile,
+                  resulting in the following final changes:
+                </p>
+                <ul className="details-list-img">
+                  <li>
+                    Users now have a bio to give a brief description of
+                    themselves
+                  </li>
+                  <li>
+                    Added a join date for holders and changed birthdays to be
+                    the same format for consistency
+                  </li>
+                  <li>
+                    Profiles display asset counts and time zones to help
+                    facilitate trading and communication
+                  </li>
+                  <li>
+                    Standardized the look of social media icons (adapted from
+                    Tabler) and added more Web3 platforms
+                  </li>
+                </ul>
+                <img className="full-img" src={finalHifi} />
               </div>
+            </section>
+            <section className="final" id="final">
+              <h2>Final Prototype</h2>
+              <div className="section-content">
+                <a
+                  href="https://www.figma.com/proto/2EoWk6itNHXvBVz2agiEXj/gmcafe?node-id=1123-4387&t=7OUdUAqS3gR0JrXf-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1123%3A4387"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={isDark ? "cover-img-dark" : "cover-img"}
+                >
+                  <img src={gmcafe} />
+                </a>
+              </div>
+            </section>
+            <section className="conclusion" id="conclusion">
+              <h2>Conclusion</h2>
+              <p className="description">
+                This project was a lot of fun as it was my first time designing
+                beyond a school or personal setting, and I loved working with
+                the GMCafé team. During these two months, one of my biggest
+                challenges was designing for a space I was unfamiliar with. User
+                research was essential in helping me understand collectors in
+                the NFT space, specifically the GMCafé community.
+              </p>
+              <p className="description">
+                I also battled with finding the right balance between GMCafé's
+                two main priorities for the product: branding and functionality.
+                It was interesting undergoing the design process for two quite
+                different versions, seeing them both from the beginning and
+                almost to the end. Ultimately, what helped us come to a decision
+                in the end was refocusing on and prioritizing our users.
+              </p>
+              <p className="description">
+                GMCafé has largely finished development and will soon release
+                the link in bio profile alongside other features I have also
+                been working on, so stay tuned :)
+              </p>
+              <p className="description">
+                If you haven't had a chance to yet, please check out the final
+                prototype{" "}
+                <a
+                  href="https://www.figma.com/proto/2EoWk6itNHXvBVz2agiEXj/gmcafe?node-id=1123-4387&t=7OUdUAqS3gR0JrXf-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1123%3A4387"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={isDark ? "hyperlink-dark" : "hyperlink"}
+                >
+                  here
+                </a>
+                !
+              </p>
             </section>
           </div>
         </div>
