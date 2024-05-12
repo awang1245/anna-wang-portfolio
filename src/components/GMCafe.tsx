@@ -513,6 +513,7 @@ function GMCafe() {
               </div>
               <div className="section-content">
                 <h3>Final Prototype</h3>
+                <p className="description-list"></p>
               </div>
             </section>
           </div>
