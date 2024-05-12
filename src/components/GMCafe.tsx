@@ -377,7 +377,7 @@ function GMCafe() {
               </div>
             </section>
             <section className="lofi">
-              <h2>Lo-fi Prototyping</h2>
+              <h2>Lo-fi Designs</h2>
               <div className="section-content">
                 <h3>Ideation</h3>
                 <div className="emphasis">
@@ -449,13 +449,12 @@ function GMCafe() {
               </div>
             </section>
             <section className="hifi">
-              <h2>Hi-fi Prototyping</h2>
+              <h2>Hi-fi Designs</h2>
               <div className="section-content">
-                <h3>Iteration 01</h3>
+                <h3>First Iteration</h3>
                 <div className="emphasis">
                   <div className="callout">
-                    Making our product unique <br />
-                    to GMCafé
+                    Prioritizing <br /> Our Users
                     <br />
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -504,14 +503,16 @@ function GMCafe() {
                   <li>
                     Version B was less forward in branding, but the colors and
                     integration of NFTs as avatars still gave the interface a
-                    strong GMCafé feel, while allowing more breathing room for
-                    the profile information.
+                    strong GMCafé feel. By allowing more breathing room for the
+                    profile information, the interface would be less
+                    overwhelming and more functional for collectors and
+                    visitors.
                   </li>
                 </ul>
                 <img className="full-img" src={hifi1} />
               </div>
               <div className="section-content">
-                <h3>Iteration 02</h3>
+                <h3>Final Prototype</h3>
               </div>
             </section>
           </div>
