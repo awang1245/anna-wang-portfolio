@@ -20,14 +20,14 @@ export const projects = [
     nav: "/kopi-development",
     featured: true,
   },
-  {
-    name: "MEDx AB Testing",
-    path: abtesting,
-    time: "March 2024",
-    tags: ["A/B Testing", "UX Research", "HTML", "CSS"],
-    // nav: "/ab-testing",
-    featured: false,
-  },
+  // {
+  //   name: "MEDx AB Testing",
+  //   path: abtesting,
+  //   time: "March 2024",
+  //   tags: ["A/B Testing", "UX Research", "HTML", "CSS"],
+  //   // nav: "/ab-testing",
+  //   featured: false,
+  // },
   {
     name: "Beestar Learning",
     path: beestar,

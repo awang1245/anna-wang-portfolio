@@ -32,9 +32,8 @@
 }
 
 .gmcafe h3 {
-  font-family: "ivymode";
-  font-weight: 400;
-  font-size: 32px;
+  font-weight: 500;
+  font-size: 20px;
   padding: 0 0 16px 0;
   line-height: 90%;
   margin: 0;
@@ -113,11 +112,15 @@
   align-items: start;
   max-width: 250px;
   gap: 4px;
-  font-size: 16px;
 }
 
 .item-name {
   font-weight: 500;
+  font-size: 16px;
+}
+
+.item-content {
+  font-size: 15px;
 }
 
 .gmcafe .process {
@@ -128,8 +131,8 @@
   gap: 72px;
 }
 
-.gmcafe .left {
-  width: 80%;
+.gmcafe .right {
+  width: 84%;
   display: flex;
   flex-flow: column nowrap;
   align-items: start;
@@ -137,10 +140,15 @@
   gap: 96px;
 }
 
-.gmcafe .right {
-  width: 20%;
+.gmcafe .left {
+  width: 16%;
   display: flex;
   flex-flow: column nowrap;
+  font-size: 15px;
+  margin-top: 16px;
+  position: sticky;
+  top: 160px;
+  font-weight: 500;
 }
 
 .gmcafe .overview,
@@ -159,19 +167,69 @@
   max-width: 1000px;
   display: flex;
   flex-flow: column nowrap;
-  margin-bottom: 56px;
+  margin-bottom: 72px;
 
   .description {
     margin-bottom: 16px;
   }
 
   .description-top {
-    margin: 16px 0;
+    margin: 64px 0 24px 0;
+  }
+
+  .description-list {
+    margin-bottom: 6px;
+  }
+
+  .description-top-list {
+    margin: 64px 0 6px 0;
+  }
+
+  .description-img {
+    margin-bottom: 24px;
+  }
+}
+
+.emphasis {
+  margin-top: 6px;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 64px;
+  text-align: left;
+
+  .callout {
+    width: 36%;
+    font-size: 36px;
+    font-weight: 500;
+    font-family: "ivymode";
+  }
+
+  .text {
+    width: 64%;
+    font-size: 16px;
+  }
+
+  .star {
+    width: 24px;
   }
 }
 
 .gmcafe .details-list {
   margin-left: 16px;
+  list-style-type: disc;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 8px;
+
+  li {
+    stroke-width: 1.5px;
+    padding-left: 8px;
+  }
+}
+
+.gmcafe .details-list-img {
+  margin: 0 0 20px 16px;
   list-style-type: disc;
   display: flex;
   flex-flow: column nowrap;
@@ -194,7 +252,7 @@
   max-width: 1200px;
   display: flex;
   justify-content: center;
-  margin-bottom: 56px;
+  margin-bottom: 48px;
   line-height: 1;
 
   img {

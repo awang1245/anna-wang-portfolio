@@ -6,7 +6,10 @@ import x from "../../public/kopi/x.svg";
 import check from "../../public/kopi/check.svg";
 import interviews from "../../public/gmcafe/interviews.png";
 import personas from "../../public/gmcafe/personas.png";
+import competitors from "../../public/gmcafe/competitors.png";
 import wireframes from "../../public/gmcafe/wireframes.png";
+import finalLofi from "../../public/gmcafe/final-lofi.png";
+import hifi1 from "../../public/gmcafe/hifi1.png";
 
 function GMCafe() {
   const [isDark] = useRecoilState<boolean>(isDarkState);
@@ -39,8 +42,7 @@ function GMCafe() {
             <div className="blurb-item">
               <div className="item-name">Skills</div>
               <div className="item-content">
-                Product Design, User Research, Competitive Analysis, Figma,
-                Adobe Illustrator
+                Product Design, User Research, Competitive Analysis, Figma
               </div>
             </div>
           </div>
@@ -55,6 +57,11 @@ function GMCafe() {
         </section>
         <div className="process">
           <div className="left">
+            01&nbsp; Overview <br />
+            02&nbsp; Research <br /> 03&nbsp; Lo-fi Designs
+            <br /> 04&nbsp; Hi-fi Designs
+          </div>
+          <div className="right">
             <section className="overview">
               <h2>Overview</h2>
               <div className="section-content">
@@ -69,63 +76,99 @@ function GMCafe() {
                   </a>{" "}
                   is an NFT brand featuring Ben Colefax's signature art style.
                   Its next steps were to innovate new tech to engage the
-                  community it has built since launching in 2022. As the sole
+                  community it has grown since launching in 2022. As the sole
                   product designer, I created a link in a bio-style profile to
                   connect and enable over 1.5k GMCafé collectors to easily
                   promote their work and assets.
                 </p>
               </div>
               <div className="section-content">
-                <h3>The Problem & Defining Goals</h3>
-                <p className="description">
-                  Following major brand growth, GMCafé wanted to redirect focus
-                  to bringing value to its holders. With the end goal of
-                  launching a series of free tools to build community and
-                  address needs in the Web3 space, the team decided to start
-                  with user profiles in a link in bio-style to address two major
-                  trends:
-                </p>
-                <ul className="details-list">
-                  <li>
-                    GMCafé and the broader NFT community operate primarily
-                    through X (formerly Twitter) and Discord, where a link in
-                    bio format is most efficient and easily sharable.
-                  </li>
-                  <li>
-                    Existing tools were either paid, not designed with Web3
-                    users in mind, or a combination of both.
-                  </li>
-                </ul>
+                <h3>The Problem</h3>
+                <div className="emphasis">
+                  <div className="callout">
+                    GMCafé needed to engage its community.
+                    <br />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="34"
+                      height="35"
+                      viewBox="0 0 34 35"
+                      fill="none"
+                      className="star"
+                    >
+                      <path
+                        d="M18.9276 26.7535L17 33.5L15.0724 26.7535C14.06 23.2099 11.2901 20.44 7.74652 19.4276L1 17.5L7.74653 15.5724C11.2901 14.56 14.06 11.7901 15.0724 8.24652L17 1.5L18.9276 8.24653C19.94 11.7901 22.7099 14.56 26.2535 15.5724L33 17.5L26.2535 19.4276C22.7099 20.44 19.94 23.2099 18.9276 26.7535Z"
+                        fill="currentColor"
+                        stroke="currentColor"
+                        stroke-width="1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div className="text">
+                    <p className="description">
+                      Following major brand growth, GMCafé wanted to redirect
+                      focus to bringing value to its holders. With the end goal
+                      of launching a series of free tools to address collector
+                      needs in the Web3 space— to build an online community,{" "}
+                      <b>we needed to start with user profiles.</b>
+                    </p>
+                    <p className="description-list">
+                      We decided on a <b>link in bio-style</b> to address two
+                      major trends:
+                    </p>
+                    <ul className="details-list">
+                      <li>
+                        GMCafé and the broader NFT community operate primarily
+                        through X (formerly Twitter) and Discord, where a link
+                        in bio format is most efficient and easily sharable.
+                      </li>
+                      <li>
+                        Existing tools were either paid, not designed with Web3
+                        users in mind, or a combination of both.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </section>
             <section className="research">
               <h2>Research</h2>
               <div className="section-content">
                 <h3>User Interviews</h3>
-                <p className="description">
+                <p className="description-img">
                   After defining our initial goals, I needed to better
-                  understand the collectors within the GMCafé community. I
+                  understand the collectors within the GMCafé community as
+                  someone with limited familiarity with the NFT space. I
                   conducted interviews with current holders to find out their
-                  needs in the space and experiences with existing link in bio
-                  and promotional tools.
+                  needs and experiences with existing link in bio and
+                  promotional tools.
                 </p>
                 <img className="full-img" src={interviews} />
                 <div className="interview-questions"></div>
               </div>
               <div className="section-content">
                 <h3>Personas</h3>
-                <p className="description">
+                <p className="description-img">
                   I constructed two quick user personas based on my findings to
-                  help guide my design process and consideration of features.
+                  help guide my design process and consider what features our
+                  holders needed most.
                 </p>
                 <img className="full-img" src={personas} />
               </div>
               <div className="section-content">
                 <h3>Competitive Analysis</h3>
-                <p className="description">
+                <p className="description-img">
                   Following user research, I also conducted a competitive
-                  analysis on two competing link in bio tools: Linktree and
-                  Eth.co by constructing a feature comparison chart.
+                  analysis on two other link in bio platforms: Linktree, which
+                  is most widely used by the general public, and Eth.co, a newer
+                  tool geared toward NFT collectors, similar to GMCafé's
+                  mission.
+                </p>
+                <img className="full-img" src={competitors} />
+                <p className="description-top">
+                  I constructed the following feature comparison chart:
                 </p>
                 <div className="table-content">
                   <table>
@@ -308,8 +351,8 @@ function GMCafe() {
                   </table>
                 </div>
                 <p className="description">
-                  Analyzing our competing platforms allowed me to see what
-                  worked well for them and feature gaps in the current Web3
+                  Analyzing our competing platforms allowed me to see where they
+                  were successful and identify feature gaps in the current Web3
                   landscape. Here are my takeaways leading into the design
                   process for our product:
                 </p>
@@ -336,31 +379,142 @@ function GMCafe() {
             <section className="lofi">
               <h2>Lo-fi Prototyping</h2>
               <div className="section-content">
-                <p className="description">
-                  In addition to my findings from user and market research, I
-                  wanted my design process to be guided by a strong sense of
-                  what would make our feature uniquely GMCafé. I was creating
-                  not just a link in bio tool but also a community profile. I
-                  needed to effectively allocate space to display details about
-                  each holder in the layout without impacting the utility of the
-                  tool. Importantly, my designs needed to align with the themes
-                  and playfulness of the GMCafé brand and artstyle.
-                </p>
+                <h3>Ideation</h3>
+                <div className="emphasis">
+                  <div className="callout">
+                    Making our product unique <br />
+                    to GMCafé
+                    <br />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="34"
+                      height="35"
+                      viewBox="0 0 34 35"
+                      fill="none"
+                      className="star"
+                    >
+                      <path
+                        d="M18.9276 26.7535L17 33.5L15.0724 26.7535C14.06 23.2099 11.2901 20.44 7.74652 19.4276L1 17.5L7.74653 15.5724C11.2901 14.56 14.06 11.7901 15.0724 8.24652L17 1.5L18.9276 8.24653C19.94 11.7901 22.7099 14.56 26.2535 15.5724L33 17.5L26.2535 19.4276C22.7099 20.44 19.94 23.2099 18.9276 26.7535Z"
+                        fill="currentColor"
+                        stroke="currentColor"
+                        stroke-width="1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div className="text">
+                    {" "}
+                    <p className="description">
+                      In addition to my findings from user and market research,
+                      I wanted my design process to be guided by a strong sense
+                      of what would make our feature uniquely GMCafé.{" "}
+                      <b>
+                        I was creating not just a link in bio tool but also a
+                        community profile.
+                      </b>
+                    </p>
+                    <p className="description">
+                      I needed to effectively allocate space to display user
+                      details without impacting the utility of the tool.
+                      Importantly, my designs needed to align with the themes
+                      and playfulness of the GMCafé brand and artstyle.
+                    </p>
+                  </div>
+                </div>
                 <p className="description-top">
-                  Following these guidelines, I created six sketches of possible
-                  layouts for our feature.
+                  Following these guidelines, I created five sketches of
+                  potential layouts for our link in bio profile:
                 </p>
                 <img className="full-img" src={wireframes} />
               </div>
-
-              <div className="section-content"></div>
+              <div className="section-content">
+                <h3>Final Designs</h3>
+                <p className="description-list">
+                  After presenting my sketches to the founder and team, we
+                  narrowed it down to two designs, which they wanted to see
+                  prototyped before we made a final decision.
+                </p>
+                <ul className="details-list-img">
+                  <li>
+                    Version A better accomplished the goal of honoring the
+                    GMCafé brand.
+                  </li>
+                  <li>
+                    Version B had a simpler, more practical interface that could
+                    better fit profile content.
+                  </li>
+                </ul>
+                <img className="full-img" src={finalLofi} />
+              </div>
             </section>
             <section className="hifi">
               <h2>Hi-fi Prototyping</h2>
-              <div className="section-content"></div>
+              <div className="section-content">
+                <h3>Iteration 01</h3>
+                <div className="emphasis">
+                  <div className="callout">
+                    Making our product unique <br />
+                    to GMCafé
+                    <br />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="34"
+                      height="35"
+                      viewBox="0 0 34 35"
+                      fill="none"
+                      className="star"
+                    >
+                      <path
+                        d="M18.9276 26.7535L17 33.5L15.0724 26.7535C14.06 23.2099 11.2901 20.44 7.74652 19.4276L1 17.5L7.74653 15.5724C11.2901 14.56 14.06 11.7901 15.0724 8.24652L17 1.5L18.9276 8.24653C19.94 11.7901 22.7099 14.56 26.2535 15.5724L33 17.5L26.2535 19.4276C22.7099 20.44 19.94 23.2099 18.9276 26.7535Z"
+                        fill="currentColor"
+                        stroke="currentColor"
+                        stroke-width="1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div className="text">
+                    {" "}
+                    <p className="description">
+                      Based on feedback on my lo-fi designs, I built out screens
+                      for Version A and Version B in Figma so that the team
+                      could better visualize how each layout would look before
+                      moving on to final iterations and development.
+                    </p>
+                    <p className="description">
+                      I also tried various color combinations on both designs to
+                      test their compatibility with customization.
+                    </p>
+                  </div>
+                </div>
+                <p className="description-top-list">
+                  After comparing the two,{" "}
+                  <b>we decided to proceed with Version B</b> based on the
+                  following considerations:
+                </p>
+                <ul className="details-list-img">
+                  <li>
+                    The team liked the "storefront" aesthetic of Version A, but
+                    the design cluttered the upper portion of the profile,
+                    making content tightly packed and spacing inflexible,
+                    especially for bulkier NFTs.
+                  </li>
+                  <li>
+                    Version B was less forward in branding, but the colors and
+                    integration of NFTs as avatars still gave the interface a
+                    strong GMCafé feel, while allowing more breathing room for
+                    the profile information.
+                  </li>
+                </ul>
+                <img className="full-img" src={hifi1} />
+              </div>
+              <div className="section-content">
+                <h3>Iteration 02</h3>
+              </div>
             </section>
           </div>
-          <div className="right">placeholder</div>
         </div>
       </div>
     </main>
