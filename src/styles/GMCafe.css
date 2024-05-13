@@ -128,11 +128,11 @@
   display: flex;
   flex-flow: row nowrap;
   align-items: start;
-  gap: 72px;
 }
 
 .gmcafe .left {
-  width: 16%;
+  width: 20%;
+  min-width: 160px;
   display: flex;
   flex-flow: column nowrap;
   margin-top: 16px;
@@ -150,6 +150,12 @@
   a {
     padding: 1em;
     margin: -1em;
+  }
+}
+
+@media (max-width: 800px) {
+  .gmcafe .left {
+    display: none;
   }
 }
 
@@ -176,7 +182,7 @@
 }
 
 .gmcafe .right {
-  width: 84%;
+  width: 80%;
   display: flex;
   flex-flow: column nowrap;
   align-items: start;
