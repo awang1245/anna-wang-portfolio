@@ -104,6 +104,30 @@
   justify-content: space-between;
   align-items: start;
   row-gap: 32px;
+  column-gap: 48px;
+}
+
+.small-blurb-info {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+  align-items: start;
+  row-gap: 32px;
+  column-gap: 200px;
+}
+
+@media (max-width: 1000px) {
+  .blurb-info,
+  .small-blurb-info {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: start;
+    row-gap: 32px;
+    column-gap: 160px;
+  }
 }
 
 .blurb-item {
@@ -111,6 +135,14 @@
   flex-flow: column wrap;
   align-items: start;
   max-width: 250px;
+  gap: 4px;
+}
+
+.skill-item {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: start;
+  max-width: 350px;
   gap: 4px;
 }
 

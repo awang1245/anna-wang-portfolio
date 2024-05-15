@@ -12,19 +12,19 @@ import finalLofi from "../../public/gmcafe/final-lofi.png";
 import hifi1 from "../../public/gmcafe/hifi1.png";
 import finalHifi from "../../public/gmcafe/final-hifi.png";
 
+export const scrollToSection = (name: string) => {
+  const section = document.getElementById(name);
+  if (section) {
+    const offsetTop = section.offsetTop - 112;
+    window.scrollTo({
+      top: offsetTop,
+      behavior: "smooth",
+    });
+  }
+};
+
 function GMCafe() {
   const [isDark] = useRecoilState<boolean>(isDarkState);
-
-  const scrollToSection = (name: string) => {
-    const section = document.getElementById(name);
-    if (section) {
-      const offsetTop = section.offsetTop - 112;
-      window.scrollTo({
-        top: offsetTop,
-        behavior: "smooth",
-      });
-    }
-  };
 
   return (
     <main className={isDark ? "page-dark" : "page-light"}>

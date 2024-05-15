@@ -119,7 +119,7 @@ nav {
   gap: 48px;
 }
 
-@media (max-height: 600px) {
+@media (max-height: 600px) or (max-width: 800px) {
   .key-controls-light,
   .key-controls-dark {
     display: none;
