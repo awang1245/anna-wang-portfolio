@@ -1,4 +1,5 @@
 import "../styles/Beestar.css";
+import "../styles/GMCafe.css";
 import redesigned from "../../public/beestar/redesigned.png";
 import original from "../../public/beestar/original.png";
 import accessibility from "../../public/beestar/accessibility.png";
@@ -23,15 +24,52 @@ function Beestar() {
   return (
     <>
       <main className={isDark ? "page-dark" : "page-light"}>
-        <div className="beestar-content">
-          <section className="overview">
+        <div className="gmcafe">
+          <section className="blurb">
             <div className="grouping">
               <h1>Beestar Learning</h1>
-              <div className="subheading">Responsive Redesign | March 2024</div>
+              <div className="description">
+                Redesigning the home page of a K-8 learning platform to be more
+                accessible and user-friendly for thousands of students.
+              </div>
             </div>
-            <div className="grouping">
-              <p>
-                In this project, I redesigned{" "}
+            <div className="small-blurb-info">
+              <div className="blurb-item">
+                <div className="item-name">Role</div>
+                <div className="item-content">
+                  Front End Developer, <br />
+                  UI/UX Designer
+                </div>
+              </div>
+              <div className="blurb-item">
+                <div className="item-name">Duration</div>
+                <div className="item-content">March 2024</div>
+              </div>
+              <div className="skill-item">
+                <div className="item-name">Skills</div>
+                <div className="item-content">
+                  Responsive Design, HTML, CSS,
+                  <br />
+                  JavaScript, Figma
+                </div>
+              </div>
+            </div>
+            <a
+              href="https://awang1245.github.io/beestar-responsive-redesign/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={isDark ? "cover-img-dark" : "cover-img"}
+            >
+              <img
+                src={redesigned}
+                alt="image of the redesigned Beestar website for desktop"
+              />
+            </a>
+          </section>
+          <section className="overview">
+            <div className="section-content">
+              <h2>Overview</h2>
+              <p className="description">
                 <a
                   href="https://www.beestar.org/"
                   target="_blank"
@@ -39,15 +77,15 @@ function Beestar() {
                   className={isDark ? "hyperlink-dark" : "hyperlink"}
                 >
                   Beestar.org
-                </a>
-                , a site that offers both free and paid programs for students
-                K-8, supplementing learning in language arts, math, science,
-                among other subjects. I chose this website because I used to be
-                a part of their free math program in elementary school, which
-                had great content, but the interface was confusing and hard to
-                navigate.
+                </a>{" "}
+                is a site offering both free and paid programs for students K-8,
+                supplementing learning in language arts, math, science, among
+                other subjects. As a former student in their math program when I
+                was in elementary school, I found the interface confusing and
+                hard to navigate, despite the great learning content on the
+                site.
               </p>
-              <p>
+              <p className="description">
                 I focused on redesigning the home page, which needed to
                 accomodate both new and existing users. After identifying
                 accessibility and usability issues, I created sketches, lo-fi
@@ -56,19 +94,6 @@ function Beestar() {
                 support a broad range of screen dimensions.
               </p>
             </div>
-            <a
-              href="https://awang1245.github.io/beestar-responsive-redesign/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={
-                isDark ? "redesigned-img-dark" : "redesigned-img-light"
-              }
-            >
-              <img
-                src={redesigned}
-                alt="image of the redesigned Beestar website for desktop"
-              />
-            </a>
           </section>
           <section className="issues">
             <h2>Identifying the Problem</h2>
