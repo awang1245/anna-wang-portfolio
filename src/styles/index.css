@@ -5,17 +5,19 @@
   --cream10: #f3ece5;
   --cream15: #e6dfd9;
   --cream20: #dad2cc;
+  --cream25: #cec6bf;
   --cream30: #c2b9b2;
   --cream40: #a99f99;
-  --cream60: #7e716c;
-  --cream85: #534540;
+  --cream50: #91857f;
+  --cream65: #6c5f59;
+  --cream75: #534540;
 
   color-scheme: light dark;
   color: black;
   font-family: Avenir, Inter, system-ui, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   background-color: var(--cream5);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -61,7 +63,7 @@ ul {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: var(--cream85);
+  background-color: var(--cream75);
   transition: background-color 0.3s;
   cursor: url("/main/light-star-unfilled.svg"), default;
 }
@@ -83,20 +85,8 @@ ul {
   padding: 1em;
   margin: -1em;
 }
-
-/* .cursor {
-  position: fixed;
-  width: 48px;
-  height: 48px;
-  background-image: url("/main/star-unfilled.svg");
-  background-repeat: no-repeat;
-  pointer-events: none;
-  transform: translate(-25%, -25%);
-  z-index: 50;
-} */
-
-.light-link:hover {
-  color: var(--cream60);
+d .light-link:hover {
+  color: var(--cream50);
   cursor: url("/main/star-filled.svg"), default;
   transition: 0.3s;
 }
@@ -114,7 +104,7 @@ ul {
 }
 
 .hyperlink:hover {
-  color: var(--cream60);
+  color: var(--cream65);
   cursor: url("/main/star-filled.svg"), default;
   transition: 0.3s;
 }

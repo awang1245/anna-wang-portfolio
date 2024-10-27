@@ -202,7 +202,7 @@
 }
 
 .button-light:hover {
-  color: var(--cream60);
+  color: var(--cream65);
   cursor: url("/main/star-filled.svg"), default;
   transition: 0.3s;
 }
