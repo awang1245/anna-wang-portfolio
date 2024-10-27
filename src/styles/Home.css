@@ -88,7 +88,7 @@ main {
   flex-flow: row nowrap;
   align-items: end;
   justify-content: start;
-  padding: 12px 10px;
+  padding: 12px 0px;
   gap: 16px;
 }
 
@@ -138,7 +138,6 @@ main {
 @media (max-width: 1600px) {
   .sushi-belt {
     height: 240px;
-    /* min-height: 267.19px; */
     display: flex;
     justify-content: center;
     position: relative;
@@ -146,7 +145,7 @@ main {
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 880px) {
   .home {
     height: 100%;
   }
@@ -156,7 +155,7 @@ main {
     width: 100%;
   }
 
-  .text {
+  .home .text {
     flex-flow: column;
     padding: 0px 56px 40px;
   }
@@ -165,7 +164,7 @@ main {
 .home p,
 .welcome {
   font-size: 18px;
-  margin: 8px;
+  margin: 8px 0px;
 }
 
 .welcome {

@@ -69,8 +69,6 @@ ul {
 }
 
 .light-link {
-  font-size: 16px;
-  font-weight: 500;
   color: black;
   text-decoration: inherit;
   padding: 1em;
@@ -78,14 +76,12 @@ ul {
 }
 
 .dark-link {
-  font-size: 16px;
-  font-weight: 500;
   color: var(--cream5);
   text-decoration: inherit;
   padding: 1em;
   margin: -1em;
 }
-d .light-link:hover {
+.light-link:hover {
   color: var(--cream50);
   cursor: url("/main/star-filled.svg"), default;
   transition: 0.3s;
