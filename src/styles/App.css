@@ -41,19 +41,38 @@ nav {
 }
 
 .dark-nav {
-  background-color: rgba(83, 69, 63, 0.9);
+  background-color: rgba(83, 69, 63, 0.8);
   transition: background-color 0.3s;
 }
 
 .light-nav {
-  background-color: rgba(255, 249, 242, 0.9);
+  background-color: rgba(255, 249, 242, 0.8);
   transition: background-color 0.3s;
 }
 
+.light-nav:hover {
+  background-color: var(--cream5);
+}
+
+.dark-nav:hover {
+  background-color: var(--cream85);
+}
+
 .logo {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-duck {
+  width: 40px;
+}
+
+/* .logo {
   width: 30px;
   transform: translateY(16%);
-}
+} */
 
 .right-links {
   display: flex;
@@ -85,7 +104,7 @@ nav {
   visibility: hidden;
 }
 
-.key-controls-light {
+.key-controls {
   bottom: 0;
   position: fixed;
   width: 100%;
@@ -94,29 +113,32 @@ nav {
   padding: 18px 56px;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  background-color: rgba(255, 249, 242, 0.9);
   transition: background-color 0.3s;
-  gap: 48px;
+
+  .left {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .right {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+}
+
+.key-controls-light {
+  background-color: rgba(255, 249, 242, 0.9);
 }
 
 .key-controls-dark {
-  bottom: 0;
-  position: fixed;
-  width: 100%;
-  z-index: 20;
-  height: 96px;
-  padding: 18px 56px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: start;
-  align-items: center;
-  box-sizing: border-box;
   background-color: rgba(83, 69, 63, 0.9);
-  transition: background-color 0.3s;
-  gap: 48px;
 }
 
 @media (max-height: 600px) or (max-width: 800px) {
@@ -135,7 +157,8 @@ nav {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: start;
-  gap: 8px;
+  font-size: 12px;
+  gap: 6px;
 }
 
 .keys {
@@ -271,7 +294,7 @@ div[data-key="4"].clicked {
 }
 
 .t.clicked {
-  background-image: url("../../public/maintop-clicked.svg");
+  background-image: url("../../public/main/top-clicked.svg");
   width: 28px;
   height: 28px;
 }

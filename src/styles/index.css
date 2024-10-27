@@ -12,12 +12,11 @@
 
   color-scheme: light dark;
   color: black;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Avenir, Inter, system-ui, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-size: 16px;
   font-weight: 400;
   background-color: var(--cream5);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -25,7 +24,8 @@
 }
 
 body {
-  font-family: "objektiv-mk2";
+  /* font-family: "objektiv-mk2"; */
+  font-family: "Avenir-Roman";
   margin: 0;
   display: flex;
   place-items: center;
@@ -83,6 +83,17 @@ ul {
   padding: 1em;
   margin: -1em;
 }
+
+/* .cursor {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  background-image: url("/main/star-unfilled.svg");
+  background-repeat: no-repeat;
+  pointer-events: none;
+  transform: translate(-25%, -25%);
+  z-index: 50;
+} */
 
 .light-link:hover {
   color: var(--cream60);

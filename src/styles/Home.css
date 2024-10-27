@@ -8,7 +8,7 @@ main {
 
 .home {
   width: 100%;
-  height: calc(100vh - 160px);
+  padding-top: 32px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -18,21 +18,40 @@ main {
 
 .text {
   display: flex;
-  flex-flow: column;
-  gap: 4px;
+  flex-flow: row;
+  gap: 64px;
+  padding: 0px 160px 64px;
+  text-align: left;
 }
 
-.intro {
+.intro-left {
   font-family: "ivymode";
   font-weight: 400;
-  font-size: 44px;
+  font-size: 36px;
   line-height: 1.4;
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  gap: 16px;
+
+  .bottom {
+    color: var(--cream60);
+  }
+}
+
+.intro-right {
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  justify-content: center;
+  width: 50%;
 }
 
 .name-light {
   font-family: "ivymode";
   font-weight: 400;
-  font-size: 44px;
+  font-size: 36px;
   line-height: 1.4;
   text-decoration: inherit;
   color: black;
@@ -41,7 +60,7 @@ main {
 .name-dark {
   font-family: "ivymode";
   font-weight: 400;
-  font-size: 44px;
+  font-size: 36px;
   line-height: 1.4;
   text-decoration: inherit;
   color: var(--cream5);
@@ -70,7 +89,7 @@ main {
 
 .sushi-belt {
   height: auto;
-  min-height: 200px;
+  height: 200px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -80,8 +99,8 @@ main {
 
 @media (max-width: 1600px) {
   .sushi-belt {
-    height: auto;
-    min-height: 267.19px;
+    height: 240px;
+    /* min-height: 267.19px; */
     display: flex;
     justify-content: center;
     position: relative;
@@ -89,13 +108,19 @@ main {
   }
 }
 
-@media (max-height: 760px) {
+@media (max-width: 760px) {
   .home {
     height: 100%;
   }
 
-  .intro {
-    font-size: 40px;
+  .intro-left,
+  .intro-right {
+    width: 100%;
+  }
+
+  .text {
+    flex-flow: column;
+    padding: 0px 56px 40px;
   }
 }
 
@@ -105,12 +130,12 @@ main {
 }
 
 .welcome {
-  transform: translateY(-32px);
+  transform: translateY(-28px);
 }
 
 .featured-work {
   width: 100%;
-  min-height: calc(100vh - 160px);
+  /* min-height: calc(100vh - 160px); */
   height: fit-content;
   display: flex;
   flex-flow: column;

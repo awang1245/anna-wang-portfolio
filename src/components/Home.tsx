@@ -44,25 +44,30 @@ function Home() {
       <main className={isDark ? "page-dark" : "page-light"}>
         <div className="home">
           <div className="text">
-            <div className="intro">
-              Hi, I'm{" "}
-              <NavLink
-                className={isDark ? "name-dark" : "name-light"}
-                to="/about"
-              >
-                Anna
-              </NavLink>
-              . <br />
-              I'm a UI developer and designer studying
-              <br />
-              Computer Science and Economics at Brown University.
+            <div className="intro-left">
+              <div className="top">
+                Hi, I’m{" "}
+                <NavLink
+                  className={isDark ? "name-dark" : "name-light"}
+                  to="/about"
+                >
+                  Anna
+                </NavLink>
+                . <br />a front-end developer and
+                <br />
+                product designer.
+              </div>
+              <div className="bottom">My favorite sushi is spicy salmon.</div>
             </div>
-            <p>
-              My interests lie at the intersection of technology and design, and
-              my goal is to develop <br />
-              interfaces that inspire delightful relationships between users and
-              products.
-            </p>
+            <div className="intro-right">
+              <p>I’m a junior at Brown University studying Computer Science.</p>
+              <p>
+                I approach computing and design as ways to create meaningful
+                relationships between people and products. My style balances a
+                love for cleanliness and pixel-perfection, with empathy and
+                delight.
+              </p>
+            </div>
           </div>
           <div className="lower-intro">
             <div className="sushi-belt">
