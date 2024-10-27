@@ -65,8 +65,8 @@ function Home() {
               <p>I’m a junior at Brown University studying Computer Science.</p>
               <p className="top">
                 I approach computing and design as ways to create meaningful
-                relationships. I focus on building digital spaces that bring
-                people and products together.
+                relationships. I enjoy building digital spaces that bring people
+                and products together.
               </p>
               <p>
                 My style balances a love for cleanliness and pixel-perfection,
