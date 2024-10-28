@@ -14,13 +14,13 @@ function About() {
             <div className="text">
               <h1>About Me</h1>
               <p>
-                Hi, I'm a sophomore at Brown University studying Computer
-                Science and Business Economics. My interests lie at the
+                Hi, I’m a junior at Brown University studying Computer Science
+                and Business Economics on the side. My interests lie at the
                 intersection of design and tech, primarily through front end
                 development, user experience, and product design.
               </p>
               <p>
-                I'm always open to new opportunities— feel free to reach out at
+                I’m always open to new opportunities— feel free to reach out at
                 anna_wang@brown.edu!
               </p>
             </div>

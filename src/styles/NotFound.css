@@ -1,0 +1,44 @@
+.not-found {
+  width: 100%;
+  max-width: 1080px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  padding: 96px 0;
+}
+
+.duck-row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 88px;
+}
+
+.duck-backward {
+  transform: scaleX(-1) translateY(30%) rotate(10deg);
+}
+
+.duck-fallen {
+  transform: translateY(100%) rotate(20deg);
+}
+
+.not-found h1 {
+  font-family: "ivymode";
+  font-weight: 400;
+  font-size: 44px;
+  margin: 0;
+}
+
+@media (max-width: 720px) {
+  .duck-fallen,
+  .fifth {
+    display: none;
+  }
+
+  .error-message {
+    padding: 0 56px;
+  }
+}

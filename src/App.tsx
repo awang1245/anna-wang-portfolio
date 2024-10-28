@@ -3,7 +3,8 @@ import { HashLink } from "react-router-hash-link";
 import About from "./components/About";
 import Home from "./components/Home";
 // import Play from "./components/Play";
-import Work from "./components/Work";
+// import Work from "./components/Work";
+import NotFound from "./components/NotFound";
 import "./styles/App.css";
 import {
   NavLink,
@@ -66,20 +67,25 @@ function App() {
   }, [location]);
 
   useEffect(() => {
-    // Define actions for different keys
+    // actions for different keys defined here
     const keyActions: { [key: string]: () => void } = {
       "0": () => navigate("/"),
-      "1": scrollToWork,
-      // "2": () => navigate("/work"),
-      // "3": () => navigate("/play"),
+      "1": () => {
+        navigate("/");
+        setTimeout(() => {
+          scrollToWork();
+        }, 50);
+      },
       "2": () => navigate("/about"),
-      "3": () =>
-        window.open(
-          "https://awang1245.github.io/anna-wang-portfolio/assets/resume-DyKsdSxX.pdf",
-          "_blank"
-        ),
+      "3": () => {
+        setTimeout(() => {
+          window.open(
+            "https://anna-wang.dev/assets/resume-D2k9VXnM.pdf",
+            "_blank"
+          );
+        }, 300); // short delay added so keyup event can be registered in time
+      },
       d: () => setIsDark((prevIsDark) => !prevIsDark),
-      // f: scrollToFeatured,
       t: scrollToTop,
       h: () => setIsShown((prevIsShown) => !prevIsShown),
     };
@@ -91,13 +97,7 @@ function App() {
         keyActions[e.key](); // Execute action for key
       }
 
-      if (
-        e.key === "0" ||
-        e.key === "1" ||
-        e.key === "2" ||
-        e.key === "3"
-        // || e.key === "4"
-      ) {
+      if (e.key === "0" || e.key === "1" || e.key === "2" || e.key === "3") {
         const key = document.querySelector(`[data-key="${e.key}"]`);
         if (key && !key.classList.contains("clicked")) {
           key.classList.add("clicked");
@@ -112,13 +112,8 @@ function App() {
 
     const handleKeyUp = (e: KeyboardEvent) => {
       // Handle removing "clicked" class for keys
-      if (
-        e.key === "0" ||
-        e.key === "1" ||
-        e.key === "2" ||
-        e.key === "3"
-        // || e.key === "4"
-      ) {
+      if (e.key === "0" || e.key === "1" || e.key === "2" || e.key === "3") {
+        console.log("made it here");
         const key = document.querySelector(`[data-key="${e.key}"]`);
         if (key && key.classList.contains("clicked")) {
           key.classList.remove("clicked");
@@ -283,7 +278,6 @@ function App() {
                 <div data-key="1" />
                 <div data-key="2" />
                 <div data-key="3" />
-                {/* <div data-key="4" /> */}
               </ul>
               <div className="control-label">Navigate to Section</div>
             </div>
@@ -293,14 +287,6 @@ function App() {
               </ul>
               <div className="control-label">Dark/Light</div>
             </div>
-            {/* {location.pathname === "/" && (
-              <div className="keys-label">
-                <ul className="keys">
-                  <div className="f" />
-                </ul>
-                <div className="control-label">Featured Work</div>
-              </div>
-            )} */}
             {hasScrolled && (
               <div className="keys-label">
                 <ul className="keys">
@@ -321,17 +307,20 @@ function App() {
         </div>
       )}
       <Routes>
+        {/* main pages */}
         <Route path="/" element={<Home />} />
-
         {/* <Route path="/work" element={<Work />} /> */}
         {/* <Route path="/play" element={<Play />} /> */}
         <Route path="/about" element={<About />} />
-        {/* add a not found page */}
+
         {/* routes to work pages */}
         <Route path="/beestar-redesign" element={<Beestar />} />
         <Route path="/ab-testing" element={<ABTesting />} />
         <Route path="/kopi-development" element={<KopiDevelopment />} />
         <Route path="/gmcafe" element={<GMCafe />} />
+
+        {/* catch all 404 not found page */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </article>
   );
