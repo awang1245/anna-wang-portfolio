@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import "../styles/Work.css";
 import { useRecoilState } from "recoil";
 import { isDarkState } from "./atoms";

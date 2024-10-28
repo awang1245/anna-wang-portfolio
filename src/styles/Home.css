@@ -8,7 +8,6 @@ main {
 
 .home {
   width: 100%;
-  padding-top: 32px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -16,12 +15,13 @@ main {
   text-align: center;
 }
 
-.home .text {
+.home-text {
   display: flex;
   flex-flow: row;
   align-items: start;
-  gap: 64px;
-  padding: 0px 136px 64px;
+  gap: 56px;
+  max-width: 1080px;
+  padding: 40px 0px;
   text-align: left;
 }
 
@@ -43,6 +43,118 @@ main {
 
 .fun-facts-dark {
   color: var(--cream25);
+}
+
+.facts {
+  height: 100px;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+
+  li {
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    text-align: start;
+    animation: slide-up 16s infinite;
+  }
+}
+
+@keyframes slide-up {
+  0%,
+  7.5% {
+    transform: translateY(0); /* item 1 */
+    animation-timing-function: ease-in;
+  }
+
+  10% {
+    transform: translateY(-105%);
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+
+  11%,
+  20% {
+    transform: translateY(-100%);
+    animation-timing-function: ease-in;
+  }
+
+  22.5% {
+    transform: translateY(-205%);
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+
+  23%,
+  32.5% {
+    transform: translateY(-200%); /* move to item 3 */
+    animation-timing-function: ease-in;
+  }
+
+  35% {
+    transform: translateY(-305%);
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+
+  36%,
+  45% {
+    transform: translateY(-300%); /* move to item 4 */
+    animation-timing-function: ease-in;
+  }
+
+  47.5% {
+    transform: translateY(-405%);
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+
+  48.5%,
+  57.5% {
+    transform: translateY(-400%); /* move to item 5 */
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: translateY(-505%);
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+
+  61%,
+  70% {
+    transform: translateY(-500%); /* move to item 6 */
+    animation-timing-function: ease-in;
+  }
+
+  72.5% {
+    transform: translateY(-605%);
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+
+  73.5%,
+  82.5% {
+    transform: translateY(-600%); /* move to item 7 */
+    animation-timing-function: ease-in;
+  }
+
+  85% {
+    transform: translateY(-705%);
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+
+  86%,
+  95% {
+    transform: translateY(-700%); /* move to item 8 */
+    animation-timing-function: ease-in;
+  }
+
+  97.5% {
+    transform: translateY(-805%);
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+
+  98.5%,
+  100% {
+    transform: translateY(-800%); /* move to copy of item 1 */
+    animation-timing-function: ease-in;
+  }
 }
 
 .intro-right {
@@ -93,7 +205,7 @@ main {
 }
 
 .social-light {
-  color: var(--cream75);
+  color: black;
   padding: 1em;
   margin: -1em;
 }
@@ -155,9 +267,15 @@ main {
     width: 100%;
   }
 
-  .home .text {
+  .home-text {
     flex-flow: column;
     padding: 0px 56px 40px;
+  }
+}
+
+@media (max-width: 540px) {
+  .facts {
+    height: 150px;
   }
 }
 
@@ -173,7 +291,6 @@ main {
 
 .featured-work {
   width: 100%;
-  /* min-height: calc(100vh - 160px); */
   height: fit-content;
   display: flex;
   flex-flow: column;
@@ -184,8 +301,9 @@ main {
   margin-bottom: 120px;
 }
 
-@media (max-width: 1160px) {
-  .featured-work {
+@media (max-width: 1200px) {
+  .featured-work,
+  .home-text {
     padding: 0px 56px;
   }
 }

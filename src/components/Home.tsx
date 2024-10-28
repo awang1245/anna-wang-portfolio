@@ -43,7 +43,7 @@ function Home() {
     <>
       <main className={isDark ? "page-dark" : "page-light"}>
         <div className="home">
-          <div className="text">
+          <div className="home-text">
             <div className="intro-left">
               <div>
                 Hi, I’m{" "}
@@ -58,7 +58,17 @@ function Home() {
                 product designer.
               </div>
               <div className={isDark ? "fun-facts-dark" : "fun-facts-light"}>
-                My favorite sushi is spicy salmon.
+                <ul className="facts">
+                  <li>My favorite sushi is spicy salmon.</li>
+                  <li>I LOVE ducks.</li>
+                  <li>I pet kitties even though I'm allergic to them.</li>
+                  <li>I study economics (sometimes).</li>
+                  <li>I'm a bit of a caffeine addict.</li>
+                  <li>I grew up in Philadelphia area.</li>
+                  <li>I also dabble in publication and pet apparel design.</li>
+                  <li>I'm a huge Studio Ghibli fan.</li>
+                  <li>My favorite sushi is spicy salmon.</li>
+                </ul>
               </div>
             </div>
             <div className="intro-right">

@@ -71,7 +71,7 @@ nav {
 
 .logo:hover {
   .logo-duck {
-    animation: shake 500ms infinite;
+    animation: shake 300ms 3;
     animation-timing-function: linear;
   }
 }
@@ -167,14 +167,7 @@ nav {
   ); */
 }
 
-@media (max-width: 880px) {
-  .key-controls-light,
-  .key-controls-dark {
-    display: none;
-  }
-}
-
-@media (max-height: 600px) or (max-width: 480px) {
+@media (max-width: 880px) or (max-height: 640px) {
   .key-controls-light,
   .key-controls-dark {
     display: none;
