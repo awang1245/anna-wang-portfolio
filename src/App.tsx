@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
+import { HashLink } from "react-router-hash-link";
 import About from "./components/About";
 import Home from "./components/Home";
-import Play from "./components/Play";
+// import Play from "./components/Play";
 import Work from "./components/Work";
 import "./styles/App.css";
 import {
@@ -27,10 +28,12 @@ function App() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const scrollToFeatured = () => {
+  const scrollToWork = () => {
     const featuredDiv = document.getElementById("featured");
     if (featuredDiv) {
       featuredDiv.scrollIntoView({ behavior: "smooth" });
+      // update url, without triggering re-render
+      window.history.replaceState(null, "", "/#featured");
     }
   };
 
@@ -66,21 +69,23 @@ function App() {
     // Define actions for different keys
     const keyActions: { [key: string]: () => void } = {
       "0": () => navigate("/"),
-      "1": () => navigate("/work"),
-      "2": () => navigate("/play"),
-      "3": () => navigate("/about"),
-      "4": () =>
+      "1": scrollToWork,
+      // "2": () => navigate("/work"),
+      // "3": () => navigate("/play"),
+      "2": () => navigate("/about"),
+      "3": () =>
         window.open(
           "https://awang1245.github.io/anna-wang-portfolio/assets/resume-DyKsdSxX.pdf",
           "_blank"
         ),
       d: () => setIsDark((prevIsDark) => !prevIsDark),
-      f: scrollToFeatured,
+      // f: scrollToFeatured,
       t: scrollToTop,
       h: () => setIsShown((prevIsShown) => !prevIsShown),
     };
 
     const handleKeyDown = (e: KeyboardEvent) => {
+      1;
       // Check if the key exists in keyActions and execute the corresponding action
       if (keyActions[e.key]) {
         keyActions[e.key](); // Execute action for key
@@ -90,8 +95,8 @@ function App() {
         e.key === "0" ||
         e.key === "1" ||
         e.key === "2" ||
-        e.key === "3" ||
-        e.key === "4"
+        e.key === "3"
+        // || e.key === "4"
       ) {
         const key = document.querySelector(`[data-key="${e.key}"]`);
         if (key && !key.classList.contains("clicked")) {
@@ -111,8 +116,8 @@ function App() {
         e.key === "0" ||
         e.key === "1" ||
         e.key === "2" ||
-        e.key === "3" ||
-        e.key === "4"
+        e.key === "3"
+        // || e.key === "4"
       ) {
         const key = document.querySelector(`[data-key="${e.key}"]`);
         if (key && key.classList.contains("clicked")) {
@@ -191,27 +196,34 @@ function App() {
           </NavLink>
           <ul className="right-links">
             <li>
-              <NavLink
+              <HashLink
+                smooth
+                className={isDark ? "dark-link" : "light-link"}
+                to="/#featured"
+              >
+                01&nbsp; Work
+              </HashLink>
+              {/* <NavLink
                 className={isDark ? "dark-link" : "light-link"}
                 to={"/work"}
               >
                 01&nbsp; Work
-              </NavLink>
+              </NavLink> */}
             </li>
-            <li>
+            {/* <li>
               <NavLink
                 className={isDark ? "dark-link" : "light-link"}
                 to={"/play"}
               >
                 02&nbsp; Play
               </NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink
                 className={isDark ? "dark-link" : "light-link"}
                 to={"/about"}
               >
-                03&nbsp; About
+                02&nbsp; About
               </NavLink>
             </li>
             <li>
@@ -221,7 +233,7 @@ function App() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                04&nbsp; Resume
+                03&nbsp; Resume
               </a>
             </li>
           </ul>
@@ -271,9 +283,9 @@ function App() {
                 <div data-key="1" />
                 <div data-key="2" />
                 <div data-key="3" />
-                <div data-key="4" />
+                {/* <div data-key="4" /> */}
               </ul>
-              <div className="control-label">Navigate to Page</div>
+              <div className="control-label">Navigate to Section</div>
             </div>
             <div className="keys-label">
               <ul className="keys">
@@ -281,14 +293,14 @@ function App() {
               </ul>
               <div className="control-label">Dark/Light</div>
             </div>
-            {location.pathname === "/" && (
+            {/* {location.pathname === "/" && (
               <div className="keys-label">
                 <ul className="keys">
                   <div className="f" />
                 </ul>
                 <div className="control-label">Featured Work</div>
               </div>
-            )}
+            )} */}
             {hasScrolled && (
               <div className="keys-label">
                 <ul className="keys">
@@ -310,8 +322,9 @@ function App() {
       )}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/work" element={<Work />} />
-        <Route path="/play" element={<Play />} />
+
+        {/* <Route path="/work" element={<Work />} /> */}
+        {/* <Route path="/play" element={<Play />} /> */}
         <Route path="/about" element={<About />} />
         {/* add a not found page */}
         {/* routes to work pages */}

@@ -57,7 +57,7 @@ main {
     align-items: start;
     justify-content: start;
     text-align: start;
-    animation: slide-up 16s infinite;
+    animation: slide-up 20s infinite;
   }
 }
 
