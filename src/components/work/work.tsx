@@ -1,9 +1,20 @@
-import "../styles/Work.css";
+import "./work.css";
 import { useRecoilState } from "recoil";
-import { isDarkState } from "./atoms";
-import { projects } from "./Projects";
-import { WorkData } from "./Home";
-import ProjectCard from "./ProjectCard";
+import { isDarkState } from "../../recoil/atoms";
+import { projects } from "../../data/projects";
+import { WorkData } from "../home/home";
+import ProjectCard from "../project_card/project_card";
+
+export const scrollToSection = (name: string) => {
+  const section = document.getElementById(name);
+  if (section) {
+    const offsetTop = section.offsetTop - 112;
+    window.scrollTo({
+      top: offsetTop,
+      behavior: "smooth",
+    });
+  }
+};
 
 function Work() {
   const [isDark] = useRecoilState<boolean>(isDarkState);

@@ -1,27 +1,17 @@
-import "../styles/GMCafe.css";
+import "./gmcafe.css";
 import { useRecoilState } from "recoil";
-import { isDarkState } from "./atoms";
-import gmcafe from "../../public/gmcafe/gmcafe.png";
-import x from "../../public/kopi/x.svg";
-import check from "../../public/kopi/check.svg";
-import interviews from "../../public/gmcafe/interviews.png";
-import personas from "../../public/gmcafe/personas.png";
-import competitors from "../../public/gmcafe/competitors.png";
-import wireframes from "../../public/gmcafe/wireframes.png";
-import finalLofi from "../../public/gmcafe/final-lofi.png";
-import hifi1 from "../../public/gmcafe/hifi1.png";
-import finalHifi from "../../public/gmcafe/final-hifi.png";
-
-export const scrollToSection = (name: string) => {
-  const section = document.getElementById(name);
-  if (section) {
-    const offsetTop = section.offsetTop - 112;
-    window.scrollTo({
-      top: offsetTop,
-      behavior: "smooth",
-    });
-  }
-};
+import { isDarkState } from "../../recoil/atoms";
+import gmcafe from "../../../public/gmcafe/gmcafe.png";
+import x from "../../../public/kopi/x.svg";
+import check from "../../../public/kopi/check.svg";
+import interviews from "../../../public/gmcafe/interviews.png";
+import personas from "../../../public/gmcafe/personas.png";
+import competitors from "../../../public/gmcafe/competitors.png";
+import wireframes from "../../../public/gmcafe/wireframes.png";
+import finalLofi from "../../../public/gmcafe/final-lofi.png";
+import hifi1 from "../../../public/gmcafe/hifi1.png";
+import finalHifi from "../../../public/gmcafe/final-hifi.png";
+import { scrollToSection } from "../work/work";
 
 function GMCafe() {
   const [isDark] = useRecoilState<boolean>(isDarkState);

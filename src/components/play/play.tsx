@@ -1,6 +1,6 @@
-import "../styles/Play.css";
+import "./play.css";
 import { useRecoilState } from "recoil";
-import { isDarkState } from "./atoms";
+import { isDarkState } from "../../recoil/atoms";
 
 function Play() {
   const [isDark] = useRecoilState<boolean>(isDarkState);

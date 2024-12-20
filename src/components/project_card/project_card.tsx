@@ -1,8 +1,8 @@
-import "../styles/ProjectCard.css";
+import "./project_card.css";
 import { useRecoilState } from "recoil";
-import { isDarkState } from "./atoms";
-import { NavLink, useLocation } from "react-router-dom";
-import { WorkData } from "./Home";
+import { isDarkState } from "../../recoil/atoms";
+import { NavLink } from "react-router-dom";
+import { WorkData } from "../home/home";
 
 interface ProjectCardProps {
   work: WorkData;
@@ -10,7 +10,6 @@ interface ProjectCardProps {
 
 function ProjectCard({ work }: ProjectCardProps) {
   const [isDark] = useRecoilState<boolean>(isDarkState);
-  const location = useLocation();
 
   return (
     <>

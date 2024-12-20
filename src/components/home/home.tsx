@@ -1,11 +1,11 @@
-import "../styles/Home.css";
+import "./home.css";
 import "@dotlottie/player-component";
 import { useEffect, useState } from "react";
-import ProjectCard from "./ProjectCard";
-import { projects } from "./Projects";
+import ProjectCard from "../project_card/project_card";
+import { projects } from "../../data/projects";
 import { useRecoilState } from "recoil";
-import { isDarkState } from "./atoms";
-import { NavLink } from "react-router-dom";
+import { isDarkState } from "../../recoil/atoms";
+import { NavLink, useLocation } from "react-router-dom";
 
 export interface WorkData {
   name: string;
@@ -19,6 +19,18 @@ export interface WorkData {
 function Home() {
   const [medScreen, setMedScreen] = useState<boolean>(false);
   const [isDark] = useRecoilState<boolean>(isDarkState);
+  const location = useLocation();
+
+  useEffect(() => {
+    // scroll to featured section if hash is present in url
+    if (location.hash) {
+      const elementId = location.hash.replace("#", "");
+      const element = document.getElementById(elementId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
 
   useEffect(() => {
     const detectScreenSize = () => {

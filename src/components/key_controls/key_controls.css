@@ -1,0 +1,214 @@
+/* main controls component */
+.key-controls {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  padding: 16px 56px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+
+  .left {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .right {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+}
+
+.key-controls-light {
+  transition: background-color 0.3s;
+  background-color: rgba(255, 249, 242, 0.8);
+  /* background-image: linear-gradient(
+    to bottom,
+    rgba(255, 249, 242, 0) 0%,
+    rgba(255, 249, 242, 0.5) 10%,
+    /* rgba(255, 249, 242, 0.7) 20%, rgba(255, 249, 242, 0.9) 100%
+  ); */
+}
+.key-controls-dark {
+  transition: background-color 0.3s;
+  background-color: rgba(83, 69, 63, 0.8);
+  /* background-image: linear-gradient(
+    to bottom,
+    rgba(83, 69, 63, 0) 0%,
+    rgba(83, 69, 63, 0.5) 10%,
+    rgba(83, 69, 63, 0.7) 20%,
+    rgba(83, 69, 63, 0.9) 100%
+  ); */
+}
+
+@media (max-width: 880px) or (max-height: 640px) {
+  .key-controls-light,
+  .key-controls-dark {
+    display: none;
+  }
+}
+
+/* individual key control */
+.control-label {
+  font-size: 14px;
+}
+
+.keys-label {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: start;
+  font-size: 12px;
+  gap: 6px;
+}
+
+.keys {
+  display: flex;
+  flex-flow: row;
+  gap: 6px;
+}
+
+/* up and down for scrolling */
+.ArrowUp {
+  background-image: url("../../public/main/up.svg");
+  width: 28px;
+  height: 28px;
+}
+
+.ArrowUp.clicked {
+  background-image: url("../../public/main/up-clicked.svg");
+  width: 28px;
+  height: 28px;
+}
+
+.ArrowDown {
+  background-image: url("../../public/main/down.svg");
+  width: 28px;
+  height: 28px;
+}
+
+.ArrowDown.clicked {
+  background-image: url("../../public/main/down-clicked.svg");
+  width: 28px;
+  height: 28px;
+}
+
+/* numerical keys for page navigation */
+div[data-key="0"] {
+  background-image: url("../../public/main/0.svg");
+  width: 28px;
+  height: 28px;
+}
+
+div[data-key="0"].clicked {
+  background-image: url("../../public/main/0-clicked.svg");
+  width: 28px;
+  height: 28px;
+}
+
+div[data-key="1"] {
+  background-image: url("../../public/main/1.svg");
+  width: 28px;
+  height: 28px;
+}
+
+div[data-key="1"].clicked {
+  background-image: url("../../public/main/1-clicked.svg");
+  width: 28px;
+  height: 28px;
+}
+
+div[data-key="2"] {
+  background-image: url("../../public/main/2.svg");
+  width: 28px;
+  height: 28px;
+}
+
+div[data-key="2"].clicked {
+  background-image: url("../../public/main/2-clicked.svg");
+  width: 28px;
+  height: 28px;
+}
+
+div[data-key="3"] {
+  background-image: url("../../public/main/3.svg");
+  width: 28px;
+  height: 28px;
+}
+
+div[data-key="3"].clicked {
+  background-image: url("../../public/main/3-clicked.svg");
+  width: 28px;
+  height: 28px;
+}
+
+div[data-key="4"] {
+  background-image: url("../../public/main/4.svg");
+  width: 28px;
+  height: 28px;
+}
+
+div[data-key="4"].clicked {
+  background-image: url("../../public/main/4-clicked.svg");
+  width: 28px;
+  height: 28px;
+}
+
+/* hide controls */
+.h {
+  background-image: url("../../public/main/hide.svg");
+  width: 28px;
+  height: 28px;
+}
+
+.h.clicked {
+  background-image: url("../../public/main/hide-clicked.svg");
+  width: 28px;
+  height: 28px;
+}
+
+/* toggle light or dark mode */
+.d {
+  background-image: url("../../public/main/dark.svg");
+  width: 28px;
+  height: 28px;
+}
+
+.d.clicked {
+  background-image: url("../../public/main/dark-clicked.svg");
+  width: 28px;
+  height: 28px;
+}
+
+/* jump to featured work */
+.f {
+  background-image: url("../../public/main/featured.svg");
+  width: 28px;
+  height: 28px;
+}
+
+.f.clicked {
+  background-image: url("../../public/main/featured-clicked.svg");
+  width: 28px;
+  height: 28px;
+}
+
+/* back to top */
+.t {
+  background-image: url("../../public/main/top.svg");
+  width: 28px;
+  height: 28px;
+}
+
+.t.clicked {
+  background-image: url("../../public/main/top-clicked.svg");
+  width: 28px;
+  height: 28px;
+}

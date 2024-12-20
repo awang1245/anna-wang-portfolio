@@ -1,7 +1,7 @@
-import "../styles/NotFound.css";
+import "./not_found.css";
 import { useRecoilState } from "recoil";
-import { isDarkState } from "./atoms";
-import ducky from "../../public/main/ducky.svg";
+import { isDarkState } from "../../recoil/atoms";
+import ducky from "../../../public/main/ducky.svg";
 import { HashLink } from "react-router-hash-link";
 
 function NotFound() {

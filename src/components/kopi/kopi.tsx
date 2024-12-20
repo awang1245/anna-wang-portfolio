@@ -1,21 +1,21 @@
-import "../styles/KopiDevelopment.css";
-import "../styles/GMCafe.css";
-import kopi from "../../public/kopi/kopi.png";
-import etsy from "../../public/kopi/etsy.png";
-import goldbelly from "../../public/kopi/goldbelly.png";
-import weee from "../../public/kopi/weee.png";
-import x from "../../public/kopi/x.svg";
-import check from "../../public/kopi/check.svg";
-import branding from "../../public/kopi/branding.png";
-import sketch from "../../public/kopi/sketch.png";
-import prototype from "../../public/kopi/prototype.png";
-import screen1 from "../../public/kopi/screen_1.png";
-import screen2 from "../../public/kopi/screen_2.png";
-import screen3 from "../../public/kopi/screen_3.png";
-import screen4 from "../../public/kopi/screen_4.png";
+import "./kopi.css";
+import "../gmcafe/gmcafe.css";
+import kopi from "../../../public/kopi/kopi.png";
+import etsy from "../../../public/kopi/etsy.png";
+import goldbelly from "../../../public/kopi/goldbelly.png";
+import weee from "../../../public/kopi/weee.png";
+import x from "../../../public/kopi/x.svg";
+import check from "../../../public/kopi/check.svg";
+import branding from "../../../public/kopi/branding.png";
+import sketch from "../../../public/kopi/sketch.png";
+import prototype from "../../../public/kopi/prototype.png";
+import screen1 from "../../../public/kopi/screen_1.png";
+import screen2 from "../../../public/kopi/screen_2.png";
+import screen3 from "../../../public/kopi/screen_3.png";
+import screen4 from "../../../public/kopi/screen_4.png";
 import { useRecoilState } from "recoil";
-import { isDarkState } from "./atoms";
-import { scrollToSection } from "./GMCafe";
+import { isDarkState } from "../../recoil/atoms";
+import { scrollToSection } from "../work/work";
 
 function KopiDevelopment() {
   const [isDark] = useRecoilState<boolean>(isDarkState);
