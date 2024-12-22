@@ -82,7 +82,7 @@
 }
 
 .cover-img:hover {
-  cursor: url("/main/star-filled.svg"), default;
+  cursor: url("/main/star-filled.svg") 12 12, default;
   img {
     transition: 0.3s;
     filter: brightness(80%);
@@ -90,7 +90,7 @@
 }
 
 .cover-img-dark:hover {
-  cursor: url("/main/light-star-filled.svg"), default;
+  cursor: url("/main/light-star-filled.svg") 12 12, default;
   img {
     transition: 0.3s;
     filter: brightness(60%);
@@ -203,13 +203,13 @@
 
 .button-light:hover {
   color: var(--cream65);
-  cursor: url("/main/star-filled.svg"), default;
+  cursor: url("/main/star-filled.svg") 12 12, default;
   transition: 0.3s;
 }
 
 .button-dark:hover {
   color: var(--cream30);
-  cursor: url("/main/light-star-filled.svg"), default;
+  cursor: url("/main/light-star-filled.svg") 12 12, default;
   transition: 0.3s;
 }
 

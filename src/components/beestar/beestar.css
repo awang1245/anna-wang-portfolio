@@ -99,7 +99,7 @@
 }
 
 .redesigned-img-light:hover {
-  cursor: url("/main/star-filled.svg"), default;
+  cursor: url("/main/star-filled.svg") 12 12, default;
   img {
     transition: 0.3s;
     filter: brightness(80%);
@@ -107,7 +107,7 @@
 }
 
 .redesigned-img-dark:hover {
-  cursor: url("/main/light-star-filled.svg"), default;
+  cursor: url("/main/light-star-filled.svg") 12 12, default;
   img {
     transition: 0.3s;
     filter: brightness(60%);
@@ -164,7 +164,7 @@
 }
 
 .original-img:hover {
-  cursor: url("/main/star-filled.svg"), default;
+  cursor: url("/main/star-filled.svg") 12 12, default;
   img {
     transition: 0.3s;
     filter: brightness(80%);
@@ -172,7 +172,7 @@
 }
 
 .original-img-dark:hover {
-  cursor: url("/main/light-star-filled.svg"), default;
+  cursor: url("/main/light-star-filled.svg") 12 12, default;
   img {
     transition: 0.3s;
     filter: brightness(60%);
@@ -242,7 +242,7 @@
 }
 
 .desktop-img:hover {
-  cursor: url("/main/star-filled.svg"), default;
+  cursor: url("/main/star-filled.svg") 12 12, default;
   img {
     transition: 0.3s;
     filter: brightness(80%);
@@ -250,7 +250,7 @@
 }
 
 .desktop-img-dark:hover {
-  cursor: url("/main/light-star-filled.svg"), default;
+  cursor: url("/main/light-star-filled.svg") 12 12, default;
   img {
     transition: 0.3s;
     filter: brightness(60%);
@@ -312,7 +312,7 @@
 }
 
 .desktop-light:hover {
-  cursor: url("/main/star-filled.svg"), default;
+  cursor: url("/main/star-filled.svg") 12 12, default;
   img {
     transition: 0.3s;
     filter: brightness(80%);
@@ -320,7 +320,7 @@
 }
 
 .desktop-dark:hover {
-  cursor: url("/main/light-star-filled.svg"), default;
+  cursor: url("/main/light-star-filled.svg") 12 12, default;
   img {
     transition: 0.3s;
     filter: brightness(60%);

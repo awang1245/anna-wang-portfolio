@@ -26,21 +26,7 @@ const Navigation = () => {
           >
             01&nbsp; Work
           </HashLink>
-          {/* <NavLink
-                className={isDark ? "dark-link" : "light-link"}
-                to={"/work"}
-              >
-                01&nbsp; Work
-              </NavLink> */}
         </li>
-        {/* <li>
-              <NavLink
-                className={isDark ? "dark-link" : "light-link"}
-                to={"/play"}
-              >
-                02&nbsp; Play
-              </NavLink>
-            </li> */}
         <li>
           <NavLink
             className={isDark ? "dark-link" : "light-link"}
@@ -49,6 +35,14 @@ const Navigation = () => {
             02&nbsp; About
           </NavLink>
         </li>
+        {/* <li>
+              <NavLink
+                className={isDark ? "dark-link" : "light-link"}
+                to={"/play"}
+              >
+                03&nbsp; Play
+              </NavLink>
+            </li> */}
         <li>
           <a
             className={isDark ? "dark-link" : "light-link"}

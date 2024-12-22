@@ -18,7 +18,7 @@
 }
 
 .card-link-light:hover {
-  cursor: url("/main/star-filled.svg"), default;
+  cursor: url("/main/star-filled.svg") 12 12, default;
   img {
     transition: 0.3s;
     filter: brightness(80%);
@@ -26,7 +26,7 @@
 }
 
 .card-link-dark:hover {
-  cursor: url("/main/light-star-filled.svg"), default;
+  cursor: url("/main/light-star-filled.svg") 12 12, default;
   img {
     transition: 0.3s;
     filter: brightness(60%);

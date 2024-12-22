@@ -33,7 +33,7 @@ body {
   place-items: center;
   width: 100vw;
   height: 100vh;
-  cursor: url("/main/star-unfilled.svg"), default;
+  cursor: url("/main/star-unfilled.svg") 12 12, default;
   overflow-x: hidden;
 }
 
@@ -73,7 +73,6 @@ ul {
 }
 
 ::selection {
-  /* background: rgba(177, 168, 161, 0.5); */
   background: rgba(242, 137, 95, 0.5);
 }
 
@@ -90,7 +89,7 @@ ul {
   justify-content: center;
   background-color: var(--cream75);
   transition: background-color 0.3s;
-  cursor: url("/main/light-star-unfilled.svg"), default;
+  cursor: url("/main/light-star-unfilled.svg") 12 12, default;
 }
 
 .light-link {
@@ -109,17 +108,17 @@ ul {
 
 .light-link:hover {
   color: var(--cream50);
-  cursor: url("/main/star-filled.svg"), default;
+  cursor: url("/main/star-filled.svg") 12 12, default;
   transition: 0.3s;
 }
 
 .dark-link:hover {
   color: var(--cream30);
-  cursor: url("/main/light-star-filled.svg"), default;
+  cursor: url("/main/light-star-filled.svg") 12 12, default;
   transition: 0.3s;
 }
 
-.light-link[href="/about"] {
+.light-link[href="/about"]:active {
   background-color: var(--cream10);
   padding: 8px 16px;
   border-radius: 50%;
@@ -133,7 +132,7 @@ ul {
 
 .hyperlink:hover {
   color: var(--cream65);
-  cursor: url("/main/star-filled.svg"), default;
+  cursor: url("/main/star-filled.svg") 12 12, default;
   transition: 0.3s;
 }
 
@@ -145,7 +144,7 @@ ul {
 
 .hyperlink-dark:hover {
   color: var(--cream30);
-  cursor: url("/main/light-star-filled.svg"), default;
+  cursor: url("/main/light-star-filled.svg") 12 12, default;
   transition: 0.3s;
 }
 

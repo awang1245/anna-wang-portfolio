@@ -4,19 +4,22 @@
   position: fixed;
   width: 100%;
   z-index: 20;
-  padding: 16px 0px;
+  padding: 12px 0px;
   display: flex;
+  flex-flow: row nowrap;
   justify-content: center;
+  align-items: center;
 }
 
 .control-wrapper {
+  height: 80px;
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  max-width: 1280px;
+  max-width: 1304px;
 
   .left {
     display: flex;
@@ -24,46 +27,42 @@
     justify-content: start;
     align-items: center;
     gap: 48px;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    padding: 12px 20px;
+    border-radius: 12px;
+  }
+
+  .left-light {
+    background-color: rgba(255, 249, 242, 0.7);
+    transition: background-color 0.3s;
+  }
+
+  .left-dark {
+    background-color: rgba(83, 69, 63, 0.7);
+    transition: background-color 0.3s;
   }
 
   .right {
     display: flex;
     justify-content: end;
     align-items: center;
+    padding: 12px 20px 0px 20px;
   }
+}
+
+.control-wrapper-hidden {
+  justify-content: end;
 }
 
 @media (max-width: 1320px) {
   .control-wrapper {
-    padding: 0px 56px;
+    padding: 0px 40px;
   }
 }
 
-.key-controls-light {
-  transition: background-color 0.3s;
-  background-color: rgba(255, 249, 242, 0.8);
-  /* background-image: linear-gradient(
-    to bottom,
-    rgba(255, 249, 242, 0) 0%,
-    rgba(255, 249, 242, 0.5) 10%,
-    /* rgba(255, 249, 242, 0.7) 20%, rgba(255, 249, 242, 0.9) 100%
-  ); */
-}
-.key-controls-dark {
-  transition: background-color 0.3s;
-  background-color: rgba(83, 69, 63, 0.8);
-  /* background-image: linear-gradient(
-    to bottom,
-    rgba(83, 69, 63, 0) 0%,
-    rgba(83, 69, 63, 0.5) 10%,
-    rgba(83, 69, 63, 0.7) 20%,
-    rgba(83, 69, 63, 0.9) 100%
-  ); */
-}
-
 @media (max-width: 880px) or (max-height: 640px) {
-  .key-controls-light,
-  .key-controls-dark {
+  .key-controls {
     display: none;
   }
 }
@@ -82,6 +81,15 @@
   gap: 6px;
 }
 
+.right-keys-label {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: end;
+  font-size: 12px;
+  gap: 6px;
+}
+
 .keys {
   display: flex;
   flex-flow: row;
@@ -95,7 +103,8 @@
   height: 28px;
 }
 
-.ArrowUp.clicked {
+.ArrowUp.clicked,
+.ArrowUp:hover {
   background-image: url("/main/up-clicked.svg");
   width: 28px;
   height: 28px;
@@ -107,7 +116,8 @@
   height: 28px;
 }
 
-.ArrowDown.clicked {
+.ArrowDown.clicked,
+.ArrowDown:hover {
   background-image: url("/main/down-clicked.svg");
   width: 28px;
   height: 28px;
@@ -120,11 +130,12 @@ div[data-key="0"] {
   height: 28px;
 }
 
-div[data-key="0"].clicked {
+/* div[data-key="0"].clicked,
+div[data-key="0"]:hover {
   background-image: url("/main/0-clicked.svg");
   width: 28px;
   height: 28px;
-}
+} */
 
 div[data-key="1"] {
   background-image: url("/main/1.svg");
@@ -132,7 +143,8 @@ div[data-key="1"] {
   height: 28px;
 }
 
-div[data-key="1"].clicked {
+div[data-key="1"].clicked,
+div[data-key="1"]:hover {
   background-image: url("/main/1-clicked.svg");
   width: 28px;
   height: 28px;
@@ -144,7 +156,8 @@ div[data-key="2"] {
   height: 28px;
 }
 
-div[data-key="2"].clicked {
+div[data-key="2"].clicked,
+div[data-key="2"]:hover {
   background-image: url("/main/2-clicked.svg");
   width: 28px;
   height: 28px;
@@ -156,7 +169,8 @@ div[data-key="3"] {
   height: 28px;
 }
 
-div[data-key="3"].clicked {
+div[data-key="3"].clicked,
+div[data-key="3"]:hover {
   background-image: url("/main/3-clicked.svg");
   width: 28px;
   height: 28px;
@@ -168,11 +182,12 @@ div[data-key="4"] {
   height: 28px;
 }
 
-div[data-key="4"].clicked {
+/* div[data-key="4"].clicked,
+div[data-key="4"]:hover {
   background-image: url("/main/4-clicked.svg");
   width: 28px;
   height: 28px;
-}
+} */
 
 /* hide controls */
 .h {
@@ -181,7 +196,8 @@ div[data-key="4"].clicked {
   height: 28px;
 }
 
-.h.clicked {
+.h.clicked,
+.h:hover {
   background-image: url("/main/hide-clicked.svg");
   width: 28px;
   height: 28px;
@@ -194,21 +210,9 @@ div[data-key="4"].clicked {
   height: 28px;
 }
 
-.d.clicked {
+.d.clicked,
+.d:hover {
   background-image: url("/main/dark-clicked.svg");
-  width: 28px;
-  height: 28px;
-}
-
-/* jump to featured work */
-.f {
-  background-image: url("/main/featured.svg");
-  width: 28px;
-  height: 28px;
-}
-
-.f.clicked {
-  background-image: url("/main/featured-clicked.svg");
   width: 28px;
   height: 28px;
 }
@@ -220,7 +224,8 @@ div[data-key="4"].clicked {
   height: 28px;
 }
 
-.t.clicked {
+.t.clicked,
+.t:hover {
   background-image: url("/main/top-clicked.svg");
   width: 28px;
   height: 28px;
