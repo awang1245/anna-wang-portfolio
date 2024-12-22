@@ -139,7 +139,11 @@ function Home() {
           </div>
           <div className="lower-intro">
             <div className="sushi-belt">
-              <div className="sushi-belt-content">
+              <div
+                className={`sushi-content ${
+                  isDark ? "sushi-content-dark" : "sushi-content-light"
+                }`}
+              >
                 <script
                   src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
                   type="module"
@@ -159,7 +163,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="featured-work" id="featured">
+        <div className="featured-work" id="work">
           {/* <h1>Featured Work</h1> */}
           <div className="featured-cards">
             {projects

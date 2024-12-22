@@ -22,7 +22,7 @@ const Navigation = () => {
           <HashLink
             smooth
             className={isDark ? "dark-link" : "light-link"}
-            to="/#featured"
+            to="/#work"
           >
             01&nbsp; Work
           </HashLink>

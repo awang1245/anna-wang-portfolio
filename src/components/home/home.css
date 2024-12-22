@@ -280,13 +280,13 @@ main {
   overflow-x: hidden;
 }
 
-.sushi-belt-content {
+.sushi-content {
   min-width: 2560px;
   position: relative;
 }
 
-.sushi-belt-content::before,
-.sushi-belt-content::after {
+.sushi-content::before,
+.sushi-content::after {
   content: "";
   position: absolute;
   top: 0;
@@ -296,25 +296,47 @@ main {
   pointer-events: none;
 }
 
-.sushi-belt-content::before {
+.sushi-content-light::before {
   left: 0;
   background: linear-gradient(
     to right,
     rgba(255, 249, 242, 1) 0%,
     rgba(255, 249, 242, 0.9) 20%,
     rgba(255, 249, 242, 0.7) 40%,
-    rgba(255, 255, 255, 0) 100%
+    rgba(255, 249, 242, 0) 100%
   );
 }
 
-.sushi-belt-content::after {
+.sushi-content-light::after {
   right: 0;
   background: linear-gradient(
     to left,
     rgba(255, 249, 242, 1) 0%,
     rgba(255, 249, 242, 0.9) 20%,
     rgba(255, 249, 242, 0.7) 40%,
-    rgba(255, 255, 255, 0) 100%
+    rgba(255, 249, 242, 0) 100%
+  );
+}
+
+.sushi-content-dark::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(83, 69, 63, 1) 0%,
+    rgba(83, 69, 63, 0.9) 20%,
+    rgba(83, 69, 63, 0.7) 40%,
+    rgba(83, 69, 63, 0) 100%
+  );
+}
+
+.sushi-content-dark::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(83, 69, 63, 1) 0%,
+    rgba(83, 69, 63, 0.9) 20%,
+    rgba(83, 69, 63, 0.7) 40%,
+    rgba(83, 69, 63, 0) 100%
   );
 }
 

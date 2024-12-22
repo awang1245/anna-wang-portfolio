@@ -32,7 +32,7 @@ const KeyControls = ({ hasScrolled }: KeyControlsProps) => {
     const keyActions: { [key: string]: () => void } = {
       // "0": () => navigate("/"),
       "1": () => {
-        navigate("/#featured");
+        navigate("/#work");
         setTimeout(() => {
           scrollToWork();
         }, 50);
