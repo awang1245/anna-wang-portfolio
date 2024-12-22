@@ -270,18 +270,56 @@ main {
 }
 
 .sushi-belt {
-  height: auto;
-  height: 200px;
+  height: 240px;
   width: 100%;
+  max-width: 2560px;
   display: flex;
   justify-content: center;
   position: relative;
+  margin: 0 auto;
   overflow-x: hidden;
+}
+
+.sushi-belt-content {
+  min-width: 2560px;
+  position: relative;
+}
+
+.sushi-belt-content::before,
+.sushi-belt-content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.sushi-belt-content::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(255, 249, 242, 1) 0%,
+    rgba(255, 249, 242, 0.9) 20%,
+    rgba(255, 249, 242, 0.7) 40%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.sushi-belt-content::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(255, 249, 242, 1) 0%,
+    rgba(255, 249, 242, 0.9) 20%,
+    rgba(255, 249, 242, 0.7) 40%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 @media (max-width: 1600px) {
   .sushi-belt {
-    height: 240px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -289,7 +327,7 @@ main {
   }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 1024px) {
   .home {
     height: 100%;
   }
@@ -302,10 +340,15 @@ main {
   .home-text {
     flex-flow: column;
     padding: 0px 56px 40px;
+    gap: 16px;
   }
 }
 
 @media (max-width: 540px) {
+  .home-text {
+    gap: 0px;
+  }
+
   .facts {
     height: 150px;
   }

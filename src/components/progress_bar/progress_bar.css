@@ -19,6 +19,6 @@
 .progress-star {
   height: 24px;
   position: absolute;
-  transform: translateY(-54%);
+  transform: translateY(-53%);
   visibility: hidden;
 }

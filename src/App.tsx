@@ -22,7 +22,7 @@ function App() {
 
   return (
     <article className={isDark ? "dark-mode" : "light-mode"}>
-      <header>
+      <header className={isDark ? "dark-header" : "light-header"}>
         <Navigation />
         <ProgressBar setHasScrolled={setHasScrolled} />
       </header>

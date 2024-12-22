@@ -4,12 +4,19 @@
   position: fixed;
   width: 100%;
   z-index: 20;
-  padding: 16px 56px;
+  padding: 16px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.control-wrapper {
+  width: 100%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
+  max-width: 1280px;
 
   .left {
     display: flex;
@@ -23,6 +30,12 @@
     display: flex;
     justify-content: end;
     align-items: center;
+  }
+}
+
+@media (max-width: 1320px) {
+  .control-wrapper {
+    padding: 0px 56px;
   }
 }
 

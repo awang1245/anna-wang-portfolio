@@ -108,44 +108,46 @@ const KeyControls = ({ hasScrolled }: KeyControlsProps) => {
         isDark ? "key-controls-dark" : "key-controls-light"
       }`}
     >
-      <div className="left">
-        <div className="keys-label">
-          <ul className="keys">
-            <div className="ArrowUp" />
-            <div className="ArrowDown" />
-          </ul>
-          <div className="control-label">Scroll</div>
-        </div>
-        <div className="keys-label">
-          <ul className="keys">
-            {/* <div data-key="0" /> */}
-            <div data-key="1" />
-            <div data-key="2" />
-            <div data-key="3" />
-          </ul>
-          <div className="control-label">Navigate to Section</div>
-        </div>
-        <div className="keys-label">
-          <ul className="keys">
-            <div className="d" />
-          </ul>
-          <div className="control-label">Dark/Light</div>
-        </div>
-        {hasScrolled && (
+      <div className="control-wrapper">
+        <div className="left">
           <div className="keys-label">
             <ul className="keys">
-              <div className="t" />
+              <div className="ArrowUp" />
+              <div className="ArrowDown" />
             </ul>
-            <div className="control-label">Back to Top</div>
+            <div className="control-label">Scroll</div>
           </div>
-        )}
-      </div>
-      <div className="right">
-        <div className="keys-label">
-          <ul className="keys">
-            <div className="h" />
-          </ul>
-          <div className="control-label">Hide</div>
+          <div className="keys-label">
+            <ul className="keys">
+              {/* <div data-key="0" /> */}
+              <div data-key="1" />
+              <div data-key="2" />
+              <div data-key="3" />
+            </ul>
+            <div className="control-label">Navigate to Section</div>
+          </div>
+          <div className="keys-label">
+            <ul className="keys">
+              <div className="d" />
+            </ul>
+            <div className="control-label">Dark/Light</div>
+          </div>
+          {hasScrolled && (
+            <div className="keys-label">
+              <ul className="keys">
+                <div className="t" />
+              </ul>
+              <div className="control-label">Back to Top</div>
+            </div>
+          )}
+        </div>
+        <div className="right">
+          <div className="keys-label">
+            <ul className="keys">
+              <div className="h" />
+            </ul>
+            <div className="control-label">Hide</div>
+          </div>
         </div>
       </div>
     </div>

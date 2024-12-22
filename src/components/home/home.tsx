@@ -17,7 +17,6 @@ export interface WorkData {
 }
 
 function Home() {
-  const [medScreen, setMedScreen] = useState<boolean>(false);
   const [isDark] = useRecoilState<boolean>(isDarkState);
   const location = useLocation();
 
@@ -31,25 +30,6 @@ function Home() {
       }
     }
   }, [location]);
-
-  useEffect(() => {
-    const detectScreenSize = () => {
-      const windowWidth = window.innerWidth;
-      setMedScreen(windowWidth <= 2400);
-    };
-
-    detectScreenSize();
-
-    const handleResize = () => {
-      detectScreenSize();
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  });
 
   return (
     <>
@@ -65,9 +45,9 @@ function Home() {
                 >
                   Anna
                 </NavLink>
-                . <br />a front-end developer and
+                . <br />a product designer and
                 <br />
-                product designer.
+                front-end developer.
               </div>
               <div className={isDark ? "fun-facts-dark" : "fun-facts-light"}>
                 <ul className="facts">
@@ -77,7 +57,7 @@ function Home() {
                   <li>I study economics (sometimes).</li>
                   <li>I'm a bit of a caffeine addict.</li>
                   <li>I grew up in Philadelphia area.</li>
-                  <li>I also dabble in publication and pet apparel design.</li>
+                  <li>I started designing in middle school.</li>
                   <li>I'm a huge Studio Ghibli fan.</li>
                   <li>My favorite sushi is spicy salmon.</li>
                 </ul>
@@ -159,19 +139,20 @@ function Home() {
           </div>
           <div className="lower-intro">
             <div className="sushi-belt">
-              <script
-                src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
-                type="module"
-              ></script>
+              <div className="sushi-belt-content">
+                <script
+                  src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                  type="module"
+                ></script>
 
-              <dotlottie-player
-                src="https://lottie.host/29b13877-8aed-4c2c-9298-c4e09e1c28f4/5BKcZ0di5y.json"
-                background="transparent"
-                style={medScreen ? { minWidth: "2850px" } : {}}
-                speed="0.3"
-                loop
-                autoplay
-              ></dotlottie-player>
+                <dotlottie-player
+                  src="https://lottie.host/29b13877-8aed-4c2c-9298-c4e09e1c28f4/5BKcZ0di5y.json"
+                  background="transparent"
+                  speed="0.3"
+                  loop
+                  autoplay
+                ></dotlottie-player>
+              </div>
             </div>
             <div className="welcome">
               Welcome, make yourself comfortable, and enjoy your stay.
