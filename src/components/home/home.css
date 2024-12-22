@@ -37,12 +37,44 @@ main {
   gap: 12px;
 }
 
+.basic-intro {
+  animation: slide-from-left 500ms 1;
+}
+
+@keyframes slide-from-left {
+  0%,
+  25% {
+    visibility: hidden;
+    transform: translateX(-40%);
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes slide-from-bottom {
+  0%,
+  25% {
+    visibility: hidden;
+    transform: translateY(60%);
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    visibility: visible;
+  }
+}
+
 .fun-facts-light {
   color: var(--cream65);
+  animation: slide-from-bottom 500ms 1;
 }
 
 .fun-facts-dark {
   color: var(--cream25);
+  animation: slide-from-bottom 600ms 1;
 }
 
 .facts {
@@ -308,13 +340,13 @@ main {
   }
 }
 
-.featured-work h1 {
+/* .featured-work h1 {
   font-family: "ivymode";
   font-weight: 400;
   font-size: 44px;
   padding: 0 0 24px 0;
   margin: 0;
-}
+} */
 
 .featured-cards {
   display: grid;

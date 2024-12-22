@@ -20,22 +20,23 @@
   }
 }
 
-.beestar-content h1 {
+/* .beestar-content h1 {
   font-family: "ivymode";
   font-weight: 400;
   font-size: 64px;
   padding: 0;
   margin: 0;
-}
+} */
 
-.beestar-content h2 {
+/* .beestar-content h2 {
   font-family: "ivymode";
   font-weight: 400;
   font-size: 44px;
   padding: 0 0 24px 0;
   margin: 0;
-}
+} */
 
+/* 
 .beestar-content h3 {
   font-family: "ivymode";
   font-weight: 400;
@@ -43,7 +44,7 @@
   padding: 0 0 16px 0;
   line-height: 90%;
   margin: 0;
-}
+} */
 
 .beestar-content img {
   border: 1.5px solid black;

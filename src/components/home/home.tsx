@@ -57,7 +57,7 @@ function Home() {
         <div className="home">
           <div className="home-text">
             <div className="intro-left">
-              <div>
+              <div className="basic-intro">
                 Hi, I’m{" "}
                 <NavLink
                   className={isDark ? "name-dark" : "name-light"}
@@ -179,7 +179,7 @@ function Home() {
           </div>
         </div>
         <div className="featured-work" id="featured">
-          <h1>Featured Work</h1>
+          {/* <h1>Featured Work</h1> */}
           <div className="featured-cards">
             {projects
               .filter((work) => work.featured)

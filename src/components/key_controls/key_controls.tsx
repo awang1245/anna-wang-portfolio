@@ -30,7 +30,7 @@ const KeyControls = ({ hasScrolled }: KeyControlsProps) => {
   useEffect(() => {
     // actions for different keys defined here
     const keyActions: { [key: string]: () => void } = {
-      "0": () => navigate("/"),
+      // "0": () => navigate("/"),
       "1": () => {
         navigate("/#featured");
         setTimeout(() => {
@@ -118,7 +118,7 @@ const KeyControls = ({ hasScrolled }: KeyControlsProps) => {
         </div>
         <div className="keys-label">
           <ul className="keys">
-            <div data-key="0" />
+            {/* <div data-key="0" /> */}
             <div data-key="1" />
             <div data-key="2" />
             <div data-key="3" />

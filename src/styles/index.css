@@ -1,4 +1,4 @@
-/* Selects the root element of the document:
+/* selects the root element of the document:
    <html> in the case of HTML */
 :root {
   --cream5: #fff9f2;
@@ -14,11 +14,13 @@
 
   color-scheme: light dark;
   color: black;
-  font-family: Avenir, Inter, system-ui, Helvetica, Arial, sans-serif;
+  font-family: "Avenir LT", Avenir, Inter, system-ui, Helvetica, Arial,
+    sans-serif;
   line-height: 1.5;
   font-size: 16px;
   font-weight: 500;
   background-color: var(--cream5);
+  /* to improve cross-platform font performance */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -26,8 +28,6 @@
 }
 
 body {
-  /* font-family: "objektiv-mk2"; */
-  font-family: "Avenir-Roman";
   margin: 0;
   display: flex;
   place-items: center;
@@ -42,14 +42,39 @@ main {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-family: "ivymode";
+  font-weight: 400;
+  font-size: 64px;
+  padding: 0;
+  margin: 0;
   line-height: 1.1;
+}
+
+h2 {
+  font-family: "ivymode";
+  font-weight: 400;
+  font-size: 44px;
+  padding: 0 0 24px 0;
+  margin: 0;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 20px;
+  padding: 0 0 16px 0;
+  line-height: 90%;
+  margin: 0;
 }
 
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+::selection {
+  background: rgba(177, 168, 161, 0.5);
+  /* background: rgba(242, 137, 95, 0.5); */
 }
 
 .page-light {
@@ -145,4 +170,101 @@ button:focus-visible {
 
 b {
   font-weight: 500;
+}
+
+/* use webfont version of avenir so works cross-platform */
+@font-face {
+  font-family: "Avenir LT";
+  src: url("/fonts/avenir-light.woff2") format("woff2"),
+    url("/fonts/avenir-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir LT";
+  src: url("/fonts/avenir-light-oblique.woff2") format("woff2"),
+    url("/fonts/avenir-light-oblique.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Avenir LT";
+  src: url("/fonts/avenir-book.woff2") format("woff2"),
+    url("/fonts/avenir-book.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir LT";
+  src: url("/fonts/avenir-book-oblique.woff2") format("woff2"),
+    url("/fonts/avenir-book-oblique.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Avenir LT";
+  src: url("/fonts/avenir-roman.woff2") format("woff2"),
+    url("/fonts/avenir-roman.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir LT";
+  src: url("/fonts/avenir-roman-italic.woff2") format("woff2"),
+    url("/fonts/avenir-roman-italic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Avenir LT";
+  src: url("/fonts/avenir-medium.woff2") format("woff2"),
+    url("/fonts/avenir-medium.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir LT";
+  src: url("/fonts/avenir-medium-italic.woff2") format("woff2"),
+    url("/fonts/avenir-medium-italic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Avenir LT";
+  src: url("/fonts/avenir-medium.woff2") format("woff2"),
+    url("/fonts/avenir-medium.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir LT";
+  src: url("/fonts/avenir-medium-italic.woff2") format("woff2"),
+    url("/fonts/avenir-medium-italic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Avenir LT";
+  src: url("/fonts/avenir-heavy.woff2") format("woff2"),
+    url("/fonts/avenir-heavy.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir LT";
+  src: url("/fonts/avenir-heavy-italic.woff2") format("woff2"),
+    url("/fonts/avenir-heavy-italic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
 }
