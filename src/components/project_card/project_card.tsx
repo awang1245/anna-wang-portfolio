@@ -3,17 +3,25 @@ import { useRecoilState } from "recoil";
 import { isDarkState } from "../../recoil/atoms";
 import { NavLink } from "react-router-dom";
 import { WorkData } from "../home/home";
+import { useInView } from "react-intersection-observer";
 
 interface ProjectCardProps {
   work: WorkData;
 }
 
-function ProjectCard({ work }: ProjectCardProps) {
+const ProjectCard = ({ work }: ProjectCardProps) => {
   const [isDark] = useRecoilState<boolean>(isDarkState);
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.3,
+  });
 
   return (
     <>
-      <div className="card-back">
+      <div
+        className={`card-back ${inView ? "card-back-visible" : ""}`}
+        ref={ref}
+      >
         {work.nav ? (
           <NavLink
             className={isDark ? "card-link-dark" : "card-link-light"}
@@ -55,6 +63,6 @@ function ProjectCard({ work }: ProjectCardProps) {
       </div>
     </>
   );
-}
+};
 
 export default ProjectCard;
