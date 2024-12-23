@@ -13,7 +13,7 @@ const Navigation = () => {
     <nav className={isDark ? "dark-nav" : "light-nav"}>
       <NavLink className={isDark ? "dark-link" : "light-link"} to="/">
         <div className="logo">
-          <img src={ducky} className="logo-duck" />
+          <img src={ducky} className="logo-duck" alt="vector art of duck" />
           Anna Wang
         </div>
       </NavLink>

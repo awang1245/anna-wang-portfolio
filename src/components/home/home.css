@@ -39,6 +39,10 @@ main {
   opacity: 0;
 }
 
+.basic-intro {
+  max-width: 400px;
+}
+
 @keyframes slide-from-bottom {
   0% {
     opacity: 0;
@@ -336,6 +340,11 @@ main {
     padding: 0px 56px 40px;
     gap: 16px;
   }
+
+  .welcome {
+    padding: 0px 56px;
+    text-align: start;
+  }
 }
 
 @media (max-width: 540px) {
@@ -355,6 +364,7 @@ main {
 }
 
 .welcome {
+  max-width: 1080px;
   animation: slide-from-bottom-welcome 600ms ease-out forwards;
   animation-delay: 1s;
   opacity: 0;

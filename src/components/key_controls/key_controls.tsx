@@ -109,30 +109,44 @@ const KeyControls = ({ hasScrolled }: KeyControlsProps) => {
             <div className={`left ${isDark ? "left-dark" : "left-light"}`}>
               <div className="keys-label">
                 <ul className="keys">
-                  <div className="ArrowUp" />
-                  <div className="ArrowDown" />
+                  <li>
+                    <div className="ArrowUp" />
+                  </li>
+                  <li>
+                    <div className="ArrowDown" />
+                  </li>
                 </ul>
                 <div className="control-label">Scroll</div>
               </div>
               <div className="keys-label">
                 <ul className="keys">
                   {/* <div data-key="0" /> */}
-                  <div data-key="1" onClick={keyActions["1"]} />
-                  <div data-key="2" onClick={keyActions["2"]} />
-                  <div data-key="3" onClick={keyActions["3"]} />
+                  <li>
+                    <div data-key="1" onClick={keyActions["1"]} />
+                  </li>
+                  <li>
+                    <div data-key="2" onClick={keyActions["2"]} />
+                  </li>
+                  <li>
+                    <div data-key="3" onClick={keyActions["3"]} />
+                  </li>
                 </ul>
                 <div className="control-label">Navigate to Section</div>
               </div>
               <div className="keys-label">
                 <ul className="keys">
-                  <div className="d" onClick={keyActions["d"]} />
+                  <li>
+                    <div className="d" onClick={keyActions["d"]} />
+                  </li>
                 </ul>
                 <div className="control-label">Dark/Light</div>
               </div>
               {hasScrolled && (
                 <div className="keys-label">
                   <ul className="keys">
-                    <div className="t" onClick={keyActions["t"]} />
+                    <li>
+                      <div className="t" onClick={keyActions["t"]} />
+                    </li>
                   </ul>
                   <div className="control-label">Back to Top</div>
                 </div>
@@ -141,7 +155,9 @@ const KeyControls = ({ hasScrolled }: KeyControlsProps) => {
             <div className={`right ${isDark ? "right-dark" : "right-light"}`}>
               <div className="right-keys-label">
                 <ul className="keys">
-                  <div className="h" onClick={keyActions["h"]} />
+                  <li>
+                    <div className="h" onClick={keyActions["h"]} />
+                  </li>
                 </ul>
                 <div className="control-label">Hide</div>
               </div>

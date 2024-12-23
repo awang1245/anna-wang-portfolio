@@ -45,9 +45,7 @@ function Home() {
                 >
                   Anna
                 </NavLink>
-                . <br />a product designer and
-                <br />
-                front-end developer.
+                . <br />a product designer and front-end developer.
               </div>
               <div className={isDark ? "fun-facts-dark" : "fun-facts-light"}>
                 <ul className="facts">
@@ -79,6 +77,7 @@ function Home() {
                   href="https://www.linkedin.com/in/annaawang/"
                   target="_blank"
                   className={isDark ? "social-dark" : "social-light"}
+                  aria-label="LinkedIn icon"
                 >
                   <svg
                     width="20"
@@ -97,6 +96,7 @@ function Home() {
                   href="https://github.com/awang1245"
                   target="_blank"
                   className={isDark ? "social-dark" : "social-light"}
+                  aria-label="GitHub icon"
                 >
                   <svg
                     width="20"
@@ -116,6 +116,7 @@ function Home() {
                 <a
                   href="mailto:anna_wang@brown.edu"
                   className={isDark ? "social-dark" : "social-light"}
+                  aria-label="email icon"
                 >
                   <svg
                     width="20"
