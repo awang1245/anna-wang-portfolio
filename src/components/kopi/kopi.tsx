@@ -15,7 +15,17 @@ import screen3 from "../../../public/kopi/screen_3.png";
 import screen4 from "../../../public/kopi/screen_4.png";
 import { useRecoilState } from "recoil";
 import { isDarkState } from "../../recoil/atoms";
-import { scrollToSection } from "../work/work";
+
+export const scrollToSection = (name: string) => {
+  const section = document.getElementById(name);
+  if (section) {
+    const offsetTop = section.offsetTop - 112;
+    window.scrollTo({
+      top: offsetTop,
+      behavior: "smooth",
+    });
+  }
+};
 
 function KopiDevelopment() {
   const [isDark] = useRecoilState<boolean>(isDarkState);

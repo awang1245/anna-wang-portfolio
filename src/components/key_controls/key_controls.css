@@ -51,6 +51,16 @@
   }
 }
 
+.left-light .keys div:hover,
+.right-light .keys div:hover {
+  cursor: url("/main/star-filled.svg") 12 12, default;
+}
+
+.left-dark .keys div:hover,
+.right-dark .keys div:hover {
+  cursor: url("/main/light-star-filled.svg") 12 12, default;
+}
+
 .control-wrapper-hidden {
   justify-content: end;
 }

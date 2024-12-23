@@ -17,7 +17,7 @@
   font-family: "Avenir LT", Avenir, Inter, system-ui, Helvetica, Arial,
     sans-serif;
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 16dpx;
   font-weight: 500;
   background-color: var(--cream5);
   /* to improve cross-platform font performance */
@@ -97,6 +97,8 @@ ul {
   text-decoration: inherit;
   padding: 1em;
   margin: -1em;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .dark-link {
@@ -107,21 +109,15 @@ ul {
 }
 
 .light-link:hover {
-  color: var(--cream50);
+  color: var(--cream65);
   cursor: url("/main/star-filled.svg") 12 12, default;
   transition: 0.3s;
 }
 
 .dark-link:hover {
-  color: var(--cream30);
+  color: var(--cream40);
   cursor: url("/main/light-star-filled.svg") 12 12, default;
   transition: 0.3s;
-}
-
-.light-link[href="/about"]:active {
-  background-color: var(--cream10);
-  padding: 8px 16px;
-  border-radius: 50%;
 }
 
 .hyperlink {
@@ -143,7 +139,7 @@ ul {
 }
 
 .hyperlink-dark:hover {
-  color: var(--cream30);
+  color: var(--cream40);
   cursor: url("/main/light-star-filled.svg") 12 12, default;
   transition: 0.3s;
 }

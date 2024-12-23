@@ -1,6 +1,6 @@
 import "./home.css";
 import "@dotlottie/player-component";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import ProjectCard from "../project_card/project_card";
 import { projects } from "../../data/projects";
 import { useRecoilState } from "recoil";
@@ -57,7 +57,7 @@ function Home() {
                   <li>I study economics (sometimes).</li>
                   <li>I'm a bit of a caffeine addict.</li>
                   <li>I grew up in Philadelphia area.</li>
-                  <li>I started designing in middle school.</li>
+                  <li>I first fell in love with design in middle school.</li>
                   <li>I'm a huge Studio Ghibli fan.</li>
                   <li>My favorite sushi is spicy salmon.</li>
                 </ul>
@@ -159,9 +159,8 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="featured-work" id="work">
-          {/* <h1>Featured Work</h1> */}
-          <div className="featured-cards">
+        <div className="work" id="work">
+          <div className="work-cards">
             {projects
               .filter((work) => work.featured)
               .map((work: WorkData, index: number) => (

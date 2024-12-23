@@ -16,24 +16,6 @@ nav {
   }
 }
 
-/* .dark-nav {
-  background-color: rgba(83, 69, 63, 0.8);
-  transition: background-color 0.3s;
-}
-
-.light-nav {
-  background-color: rgba(255, 249, 242, 0.8);
-  transition: background-color 0.3s;
-}
-
-.light-nav:hover {
-  background-color: var(--cream5);
-}
-
-.dark-nav:hover {
-  background-color: var(--cream75);
-} */
-
 /* nav content */
 .logo {
   display: flex;
@@ -77,6 +59,7 @@ nav {
 
 .right-links {
   display: flex;
-  flex-flow: row;
+  flex-flow: row nowrap;
+  align-items: center;
   gap: 40px;
 }

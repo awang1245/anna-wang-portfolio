@@ -138,7 +138,7 @@ const KeyControls = ({ hasScrolled }: KeyControlsProps) => {
                 </div>
               )}
             </div>
-            <div className="right">
+            <div className={`right ${isDark ? "right-dark" : "right-light"}`}>
               <div className="right-keys-label">
                 <ul className="keys">
                   <div className="h" onClick={keyActions["h"]} />
@@ -149,7 +149,7 @@ const KeyControls = ({ hasScrolled }: KeyControlsProps) => {
           </>
         ) : (
           // if key controls are hidden, only display show option
-          <div className="right">
+          <div className={`right ${isDark ? "right-dark" : "right-light"}`}>
             <div className="right-keys-label">
               <ul className="keys">
                 <div className="h" onClick={keyActions["h"]} />

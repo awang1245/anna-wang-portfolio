@@ -11,7 +11,7 @@ import wireframes from "../../../public/gmcafe/wireframes.png";
 import finalLofi from "../../../public/gmcafe/final-lofi.png";
 import hifi1 from "../../../public/gmcafe/hifi1.png";
 import finalHifi from "../../../public/gmcafe/final-hifi.png";
-import { scrollToSection } from "../work/work";
+import { scrollToSection } from "../kopi/kopi";
 
 function GMCafe() {
   const [isDark] = useRecoilState<boolean>(isDarkState);

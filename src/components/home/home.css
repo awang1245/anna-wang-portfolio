@@ -21,7 +21,7 @@ main {
   align-items: start;
   gap: 56px;
   max-width: 1080px;
-  padding: 48px 0px;
+  padding: 48px 0px 0px;
   text-align: left;
 }
 
@@ -35,46 +35,28 @@ main {
   flex-flow: column;
   align-items: start;
   gap: 12px;
-}
-
-.basic-intro {
-  animation: slide-from-left 500ms 1;
-}
-
-@keyframes slide-from-left {
-  0%,
-  25% {
-    visibility: hidden;
-    transform: translateX(-40%);
-    animation-timing-function: ease-in;
-  }
-
-  100% {
-    visibility: visible;
-  }
+  animation: slide-from-bottom 600ms ease-out forwards;
+  opacity: 0;
 }
 
 @keyframes slide-from-bottom {
-  0%,
-  25% {
-    visibility: hidden;
-    transform: translateY(60%);
-    animation-timing-function: ease-in;
+  0% {
+    opacity: 0;
+    transform: translateY(40%);
   }
 
   100% {
-    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 .fun-facts-light {
   color: var(--cream65);
-  animation: slide-from-bottom 500ms 1;
 }
 
 .fun-facts-dark {
   color: var(--cream25);
-  animation: slide-from-bottom 600ms 1;
 }
 
 .facts {
@@ -195,6 +177,30 @@ main {
   align-items: start;
   justify-content: center;
   width: 50%;
+
+  p:nth-child(1) {
+    animation: slide-from-bottom 400ms ease-out forwards;
+    animation-delay: 0.4s;
+    opacity: 0;
+  }
+
+  p:nth-child(2) {
+    animation: slide-from-bottom 400ms ease-out forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+  }
+
+  p:nth-child(3) {
+    animation: slide-from-bottom 400ms ease-out forwards;
+    animation-delay: 0.7s;
+    opacity: 0;
+  }
+
+  .social-links {
+    animation: slide-from-bottom 400ms ease-out forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
+  }
 }
 
 .name-light {
@@ -266,7 +272,6 @@ main {
   flex-flow: column;
   align-items: center;
   text-align: center;
-  transform: translateY(-36px);
 }
 
 .sushi-belt {
@@ -278,6 +283,9 @@ main {
   position: relative;
   margin: 0 auto;
   overflow-x: hidden;
+  animation: slide-from-bottom 600ms ease-out forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
 }
 
 .sushi-content {
@@ -347,10 +355,25 @@ main {
 }
 
 .welcome {
-  transform: translateY(-28px);
+  animation: slide-from-bottom-welcome 600ms ease-out forwards;
+  animation-delay: 1s;
+  opacity: 0;
 }
 
-.featured-work {
+@keyframes slide-from-bottom-welcome {
+  0% {
+    opacity: 0;
+    transform: translateY(40%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(-24px);
+  }
+}
+
+/* work section */
+.work {
   width: 100%;
   height: fit-content;
   display: flex;
@@ -358,26 +381,18 @@ main {
   align-items: start;
   text-align: center;
   max-width: 1080px;
-  padding-top: 96px;
+  padding-top: 120px;
   margin-bottom: 120px;
 }
 
 @media (max-width: 1200px) {
-  .featured-work,
+  .work,
   .home-text {
     padding: 0px 56px;
   }
 }
 
-/* .featured-work h1 {
-  font-family: "ivymode";
-  font-weight: 400;
-  font-size: 44px;
-  padding: 0 0 24px 0;
-  margin: 0;
-} */
-
-.featured-cards {
+.work-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
@@ -385,7 +400,7 @@ main {
 }
 
 @media (max-width: 800px) {
-  .featured-cards {
+  .work-cards {
     grid-template-columns: 1fr;
   }
 }
