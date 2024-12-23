@@ -342,18 +342,8 @@ main {
   }
 
   .welcome {
-    padding: 0px 56px;
+    padding: 0px 56px 40px;
     text-align: start;
-  }
-}
-
-@media (max-width: 540px) {
-  .home-text {
-    gap: 0px;
-  }
-
-  .facts {
-    height: 150px;
   }
 }
 
@@ -361,6 +351,31 @@ main {
 .welcome {
   font-size: 18px;
   margin: 8px 0px;
+}
+
+@media (max-width: 540px) {
+  .home p {
+    font-size: 14px;
+    margin: 8px 0px;
+  }
+
+  .welcome {
+    display: none;
+  }
+
+  .home-text {
+    gap: 0px;
+  }
+
+  .intro-left,
+  .name-dark,
+  .name-light {
+    font-size: 28px;
+  }
+
+  .facts {
+    height: 80px;
+  }
 }
 
 .welcome {
@@ -373,7 +388,7 @@ main {
 @keyframes slide-from-bottom-welcome {
   0% {
     opacity: 0;
-    transform: translateY(40%);
+    transform: translateY(40% + 24px);
   }
 
   100% {
@@ -406,7 +421,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-  gap: 48px;
+  gap: 40px;
 }
 
 @media (max-width: 800px) {

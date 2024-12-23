@@ -165,7 +165,7 @@ function Home() {
             {projects
               .filter((work) => work.featured)
               .map((work: WorkData, index: number) => (
-                <ProjectCard work={work} key={index} />
+                <ProjectCard work={work} key={index} index={index} />
               ))}
           </div>
         </div>
