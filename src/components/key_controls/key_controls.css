@@ -121,6 +121,7 @@
   background-image: url("/main/up-clicked.svg");
   width: 28px;
   height: 28px;
+  transition: 0.1s;
 }
 
 .ArrowDown {
@@ -134,16 +135,17 @@
   background-image: url("/main/down-clicked.svg");
   width: 28px;
   height: 28px;
+  transition: 0.1s;
 }
 
 /* numerical keys for page navigation */
-div[data-key="0"] {
+/* div[data-key="0"] {
   background-image: url("/main/0.svg");
   width: 28px;
   height: 28px;
 }
 
-/* div[data-key="0"].clicked,
+div[data-key="0"].clicked,
 div[data-key="0"]:hover {
   background-image: url("/main/0-clicked.svg");
   width: 28px;
@@ -161,6 +163,7 @@ div[data-key="1"]:hover {
   background-image: url("/main/1-clicked.svg");
   width: 28px;
   height: 28px;
+  transition: 0.1s;
 }
 
 div[data-key="2"] {
@@ -174,6 +177,7 @@ div[data-key="2"]:hover {
   background-image: url("/main/2-clicked.svg");
   width: 28px;
   height: 28px;
+  transition: 0.1s;
 }
 
 div[data-key="3"] {
@@ -187,15 +191,16 @@ div[data-key="3"]:hover {
   background-image: url("/main/3-clicked.svg");
   width: 28px;
   height: 28px;
+  transition: 0.1s;
 }
 
-div[data-key="4"] {
+/* div[data-key="4"] {
   background-image: url("/main/4.svg");
   width: 28px;
   height: 28px;
 }
 
-/* div[data-key="4"].clicked,
+div[data-key="4"].clicked,
 div[data-key="4"]:hover {
   background-image: url("/main/4-clicked.svg");
   width: 28px;
@@ -214,6 +219,7 @@ div[data-key="4"]:hover {
   background-image: url("/main/hide-clicked.svg");
   width: 28px;
   height: 28px;
+  transition: 0.1s;
 }
 
 /* toggle light or dark mode */
@@ -228,6 +234,7 @@ div[data-key="4"]:hover {
   background-image: url("/main/dark-clicked.svg");
   width: 28px;
   height: 28px;
+  transition: 0.1s;
 }
 
 /* back to top */
@@ -242,4 +249,5 @@ div[data-key="4"]:hover {
   background-image: url("/main/top-clicked.svg");
   width: 28px;
   height: 28px;
+  transition: 0.1s;
 }
