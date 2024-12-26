@@ -435,8 +435,16 @@ main {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .work-cards {
     grid-template-columns: 1fr;
+  }
+
+  .home-text {
+    padding: 0px 32px;
+  }
+
+  .work {
+    padding: 64px 32px 120px;
   }
 }

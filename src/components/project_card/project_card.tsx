@@ -19,17 +19,16 @@ const ProjectCard = ({ work, index }: ProjectCardProps) => {
     threshold: 0.3,
   });
 
+  // handle delay of loading in each card
   useEffect(() => {
     if (inView) {
       // if viewport height is tall enough to show at least one project card,
       // set delay so that they load in sequentially with other elements on home
       if (window.innerHeight > 800) {
-        console.log("already in view, card #: " + index);
         setDelay(`${(index + 1) * 0.1 + 1}s`); // e.g., 1.2s, 1.4s, 1.6s
         // if viewport height is not tall enough to show cards, set smaller delay
         // offset by 0.2s when cards are scrolled into view
       } else {
-        console.log("scrolled into view, card #: " + index);
         setDelay(`${(index + 1) * 0.1}s`); // e.g., 0.2s, 0.4s, 0.6s
       }
     }

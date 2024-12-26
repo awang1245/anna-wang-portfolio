@@ -37,6 +37,10 @@ body {
   overflow-x: hidden;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 main {
   padding-top: 96px;
 }
@@ -142,10 +146,6 @@ ul {
   color: var(--cream40);
   cursor: url("/main/light-star-filled.svg") 12 12, default;
   transition: 0.3s;
-}
-
-div {
-  box-sizing: border-box;
 }
 
 button {
