@@ -17,9 +17,10 @@
   font-family: "Avenir LT", Avenir, Inter, system-ui, Helvetica, Arial,
     sans-serif;
   line-height: 1.5;
-  font-size: 16dpx;
+  font-size: 16px;
   font-weight: 500;
   background-color: var(--cream5);
+
   /* to improve cross-platform font performance */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -99,23 +100,27 @@ ul {
 .light-link {
   color: black;
   text-decoration: inherit;
-  padding: 1em;
-  margin: -1em;
   display: flex;
-  flex-flow: row nowrap;
-}
-
-.dark-link {
-  color: var(--cream5);
-  text-decoration: inherit;
-  padding: 1em;
-  margin: -1em;
+  text-wrap: nowrap;
+  display: inline-block;
+  position: relative;
+  width: 100%;
 }
 
 .light-link:hover {
   color: var(--cream65);
   cursor: url("/main/star-filled.svg") 12 12, default;
   transition: 0.3s;
+}
+
+.dark-link {
+  color: var(--cream5);
+  text-decoration: inherit;
+  display: flex;
+  text-wrap: nowrap;
+  display: inline-block;
+  position: relative;
+  width: 100%;
 }
 
 .dark-link:hover {

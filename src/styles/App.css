@@ -10,7 +10,7 @@ article {
 }
 
 .dark-mode {
-  cursor: url("/main/light-star-unfilled.svg"), default;
+  cursor: url("/main/light-star-unfilled.svg") 12 12, default;
   background-color: var(--cream75);
   color: var(--cream5);
   transition: background-color 0.3s;
@@ -45,10 +45,27 @@ header {
   transition: background-color 0.3s;
 }
 
-.light-header:hover {
-  background-color: var(--cream5);
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.dark-header:hover {
-  background-color: var(--cream75);
+.footer-text {
+  max-width: 1336px;
+  padding: 24px 0px 96px;
+  width: 100%;
+}
+
+@media (max-width: 1400px) {
+  .footer-text {
+    padding: 24px 56px 96px;
+  }
+}
+
+@media (max-width: 840px) or (max-height: 640px) {
+  .footer-text {
+    padding: 24px 32px;
+  }
 }

@@ -38,11 +38,8 @@ const Navigation = () => {
       {showHamburger ? (
         <Hamburger />
       ) : (
-        <nav
-          className="desktop-nav"
-          // className={showHamburger ? "mobile-nav" : ""}
-        >
-          <NavLink className={isDark ? "dark-link" : "light-link"} to="/">
+        <nav className="desktop-nav" role="navigation">
+          <NavLink className={isDark ? "dark-logo-link" : "logo-link"} to="/">
             <div className="logo">
               <img src={ducky} className="logo-duck" alt="vector art of duck" />
               Anna Wang

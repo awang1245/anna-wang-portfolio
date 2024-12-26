@@ -33,7 +33,7 @@ function Home() {
 
   return (
     <>
-      <main className={isDark ? "page-dark" : "page-light"}>
+      <main className={isDark ? "page-dark" : "page-light"} role="main">
         <div className="home">
           <div className="home-text">
             <div className="intro-left">

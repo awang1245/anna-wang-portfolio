@@ -22,7 +22,7 @@ function App() {
 
   return (
     <article className={isDark ? "dark-mode" : "light-mode"}>
-      <header className={isDark ? "dark-header" : "light-header"}>
+      <header className={isDark ? "dark-header" : "light-header"} role="banner">
         <Navigation />
         <ProgressBar setHasScrolled={setHasScrolled} />
       </header>
@@ -43,6 +43,9 @@ function App() {
         {/* catch all 404 not found page */}
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <footer role="contentinfo">
+        <p className="footer-text">Designed and coded by Anna Wang :D</p>
+      </footer>
     </article>
   );
 }

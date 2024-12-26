@@ -5,13 +5,24 @@ import resume from "../../../public/main/resume.pdf";
 import { NavLink } from "react-router-dom";
 import { isDarkState } from "../../recoil/atoms";
 import { useRecoilState } from "recoil";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 const Hamburger = () => {
   const [isDark] = useRecoilState<boolean>(isDarkState);
+  const location = useLocation();
+
+  // collapse hamburger menu whenever a navlink is clicked
+  useEffect(() => {
+    const input = document.getElementById("toggle-menu") as HTMLInputElement;
+    if (input) {
+      input.checked = false;
+    }
+  }, [location]);
 
   return (
-    <nav className="mobile-nav">
-      <NavLink className={isDark ? "dark-link" : "light-link"} to="/">
+    <nav className="mobile-nav" role="navigation">
+      <NavLink className={isDark ? "dark-logo-link" : "logo-link"} to="/">
         <div className="logo">
           <img src={ducky} className="logo-duck" alt="vector art of duck" />
           Anna Wang
@@ -19,6 +30,7 @@ const Hamburger = () => {
       </NavLink>
       <div className="hamburger">
         <input
+          id="toggle-menu"
           type="checkbox"
           className={isDark ? "input-dark" : "input-light"}
         />
@@ -34,7 +46,7 @@ const Hamburger = () => {
               className={isDark ? "dark-link" : "light-link"}
               to="/#work"
             >
-              01&nbsp; Work
+              <p>01&nbsp; Work</p>
             </HashLink>
           </li>
           <li>
@@ -42,7 +54,7 @@ const Hamburger = () => {
               className={isDark ? "dark-link" : "light-link"}
               to={"/about"}
             >
-              02&nbsp; About
+              <p>02&nbsp; About</p>
             </NavLink>
           </li>
           {/* <li>
@@ -60,7 +72,7 @@ const Hamburger = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              03&nbsp; Resume
+              <p>03&nbsp; Resume</p>
             </a>
           </li>
         </ul>

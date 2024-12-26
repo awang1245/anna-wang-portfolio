@@ -15,6 +15,30 @@
   }
 }
 
+.logo-link {
+  color: black;
+  text-decoration: inherit;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.dark-logo-link {
+  color: var(--cream5);
+  text-decoration: inherit;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.logo-link:hover {
+  color: var(--cream65);
+  cursor: url("/main/star-filled.svg") 12 12, default;
+}
+
+.dark-logo-link:hover {
+  color: var(--cream40);
+  cursor: url("/main/light-star-filled.svg") 12 12, default;
+}
+
 /* nav content */
 .logo {
   display: flex;
@@ -61,4 +85,42 @@
   flex-flow: row nowrap;
   align-items: center;
   gap: 40px;
+}
+
+.desktop-nav .light-link::after {
+  width: 100%;
+  content: "";
+  position: absolute;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--cream65);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.desktop-nav .light-link:hover::after {
+  background-color: var(--cream65);
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.desktop-nav .dark-link::after {
+  width: 100%;
+  content: "";
+  position: absolute;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--cream40);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.desktop-nav .dark-link:hover::after {
+  background-color: var(--cream40);
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }

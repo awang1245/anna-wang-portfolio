@@ -23,7 +23,7 @@ function Beestar() {
 
   return (
     <>
-      <main className={isDark ? "page-dark" : "page-light"}>
+      <main className={isDark ? "page-dark" : "page-light"} role="main">
         <div className="gmcafe">
           <section className="blurb">
             <div className="grouping">

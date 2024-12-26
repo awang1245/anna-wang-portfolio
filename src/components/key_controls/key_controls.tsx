@@ -139,7 +139,9 @@ const KeyControls = ({ hasScrolled }: KeyControlsProps) => {
                     <div className="d" onClick={keyActions["d"]} />
                   </li>
                 </ul>
-                <div className="control-label">Dark/Light</div>
+                <div className="control-label">
+                  {isDark ? "Light Mode" : "Dark Mode"}
+                </div>
               </div>
               {hasScrolled && (
                 <div className="keys-label">

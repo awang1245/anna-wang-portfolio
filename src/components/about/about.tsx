@@ -8,7 +8,7 @@ function About() {
   const [isDark] = useRecoilState<boolean>(isDarkState);
   return (
     <>
-      <main className={isDark ? "page-dark" : "page-light"}>
+      <main className={isDark ? "page-dark" : "page-light"} role="main">
         <div className="about">
           <div className="split">
             <div className="text">
