@@ -92,7 +92,8 @@
   content: "";
   position: absolute;
   transform: scaleX(0);
-  height: 1.5px;
+  height: 2px;
+  border-radius: 2px;
   bottom: 0;
   left: 0;
   background-color: var(--cream65);
@@ -111,7 +112,8 @@
   content: "";
   position: absolute;
   transform: scaleX(0);
-  height: 1.5px;
+  height: 2px;
+  border-radius: 2px;
   bottom: 0;
   left: 0;
   background-color: var(--cream40);

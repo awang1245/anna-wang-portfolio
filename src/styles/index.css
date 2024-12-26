@@ -100,7 +100,6 @@ ul {
 .light-link {
   color: black;
   text-decoration: inherit;
-  display: flex;
   text-wrap: nowrap;
   display: inline-block;
   position: relative;
@@ -108,15 +107,15 @@ ul {
 }
 
 .light-link:hover {
+  /* text-decoration: underline; */
   color: var(--cream65);
   cursor: url("/main/star-filled.svg") 12 12, default;
-  transition: 0.3s;
+  transition: text-decoration 0.3s, color 0.3s;
 }
 
 .dark-link {
   color: var(--cream5);
   text-decoration: inherit;
-  display: flex;
   text-wrap: nowrap;
   display: inline-block;
   position: relative;
@@ -124,6 +123,7 @@ ul {
 }
 
 .dark-link:hover {
+  /* text-decoration: underline; */
   color: var(--cream40);
   cursor: url("/main/light-star-filled.svg") 12 12, default;
   transition: 0.3s;
