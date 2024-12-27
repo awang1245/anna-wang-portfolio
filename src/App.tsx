@@ -43,7 +43,10 @@ function App() {
         {/* catch all 404 not found page */}
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <footer role="contentinfo">
+      <footer
+        className={isDark ? "dark-footer" : "light-footer"}
+        role="contentinfo"
+      >
         <p className="footer-text">Designed and coded by Anna Wang :D</p>
       </footer>
     </article>

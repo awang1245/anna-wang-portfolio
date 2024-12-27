@@ -52,6 +52,16 @@ footer {
   justify-content: center;
 }
 
+.light-footer {
+  background-color: var(--cream5);
+  transition: background-color 0.3s;
+}
+
+.dark-footer {
+  background-color: var(--cream75);
+  transition: background-color 0.3s;
+}
+
 .footer-text {
   max-width: 1336px;
   padding: 24px 0px 96px;
