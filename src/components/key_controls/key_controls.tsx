@@ -52,7 +52,6 @@ const KeyControls = ({ hasScrolled }: KeyControlsProps) => {
   // listens for keydown and keyup and handles actions accordingly
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      1;
       // check if the key exists in keyActions and execute the corresponding action
       if (keyActions[e.key]) {
         keyActions[e.key]();
@@ -74,7 +73,6 @@ const KeyControls = ({ hasScrolled }: KeyControlsProps) => {
     const handleKeyUp = (e: KeyboardEvent) => {
       // handle removing "clicked" class for keys
       if (e.key === "0" || e.key === "1" || e.key === "2" || e.key === "3") {
-        console.log("made it here");
         const key = document.querySelector(`[data-key="${e.key}"]`);
         if (key && key.classList.contains("clicked")) {
           key.classList.remove("clicked");

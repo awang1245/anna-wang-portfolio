@@ -27,16 +27,12 @@
 }
 
 .dark-logo-link:hover {
-  color: var(--cream40);
+  color: var(--cream25);
   cursor: url("/main/light-star-filled.svg") 12 12, default;
 }
 
 .hamburger {
   width: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: end;
-
   -webkit-user-select: none;
   user-select: none;
 }
@@ -94,15 +90,13 @@
   background-color: var(--cream5);
 }
 
-.span-light:hover {
+.input-light:hover ~ .menu-icon .span-light {
   background-color: var(--cream65);
-  cursor: url("/main/star-filled.svg") 12 12, default;
   transition: background-color 0.3s;
 }
 
-.span-dark:hover {
+.input-dark:hover ~ .menu-icon .span-dark {
   background-color: var(--cream40);
-  cursor: url("/main/light-star-filled.svg") 12 12, default;
   transition: background-color 0.3s;
 }
 
@@ -133,6 +127,7 @@
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
+  justify-content: center;
   align-items: end;
   gap: 24px;
   height: 0;
@@ -156,6 +151,15 @@
   transition: height 600ms ease;
 }
 
+.hamburger-links li:first-child {
+  padding-top: 24px;
+}
+
+.hamburger-links p:hover {
+  text-decoration: underline;
+}
+
+/* 
 .hamburger-links .light-link p::after {
   width: 100%;
   content: "";
@@ -185,17 +189,14 @@
   border-radius: 2px;
   bottom: 0;
   left: 0;
-  background-color: var(--cream40);
+  background-color: var(--cream25);
   transform-origin: bottom right;
   transition: transform 0.3s ease-out;
 }
 
 .hamburger-links .dark-link:hover p::after {
-  background-color: var(--cream40);
+  background-color: var(--cream25);
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
-.hamburger-links li:first-child {
-  padding-top: 24px;
-}
+*/

@@ -35,7 +35,7 @@
 }
 
 .dark-logo-link:hover {
-  color: var(--cream40);
+  color: var(--cream25);
   cursor: url("/main/light-star-filled.svg") 12 12, default;
 }
 
@@ -87,7 +87,7 @@
   gap: 40px;
 }
 
-.desktop-nav .light-link::after {
+/* .desktop-nav .light-link::after {
   width: 100%;
   content: "";
   position: absolute;
@@ -116,13 +116,13 @@
   border-radius: 2px;
   bottom: 0;
   left: 0;
-  background-color: var(--cream40);
+  background-color: var(--cream25);
   transform-origin: bottom right;
   transition: transform 0.3s ease-out;
 }
 
 .desktop-nav .dark-link:hover::after {
-  background-color: var(--cream40);
+  background-color: var(--cream25);
   transform: scaleX(1);
   transform-origin: bottom left;
-}
+} */

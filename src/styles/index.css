@@ -107,7 +107,7 @@ ul {
 }
 
 .light-link:hover {
-  /* text-decoration: underline; */
+  text-decoration: underline;
   color: var(--cream65);
   cursor: url("/main/star-filled.svg") 12 12, default;
   transition: text-decoration 0.3s, color 0.3s;
@@ -123,8 +123,8 @@ ul {
 }
 
 .dark-link:hover {
-  /* text-decoration: underline; */
-  color: var(--cream40);
+  text-decoration: underline;
+  color: var(--cream25);
   cursor: url("/main/light-star-filled.svg") 12 12, default;
   transition: 0.3s;
 }
@@ -148,7 +148,7 @@ ul {
 }
 
 .hyperlink-dark:hover {
-  color: var(--cream40);
+  color: var(--cream25);
   cursor: url("/main/light-star-filled.svg") 12 12, default;
   transition: 0.3s;
 }
