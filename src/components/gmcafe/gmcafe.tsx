@@ -39,7 +39,8 @@ function GMCafe() {
             <div className="blurb-item">
               <div className="item-name">Team</div>
               <div className="item-content">
-                Ben &#40;Founder&#41;, <br></br>Jane &#40;Developer&#41;
+                Ben &#40;Founder&#41;, Jane &#40;Developer&#41;, Loop
+                &#40;Developer&#41;, Raffy &#40;Developer&#41;
               </div>
             </div>
             <div className="blurb-item">

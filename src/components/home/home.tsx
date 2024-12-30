@@ -45,7 +45,7 @@ function Home() {
                 >
                   Anna
                 </NavLink>
-                . <br />a product designer and front-end developer.
+                , <br />a product designer and front-end developer.
               </div>
               <div className={isDark ? "fun-facts-dark" : "fun-facts-light"}>
                 <ul className="facts">
