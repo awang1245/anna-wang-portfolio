@@ -80,30 +80,7 @@
   justify-content: space-between;
   align-items: start;
   row-gap: 32px;
-  column-gap: 48px;
-}
-
-.small-blurb-info {
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: start;
-  align-items: start;
-  row-gap: 32px;
-  column-gap: 200px;
-}
-
-@media (max-width: 1000px) {
-  .blurb-info,
-  .small-blurb-info {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: start;
-    align-items: start;
-    row-gap: 32px;
-    column-gap: 160px;
-  }
+  column-gap: 16px;
 }
 
 .blurb-item {
@@ -118,8 +95,24 @@
   display: flex;
   flex-flow: column wrap;
   align-items: start;
-  max-width: 350px;
+  max-width: 320px;
   gap: 4px;
+}
+
+@media (max-width: 1024px) {
+  .blurb-info {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: start;
+    row-gap: 32px;
+  }
+
+  .blurb-item,
+  .skill-item {
+    flex: 0 0 45%;
+  }
 }
 
 .item-name {

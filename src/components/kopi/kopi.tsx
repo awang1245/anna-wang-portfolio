@@ -41,7 +41,7 @@ function KopiDevelopment() {
               coffee brand to life.
             </div>
           </div>
-          <div className="small-blurb-info">
+          <div className="blurb-info">
             <div className="blurb-item">
               <div className="item-name">Role</div>
               <div className="item-content">
